@@ -1,41 +1,52 @@
 @import 'null_style.scss';
 
+@mixin squareSize($size) {
+	width: $size;
+	height: $size;
+}
+
 body {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 50px;
+	color: #fff;
 }
 
-.wrapper {
+.block {
 
 	&__row {
-		border: 10px solid rgb(200, 200, 20);
 		display: flex;
-		
+		border: 10px solid #ede89d;
 	}
 
 	&__column {
-		
-		&_1 {
-			.wrapper__item {
-				background-color: #00f;
-				color: #fff;
-			}
-		}
+		@include squareSize(80px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #18b5a4;
+		border: 5px solid #5e5373;
 
-		&_2 {
-			.wrapper__item {
-				background-color: #0ff;
-				height: 200px;
-			}
-		}
-
-		&_3 {
-			.wrapper__item {
-					background-color: #00f;
-					color: #fff;
-				}
-		}
+		flex: 0 1 33.3%;
 	}
 
-	&__item {}
+	&__item {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+
+.block {
+
+	&__column--1 {
+	}
+
+	&__column--2 {
+		width: fit-content;
+		height: fit-content;
+	}
+
+	&__column--3 {
+	}
+
 }
