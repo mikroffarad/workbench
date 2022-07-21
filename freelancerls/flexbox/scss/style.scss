@@ -12,24 +12,21 @@ body {
 }
 
 .block {
-
 	&__row {
 		display: flex;
 		border: 10px solid #ede89d;
+		flex-direction: column;
+		height: 95vh;
 	}
 
 	&__column {
-		@include squareSize(80px);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: #18b5a4;
+		
 		border: 5px solid #5e5373;
 
-		flex: 0 1 33.3%;
 	}
 
 	&__item {
+		background-color: #18b5a4;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
@@ -42,8 +39,7 @@ body {
 	}
 
 	&__column--2 {
-		width: fit-content;
-		height: fit-content;
+		flex: 1 0 33.3%;
 	}
 
 	&__column--3 {
