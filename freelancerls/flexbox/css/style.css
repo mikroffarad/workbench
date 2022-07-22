@@ -11,13 +11,15 @@ body {
   height: 95vh;
 }
 .block__column {
+  background-color: #18b5a4;
   border: 5px solid #5e5373;
 }
 .block__item {
-  background-color: #18b5a4;
   display: flex;
+  height: 100%;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  color: #ede89d;
 }
 
 .block__column--2 {
