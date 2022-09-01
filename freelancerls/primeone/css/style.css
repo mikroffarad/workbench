@@ -30,15 +30,15 @@
 }
 @font-face {
   font-family: "Akzidenz Ggrotesk BQ Bold Condensed";
-  src: url("../../fonts/AkzidenzGgroteskBQBoldCondensed.eot");
-  src: local("☺"), url("../../fonts/AkzidenzGgroteskBQBoldCondensed.woff") format("woff"), url("../../fonts/AkzidenzGgroteskBQBoldCondensed.ttf") format("truetype"), url("../../fonts/AkzidenzGgroteskBQBoldCondensed.svg") format("svg");
+  src: url("../fonts/AkzidenzGgroteskBQBoldCondensed.eot");
+  src: local("☺"), url("../fonts/AkzidenzGgroteskBQBoldCondensed.woff") format("woff"), url("../fonts/AkzidenzGgroteskBQBoldCondensed.ttf") format("truetype"), url("../fonts/AkzidenzGgroteskBQBoldCondensed.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Bebas";
-  src: url("../../fonts/Bebas-Regular.eot");
-  src: local("☺"), url("../../fonts/Bebas-Regular.woff") format("woff"), url("../../fonts/Bebas-Regular.ttf") format("truetype"), url("../../fonts/Bebas-Regular.svg") format("svg");
+  src: url("../fonts/Bebas-Regular.eot");
+  src: local("☺"), url("../fonts/Bebas-Regular.woff") format("woff"), url("../fonts/Bebas-Regular.ttf") format("truetype"), url("../fonts/Bebas-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
