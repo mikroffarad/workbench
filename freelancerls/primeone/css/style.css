@@ -30,7 +30,7 @@
 }
 @font-face {
   font-family: "Akzidenz Ggrotesk BQ Bold Condensed";
-  src: url("../../fonts/");
+  src: url("../../fonts/AkzidenzGgroteskBQBoldCondensed.eot");
   src: local("☺"), url("../../fonts/AkzidenzGgroteskBQBoldCondensed.woff") format("woff"), url("../../fonts/AkzidenzGgroteskBQBoldCondensed.ttf") format("truetype"), url("../../fonts/AkzidenzGgroteskBQBoldCondensed.svg") format("svg");
   font-weight: normal;
   font-style: normal;
