@@ -1,0 +1,60 @@
+@use '../variables';
+
+.header {
+    border-top: 5px solid rgba(0, 255, 255, 0.5);
+    border-bottom: 5px solid rgba(255, 255, 0, 0.5);
+
+    background: url(/images/header/background.jpg) no-repeat center;
+
+    &__inner {
+        height: variables.$headerHeight;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.logoname {
+    display: flex;
+    align-items: center;
+
+    &__logo {
+        margin-right: 5px;
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    &__name {
+        font-size: 28px;
+        font-family: "Huntsman";
+    }
+}
+
+.header-nav {
+    &__list {
+        display: flex;
+        height: 100%;
+    }
+
+    &__item {
+        list-style: none;
+        border-left: 1px solid variables.$color1;
+        border-right: 1px solid variables.$color1;
+        &:last-child {
+            border-left: none;
+        }
+    }
+
+    &__link {
+        &:hover{
+            background-color: variables.$color2;
+            color: variables.$color1;
+        }
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 20px;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,9 @@
+@mixin importFont($fontName, $fontPath) {
+    @font-face {
+        font-family: $fontName;
+        src: url("../../fonts/#{$fontPath}");
+    }
+}
+// ============================
+@include importFont("Open Sans", "OpenSans-VariableFont_wdth\,wght.ttf");
+@include importFont("Huntsman", "Huntsman.otf");

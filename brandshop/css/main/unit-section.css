@@ -1,0 +1,38 @@
+/* .unit-section {
+
+}
+
+.unit-section__inner {
+
+}
+
+.unit-section__description {
+
+} */
+
+.unit-card {
+    display: flex;
+}
+
+.unit-card__image {
+    flex: 0 1 30%;
+}
+
+.unit-card__image img {
+    width: 100%;
+}
+
+.unit-card__info {
+    flex: 0 1 70%;
+}
+
+/* .unit-card__name {
+}
+
+.unit-card__description {
+
+}
+
+.unit-card__price {
+
+} */

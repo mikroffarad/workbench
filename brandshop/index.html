@@ -5,36 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online shop</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <div id="headerInside">
-                <div id="headerLeft">
-                    <div id="logo"></div>
-                    <div id="companyName">
+            <div class="header__inner">
+                <div class="logoname">
+                    <div class="logoname__logo">
+                        <img src="images/header/logo.svg" alt="">
+                    </div>
+                    <div class="logoname__name">
                         ПінєПчонє
                     </div>
                 </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">Main</a>
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="#">Main</a>
                         </li>
-                        <li>
-                            <a href="#">Shop</a>
+                        <li class="header-nav__item">
+                            <a class="header-nav__link" href="#">Shop</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
-
     </header>
     <main>
-        <section id="promo-text">
+        <section class="promo-text">
             <div class="container">
-
+                <div class="promo-text__inner">
+                    <div class="cross">
+                    </div>
+                </div>
             </div>
         </section>
         <section class="main-text">
@@ -42,20 +46,20 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt temporibus ipsum facere iure culpa nihil saepe omnis, aperiam facilis ut adipisci delectus et, vero impedit optio cum quaerat. Blanditiis sed quisquam praesentium expedita asperiores dolor nostrum maxime ducimus deleniti magni distinctio quia amet minus error, provident est veritatis ratione, fugit corrupti. Rem architecto iste, sed recusandae pariatur dicta optio quam dolorem alias animi molestias est illum beatae tempore debitis eaque ullam odit minima id atque iure reprehenderit. Magnam dolorem autem, iste fugit, eaque vero labore, iure illum maiores ullam natus. Quidem deserunt porro quas voluptate enim laborum nostrum dicta facere?
             </div>          
         </section>
-        <section class="shop-section">
-            <div class="container">
-                <hr>
-                <h2 class="shop-section__description">It's a separate page of opened shop</h2>
-                <div class="shop-section__products products">
-                    <h2 class="shop-section__title">In stock</h2>
-                    <ul class="products__unit-list unit-list">
+        <section class="shop">
+            <section class="goods">
+                <div class="container">
+                    <hr>
+                    <h2 class="goods__description">It's a separate page of opened shop</h2>
+                    <h1 class="goods__title">In stock</h1>
+                    <ul class="goods__unit-list unit-list">
                         <li class="unit-list__item unit-list-item">
                             <div class="unit-list-item__image">
                                 <img src="https://www.pine64.org/wp-content/uploads/2020/05/PinePhone-3.jpg" alt="">
                             </div>
-                            <div class="unit-list-item__name">
+                            <h3 class="unit-list-item__name">
                                 PinePhone
-                            </div>
+                            </h3>
                             <div class="unit-list-item__description">
                                 The PinePhone is a smartphone developed by Hong Kong-based computer manufacturer Pine64, intended to allow the user to have full control over the device.
                             </div>
@@ -63,16 +67,16 @@
                                 Price: $150
                             </div>
                             <div class="unit-list-item__more-btn">
-                                <p>Learn More</p>
+                                Learn More
                             </div>
                         </li>
                         <li class="unit-list__item unit-list-item">
                             <div class="unit-list-item__image">
                                 <img src="https://www.pine64.org/wp-content/uploads/2020/05/PinePhone-3.jpg" alt="">
                             </div>
-                            <div class="unit-list-item__name">
+                            <h3 class="unit-list-item__name">
                                 PinePhone
-                            </div>
+                            </h3>
                             <div class="unit-list-item__description">
                                 The PinePhone is a smartphone developed by Hong Kong-based computer manufacturer Pine64, intended to allow the user to have full control over the device.
                             </div>
@@ -80,16 +84,16 @@
                                 Price: $150
                             </div>
                             <div class="unit-list-item__more-btn">
-                                <p>Learn More</p>
+                                Learn More
                             </div>
                         </li>
                         <li class="unit-list__item unit-list-item">
                             <div class="unit-list-item__image">
                                 <img src="https://www.pine64.org/wp-content/uploads/2020/05/PinePhone-3.jpg" alt="">
                             </div>
-                            <div class="unit-list-item__name">
+                            <h3 class="unit-list-item__name">
                                 PinePhone
-                            </div>
+                            </h3>
                             <div class="unit-list-item__description">
                                 The PinePhone is a smartphone developed by Hong Kong-based computer manufacturer Pine64, intended to allow the user to have full control over the device.
                             </div>
@@ -97,12 +101,36 @@
                                 Price: $150
                             </div>
                             <div class="unit-list-item__more-btn">
-                                <p>Learn More</p>
+                                Learn More
                             </div>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </section>
+            <section class="unit">
+                <div class="container">
+                    <hr>
+                    <h2 class="unit__description">
+                        Opened unit
+                    </h2>
+                    <div class="unit__unit-card unit-card">
+                        <div class="unit-card__image">
+                            <img src="https://www.pine64.org/wp-content/uploads/2020/05/PinePhone-3.jpg" alt="">
+                        </div>
+                        <div class="unit-card__info">
+                            <h1 class="unit-card__name">
+                                PinePhone
+                            </h1>
+                            <div class="unit-card__description">
+                                The PinePhone is a smartphone developed by Hong Kong-based computer manufacturer Pine64, intended to allow the user to have full control over the device.
+                            </div>
+                            <div class="unit-card__price">
+                                Price: $150
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
     <footer class="footer">
@@ -110,14 +138,29 @@
             <div class="footer__inner">
                 <div class="footer__top footer-top">
                     <div class="footer-top__contacts contacts"> 
-                        <div class="contacts__email">
-                            1
+                        <div class="contacts__email email">
+                            <div class="email__icon icon">
+                                <img src="/images/envelope.svg" alt="">
+                            </div>
+                            <div class="email__value">
+                                pine64@gmail.com
+                            </div>
                         </div>
-                        <div class="contacts__phone">
-                            2
+                        <div class="contacts__phone phone">
+                            <div class="phone__icon icon">
+                                <img src="/images/phone-call.svg" alt="">
+                            </div>
+                            <div class="phone__value">
+                                +380123456789
+                            </div>
                         </div>
-                        <div class="contacts__address">
-                            3
+                        <div class="contacts__address address">
+                            <div class="address__icon icon">
+                                <img src="/images/placeholder.svg" alt="">
+                            </div>
+                            <div class="address__value">
+
+                            </div>
                         </div>
                     </div>
                     <nav class="footer-top__nav nav">

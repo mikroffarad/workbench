@@ -1,0 +1,19 @@
+@import 'shop/goods';
+@import 'shop/unit';
+
+.promo-text, .main-text {
+    margin: 20px 0;
+}
+
+.promo-text {
+    &__inner {
+        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='%23e5e5e5' stroke-width='1'/><path d='M0 0 L100 100 ' stroke='%23e5e5e5' stroke-width='1'/></svg>");
+        background-repeat:no-repeat;
+        background-position:center center;
+        background-size: 100% 100%, auto;
+        height: 600px;
+        background-color: variables.$color1;
+    }
+}
+
+

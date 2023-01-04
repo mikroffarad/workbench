@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+@font-face {
+  font-family: "Huntsman";
+  src: url("../../fonts/Huntsman.otf");
+}
+.header {
+  border-top: 5px solid rgba(0, 255, 255, 0.5);
+  border-bottom: 5px solid rgba(255, 255, 0, 0.5);
+  background: url(/images/header/background.jpg) no-repeat center;
+}
+.header__inner {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logoname {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.logoname__logo {
+  margin-right: 5px;
+}
+.logoname__logo img {
+  width: 60px;
+  height: 60px;
+}
+.logoname__name {
+  font-size: 28px;
+  font-family: "Huntsman";
+}
+
+.header-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+.header-nav__item {
+  list-style: none;
+  border-left: 1px solid #5e5e5e;
+  border-right: 1px solid #5e5e5e;
+}
+.header-nav__item:last-child {
+  border-left: none;
+}
+.header-nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  text-decoration: none;
+}
+.header-nav__link:hover {
+  background-color: #e5e5e5;
+  color: #5e5e5e;
+}
+
+.goods__description {
+  margin: 10px 0;
+}
+.goods__title {
+  font-size: 2em;
+  text-align: center;
+  margin: 10px 0;
+}
+.goods__unit-list {
+  margin: 10px 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.unit-list__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  padding: 10px;
+}
+
+.unit-list-item {
+  border: 1px solid #000;
+  list-style: none;
+}
+.unit-list-item__image img {
+  width: 100%;
+}
+.unit-list-item__name {
+  margin-top: 5px;
+  text-align: center;
+}
+.unit-list-item__description {
+  text-align: justify;
+  margin-top: 5px;
+}
+.unit-list-item__price {
+  margin-top: 5px;
+  text-align: right;
+}
+.unit-list-item__more-btn {
+  background-color: #5e5e5e;
+  color: #e5e5e5;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.unit__unit-card {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.unit-card {
+  border: 1px solid #000;
+}
+.unit-card__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+}
+.unit-card__image img {
+  width: 100%;
+}
+.unit-card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.unit-card__name {
+  font-size: 2em;
+}
+.unit-card__description {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+.unit-card__price {
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.promo-text, .main-text {
+  margin: 20px 0;
+}
+
+.promo-text__inner {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' preserveAspectRatio='none' viewBox='0 0 100 100'><path d='M100 0 L0 100 ' stroke='%23e5e5e5' stroke-width='1'/><path d='M0 0 L100 100 ' stroke='%23e5e5e5' stroke-width='1'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%, auto;
+  height: 600px;
+  background-color: #5e5e5e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans";
+  color: #5e5e5e;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
