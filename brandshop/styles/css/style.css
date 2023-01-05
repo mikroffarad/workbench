@@ -80,7 +80,6 @@
   margin: 10px 0;
 }
 .goods__unit-list {
-  margin: 10px 0 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,8 +167,8 @@
   font-weight: 700;
 }
 
-.promo-text, .main-text {
-  margin: 20px 0;
+.promo-text, .main-text, .goods, .unit {
+  padding: 20px 0;
 }
 
 .promo-text__inner {
@@ -179,6 +178,104 @@
   background-size: 100% 100%, auto;
   height: 600px;
   background-color: #5e5e5e;
+}
+
+.footer {
+  background-color: #5e5e5e;
+}
+.footer * {
+  color: #e5e5e5;
+}
+.footer li, .footer a {
+  list-style: none;
+  text-decoration: none;
+}
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-top, .footer-bottom {
+  padding: 20px 0;
+}
+
+.footer-top__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contacts__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contacts__icon {
+  margin-right: 10px;
+}
+
+.icon img {
+  height: 40px;
+  width: 40px;
+}
+
+.nav__item {
+  padding: 5px 0;
+}
+.footer-bottom {
+  border-top: 1px solid #e5e5e5;
+}
+.footer-bottom__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-list__item {
+  padding: 0 5px;
 }
 
 * {

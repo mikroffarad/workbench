@@ -1,8 +1,8 @@
 @import 'shop/goods';
 @import 'shop/unit';
 
-.promo-text, .main-text {
-    margin: 20px 0;
+.promo-text, .main-text, .goods, .unit {
+    padding: 20px 0;
 }
 
 .promo-text {
