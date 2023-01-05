@@ -9,7 +9,7 @@
 .header {
   border-top: 5px solid rgba(0, 255, 255, 0.5);
   border-bottom: 5px solid rgba(255, 255, 0, 0.5);
-  background: url("/images/header/background.jpg") no-repeat center;
+  background: url(images/header/background.jpg) no-repeat center;
 }
 .header__inner {
   height: 80px;
