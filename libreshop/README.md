@@ -1,4 +1,4 @@
-# [LibreShop -- mikroffarad's first PHP-based study layout](https://libreshop.000webhostapp.com/)
+# [LibreShop — mikroffarad's first PHP-based study layout](https://libreshop.000webhostapp.com/)
 
 **DISCLAIMER:** *Due to GitHub Pages' incompatibility of server-side programming languages (PHP, Ruby, Python, Java, C# and so on), I was forced to host my page using another service (free 000webhost in my case)*
 
