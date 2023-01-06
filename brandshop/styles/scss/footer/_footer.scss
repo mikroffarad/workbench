@@ -1,17 +1,8 @@
 .footer {
-
-    background-color: variables.$color1;
-
-    * {
-        color: variables.$color2;
-    }
-
-    li, a {
-        list-style: none;
-        text-decoration: none;
-    }
+    border-top: 1px solid variables.$color1;
 
     &__inner {
+        padding: variables.$paddingSize 0;
         display: flex;
         flex-direction: column;
     }
@@ -23,13 +14,10 @@
     }
 
     &__bottom {
+        padding: variables.$paddingSize 0 0 0;
         display: flex;
         flex-direction: column;
     }
-}
-
-.footer-top, .footer-bottom {
-    padding: 20px 0;
 }
 
 .footer-top {
@@ -39,9 +27,9 @@
         flex-direction: column;
     }
 
-    &__nav {
+    // &__nav {
 
-    }
+    // }
 }
 .contacts {
     
@@ -54,53 +42,32 @@
         margin-right: 10px;
     }
 }
-.email {
 
-    &__icon {
-    }
-
-    &__value {
-    }
-}
 .icon {
     img {
         height: 40px;
         width: 40px;
     }
 }
-.phone {
 
-    &__icon {
-    }
-
-    &__value {
-    }
-}
-.address {
-
-    &__icon {
-    }
-
-    &__value {
-    }
-}
 .nav {
 
-    &__list {
-    }
+    // &__list {
+    // }
 
     &__item {
         padding: 5px 0;
     }
 
     &__link {
+        color: #d1cc8e;
+        text-decoration: underline;
     }
 }
 .footer-bottom {
-    border-top: 1px solid variables.$color2;
 
     &__social {
-
+        margin-bottom: 10px;
     }
 
     &__copyright {
@@ -119,10 +86,5 @@
 
     &__item {
         padding: 0 5px;
-    }
-}
-.social-list-item {
-
-    &__icon {
     }
 }

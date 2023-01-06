@@ -3,20 +3,14 @@
 
 .promo-text, .main-text, .goods, .unit {
     &__inner {
-        padding: 20px 0;
+        padding: variables.$paddingSize 0;
     }
 }
 
 .promo-text {
     background: url("../../images/main/main-background.jpg") no-repeat;
-    background-position:center center;
     background-size: 100% 100%, auto;
     height: 600px;
-
-    &__inner {
-    }
-}
-.container {
 
     &__header {
         font-size: 2em;
@@ -24,9 +18,14 @@
         margin-bottom: 25px;
         background-color: #fff;
         text-align: center;
-        u, b {
-            color: inherit;
-        }
+        font-weight: 400;
+
+    }
+
+    &__accent {
+        color: inherit;
+        text-decoration: underline;
+        font-weight: 700;
     }
 
     &__header--red-text {
@@ -37,6 +36,7 @@
         background-color: #0f0;
     }
 }
+
 .main-text {
-    padding: 20px 0;
+    text-align: justify;
 }

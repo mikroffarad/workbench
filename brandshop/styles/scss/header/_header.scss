@@ -1,32 +1,29 @@
 @use '../variables';
 
 .header {
-    // border-top: 5px solid rgba(0, 255, 255, 0.5);
-    // border-bottom: 5px solid rgba(255, 255, 0, 0.5);
-
-    background: url(/images/header/background-removebg-preview.png) no-repeat center, url(/images/main/main-background.jpg);
-    border-bottom: 5px solid #0e100d;
-    background-color: rgb(0, 2, 0);
+    background: url(/images/header/background-removebg-preview.png) no-repeat center;
+    border-bottom: 1px solid variables.$color1;
     &__inner {
-        height: variables.$headerHeight;
+        height: 120px;
         display: flex;
         justify-content: space-between;
     }
 }
 
 .logoname {
+    $logonameHeight: 60px;
     display: flex;
     align-items: center;
-
     &__logo {
         margin-right: 5px;
         img {
-            width: 60px;
-            height: 60px;
+            width: $logonameHeight;
+            height: $logonameHeight;
         }
     }
 
     &__name {
+        line-height: $logonameHeight;
         font-size: 28px;
         font-family: "Huntsman";
     }
@@ -39,7 +36,6 @@
     }
 
     &__item {
-        list-style: none;
         border-left: 1px solid variables.$color1;
         border-right: 1px solid variables.$color1;
         &:last-child {
@@ -49,13 +45,12 @@
 
     &__link {
         &:hover{
-            background-color: variables.$color2;
-            color: variables.$color1;
+            background-color: variables.$color1;
+            color: variables.$color2;
         }
         display: flex;
         align-items: center;
         height: 100%;
-        padding: 0 20px;
-        text-decoration: none;
+        padding: 0 40px;
     }
 }
