@@ -1,7 +1,7 @@
 @use '../variables';
 
 .header {
-    background: url(/images/header/background-removebg-preview.png) no-repeat center;
+    background: url(../../images/header/background-removebg-preview.png) no-repeat center;
     border-bottom: 1px solid variables.$color1;
     &__inner {
         height: 120px;

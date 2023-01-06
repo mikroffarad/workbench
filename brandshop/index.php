@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online shop</title>
+    <title>LibreShop</title>
     <link rel="stylesheet" href="styles/css/style.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
                 <nav class="header-nav">
                     <ul class="header-nav__list">
                         <li class="header-nav__item">
-                            <a class="header-nav__link" href="/">Main</a>
+                            <a class="header-nav__link" href="index.php">Main</a>
                         </li>
                         <li class="header-nav__item">
                             <a class="header-nav__link" href="index.php?page=goods">Goods</a>
@@ -34,11 +34,13 @@
     </header>
     <main class="main">
         <?php
-
+            error_reporting (E_ALL ^ E_NOTICE);
+            
             include 'goods-db.php';
 
             $page = $_GET['page'];
-            if (!isset($page)) {
+
+            if (!isset($_GET['page'])) {
                 require("templates/main.php");
             } 
             elseif ($page == "goods") {
