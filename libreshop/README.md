@@ -2,7 +2,7 @@
 
 **DISCLAIMER:** *Due to GitHub Pages' incompatibility of server-side programming languages (PHP, Ruby, Python, Java, C# and so on), I was forced to host my page using another service (free 000webhost in my case)*
 
-**WARNING:** **Adaptive/responsive layout is not yet provided**, browsing from desktop/laptop PC is recommended.** Any constructive criticism and suggestions are welcome 🙏.
+**WARNING:** **Adaptive/responsive layout is not yet provided, browsing from desktop/laptop PC is recommended.** Any constructive criticism and suggestions are welcome 🙏.
 ***
 Technology stack that was used while development:
 - Operating System: **GNU/Linux (KDE Neon 5.26 x86_64)**
