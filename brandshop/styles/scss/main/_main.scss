@@ -7,6 +7,14 @@
     }
 }
 
+.goods, .unit {
+    &__title {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
 .promo-text {
     background: url("../../images/main/main-background.jpg") no-repeat;
     background-size: 100% 100%, auto;

@@ -1,16 +1,13 @@
 .goods {
 
-    &__title {
-        font-size: 2em;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
     &__unit-list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         gap: variables.$paddingSize;
+
+        columns: 3 350px;
+
     }
 }
 
@@ -39,10 +36,11 @@
     &__description {
         text-align: justify;
         margin-top: 5px;
+        flex-grow: 1;
     }
 
     &__price {
-        flex-grow: 1;
+        font-weight: 700;
         margin-top: 5px;
         text-align: right;
     }

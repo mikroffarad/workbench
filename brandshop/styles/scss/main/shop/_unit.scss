@@ -1,27 +1,21 @@
 .unit {
 
-    &__inner {
-
-    }
-
-    &__description {
-
-    }
-
     &__unit-card {
-        margin-top: 10px;
+        // margin-top: 10px;
         display: flex;
         align-items: center;
     }
 }
 
 .unit-card {
-    border: 1px solid #000;
+    border: 1px solid variables.$color1;
+    padding: variables.$paddingSize;
     &__image { 
+        margin-right: 5px;
         display: flex;
-        flex: 0 1 40%;
         img {
-            width: 100%;
+            width: 200px;
+            height: 200px;
         }
     }
 
