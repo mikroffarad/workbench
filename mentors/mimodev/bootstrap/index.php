@@ -9,37 +9,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php 
-        $movies = [
-            [
-                'title' => 'Naruto: Shippuuden',
-                'description' => 'Synopsis: It has been two and a half years since Naruto
-                Uzumaki left Konohagakure, the Hidden Leaf Village, for intense
-                training following events which fueled his desire to be
-                stronger.'
-            ],
-            [
-                'title' => 'The Last: Naruto the Movie',
-                'description' => 'Synopsis: Two years have passed since the end of the Fourth
-                Great Ninja War. Konohagakure has remained in a state of peace
-                and harmony'   
-            ]
-        ]
-    ?>
-    <div class="container-fluid text-center">
-        <h1>Naruto: Shippuuden</h1>
-        <div class="row">
-            <?php foreach ($movies as $item): ?>   
-                <div class="col-6">
-                    <h4>
-                        <?php echo $item['title']; ?>
-                    </h4>
-                    <p>
-                        <?php echo $item['description']; ?>
-                    </p>
-                </div>
-            <?php endforeach; ?>
-        </div>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col">
+     <h4 class="bg-primary text-white">England beat Germany to win first women's major
+      trophy</h4>
+     <h3 class="text-uppercase">Author: BBC Sport</h3>
+     <p class="lead text-primary">England beat Germany in extra time
+      to win their first European trophy.
+     </p>
     </div>
+   </div>
+  </div>
 </body>
 </html>
