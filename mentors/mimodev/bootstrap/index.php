@@ -9,15 +9,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid text-center bg-light p-4">
    <div class="row">
     <div class="col">
-     <h4 class="bg-primary text-white">England beat Germany to win first women's major
-      trophy</h4>
-     <h3 class="text-uppercase">Author: BBC Sport</h3>
-     <p class="lead text-primary">England beat Germany in extra time
-      to win their first European trophy.
-     </p>
+     <img src="https://mimo.app/i/bubu.png"
+      class="rounded-circle img-fluid">
+     <h3 class="m-3">Travel Cat</h3>
+     <p class="lead">If cats could talk, they wouldn't</p>
+     <button class="btn btn-success btn-sm m-1">Add friend</button>
+     <button class="btn btn-primary btn-sm m-1">Send message</button>
+     <button class="btn btn-danger btn-sm m-1">Remove friend</button>
     </div>
    </div>
   </div>
