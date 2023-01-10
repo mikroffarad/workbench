@@ -9,16 +9,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container-fluid text-center bg-light p-4">
+  <div class="container-fluid text-center p-1">
    <div class="row">
     <div class="col">
-     <img src="https://mimo.app/i/bubu.png"
+     <h2 class="m-2">Trivia Poll</h2>
+     <img src="https://mimo.app/i/batduck.png"
       class="rounded-circle img-fluid">
-     <h3 class="m-3">Travel Cat</h3>
-     <p class="lead">If cats could talk, they wouldn't</p>
-     <button class="btn btn-success btn-sm m-1">Add friend</button>
-     <button class="btn btn-primary btn-sm m-1">Send message</button>
-     <button class="btn btn-danger btn-sm m-1">Remove friend</button>
+     <p class="m-2">Do you want a Batman trivia?</p>
+     <button class="btn btn-success btn-lg">Yes</button>
+     <button class="btn btn-danger btn-lg">No</button>
     </div>
    </div>
   </div>
