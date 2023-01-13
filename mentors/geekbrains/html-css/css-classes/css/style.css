@@ -1,7 +1,23 @@
-.heading {
-    color: blueviolet;
-}
+/* Background properties: */
+/* background-color: #000; */
+/* background-image: url(); */
+/* background-repeat: repeat-x (repeat-y | no-repeat); */
+/* background-position: top (bottom | left | right); */
+/* background-attachment: fixed; */
+/* background-size: cover (contain | 100%); */
+/* ============================== */
+/* Border properties: */
+/* border-color: #f00; */
+/* border-style: solid (dotted | dashed | groove | ridge | double | inset | outset); */
+/* border-width: 2px; */
 
-input[type="checkbox"] {
-    background-color: blueviolet;
+.block {
+    width: 90%;
+    height: 300px;
+    border: 1px solid #000;
+
+    background-color: #ccc;
+    background-image: url(https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg?w=2000);
+    background-size: cover;
+    background-position: center;    
 }
