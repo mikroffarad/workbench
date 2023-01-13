@@ -1,18 +1,36 @@
-.img {
-    width: 150px;
-    height: 200px;
+.menu__list {
+
+}
+.menu__item {
+    list-style: none;
     border: 1px solid #000;
-    float: left;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
 }
 
-.heading {
-    overflow: hidden;
-    border: 1px solid #000;
+.menu__item:first-child {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
-.footer {
-    height: 50px;
-    width: 100%;
-    background-color: #aaa;
-    clear: both;
+.menu__item:last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.menu__item:hover .menu__link {
+    text-decoration: none;
+}
+
+.menu__link {
+}
+
+.menu__link:hover {
+    color: blueviolet;
+}
+
+.menu__link:active {
+    color: green;
 }
