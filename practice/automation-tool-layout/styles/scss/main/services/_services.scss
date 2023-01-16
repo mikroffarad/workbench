@@ -1,0 +1,137 @@
+// .services {
+//     background: #E5E5E5;
+
+//     &__inner {
+//         padding-top: 65px;
+//         padding-bottom: 65px;
+//     }
+
+//     &__heading {
+//         h2 {
+//             font-weight: 300;
+//             font-size: 36px;
+//             line-height: 46px;
+//             text-align: center;
+//             letter-spacing: 0.05em;
+//             color: #000000;
+//         }
+//         margin-bottom: 65px;
+//     }
+
+//     &__cards {
+//         list-style: none;
+//         display: flex;
+//         justify-content: space-between;
+//         gap: 32px;
+//     }
+
+//     &__card {
+//         background: #FFFFFF;
+//         flex: 0 1 auto;
+//         box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+//         border-radius: 10px;
+//         padding: 45px;
+//     }
+
+//     &__title {
+
+//         h3 {
+//             font-weight: 400;
+//             font-size: 20px;
+//             line-height: 30px;
+    
+//             letter-spacing: 0.05em;
+    
+//             color: #1F3F68;
+
+//         }
+//         margin-bottom: 15px;
+//     } 
+
+//     &__image {
+//         text-align: center;
+//         margin-bottom: 50px;
+//         img {
+//             height: 120px;
+//             border: 1px solid #000;
+//         }
+//     }
+
+//     &__description {
+//         p {
+//             font-weight: 400;
+//             font-size: 16px;
+//             line-height: 26px;
+//             letter-spacing: 0.05em;
+
+//             color: #1F3F68;
+
+//             opacity: 0.6;
+//         }
+//         margin-bottom: 30px;
+//     }
+
+//     &__link {
+//     }
+// }
+
+.services {
+
+    &__inner {
+        padding: 64px 0;
+    }
+
+    &__title {
+        color: #000;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+    }
+}
+.card {
+
+    &__unit {
+        background: #FFFFFF;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+        border-radius: 10px;
+        padding: 32px 32px 45px;
+        color: variables.$text-blue;
+    }
+
+    &__image {
+        img {
+            max-width: 170px;
+            max-height: 125px;
+        }
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        margin-bottom: 14px;
+    }
+
+    &__subtitle {
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        color: variables.$btn-bg-blue;
+    }
+}
+
+.link {
+
+    &__text {
+        margin-right: 25px;
+    }
+
+    // &__arrow {
+    // }
+}
+

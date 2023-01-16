@@ -1,0 +1,31 @@
+@import 'intro/intro';
+@import 'services/services';
+
+.title--fw-light {
+    font-weight: 300;
+}
+
+.title--fw-normal {
+    font-weight: 400;
+}
+
+.title--big {
+    font-size: 64px;
+    line-height: 74px;
+}
+
+.title--medium {
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.title--small {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.subtitle {
+    line-height: 26px;
+    opacity: 0.6;
+}
+

@@ -1,0 +1,34 @@
+@use 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+@import 'header/header';
+@import 'main/main';
+@import 'footer/footer';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.05em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-intro {
+    background: linear-gradient(120deg, #EBF3FB 98.84%, rgba(152, 195, 232, 0) 91.60%);
+}
+

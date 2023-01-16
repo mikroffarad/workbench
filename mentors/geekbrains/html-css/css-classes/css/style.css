@@ -1,18 +1,4 @@
-.product {
-    width: 300px;
-    border: 1px solid #000;
+.text::first-letter {
+    color: red;
+    font-size: 25px;
 }
-
-.product--new::after {
-    content: "new";
-    text-transform: uppercase;
-    color: blueviolet;
-}
-
-.product__image {
-    height: 150px;
-    background-color: blueviolet;
-}
-.product__text {
-}
-
