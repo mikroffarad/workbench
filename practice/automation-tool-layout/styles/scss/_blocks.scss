@@ -1,0 +1,36 @@
+.title {
+    @mixin fw($value) {
+        font-weight: $value;
+    }
+    @mixin size($fz, $lh) {
+        font-size: $fz;
+        line-height: $lh;
+    }
+    &--fw-normal {
+        @include fw(400);
+    }
+    &--fw-light {
+        @include fw(300);
+    }
+
+    &--big {
+        @include size(64px, 74px);
+    }
+
+    &--medium {
+        @include size(36px, 46px);
+    }
+
+    &--small {
+        @include size(20px, 30px);
+    }
+}
+
+.subtitle {
+    opacity: 0.6;
+}
+
+.btn {
+    background: variables.$btn-bg-blue;
+    color: #fff;
+}

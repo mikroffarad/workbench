@@ -1,0 +1,75 @@
+.footer {
+
+    background: variables.$footer-bg-blue;
+    color: #FFFFFF;
+
+    &__top {
+        padding-top: 90px;
+        padding-bottom: 96px;
+        border-bottom: 1px solid rgba($color: #FFFFFF, $alpha: 0.4);
+        & > * {
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+        }
+    }
+
+    // &__inner {
+
+    // }
+
+    // &__text {
+    // }
+
+    &__title {
+        max-width: 340px;
+        margin-bottom: 32px;
+    }
+
+    &__subtitle {
+        max-width: 495px;
+    }
+
+    &__btn {
+        padding: 15px 80px;
+    }
+
+    &__bottom {
+        padding: 64px 0;
+    }
+
+		&__contacts {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 64px;
+		}
+
+		&__contact {
+            flex: 0 1 29%;        
+            display: flex;
+            &::before {
+                margin-right: 20px;
+            }
+		}
+
+        @mixin content($letter) {
+            &::before {
+                content: $letter;
+            }
+        }
+
+		&__contact--address {
+            @include content("A.");
+        }
+
+		&__contact--phone {
+            @include content("T.");
+		}
+
+		&__contact--email {
+            @include content("E.");
+		}
+
+		// &__copyright {
+		// }
+}
