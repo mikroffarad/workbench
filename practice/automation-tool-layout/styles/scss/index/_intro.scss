@@ -1,5 +1,7 @@
 .intro {
 
+    background: linear-gradient(120deg, #EBF3FB 98.84%, rgba(152, 195, 232, 0) 91.60%);
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -9,8 +11,6 @@
 
     &__header {
         flex-basis: 100%;
-        display: flex;
-        justify-content: space-between;
     }
 
     &__text-btn {
@@ -43,14 +43,22 @@
     }
 }
 
-// .header {
+.header {
 
-//     &__logo {
-//     }
+    &__inner {
 
-//     &__link {
-//     }
+        padding-top: 40px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
 
-//     &__contact {
-//     }
-// }
+    &__logo {
+    }
+
+    &__link {
+    }
+
+    &__contact {
+    }
+}
