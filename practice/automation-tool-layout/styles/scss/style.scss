@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import 'reset';
 @import 'blocks';
-@import 'header';
 @import 'intro';
 @import 'services';
 @import 'footer';
@@ -21,7 +20,7 @@
     margin: 0 auto;
 }
 
-.header-intro {
-    background: linear-gradient(120deg, #EBF3FB 98.84%, rgba(152, 195, 232, 0) 91.60%);
-}
+// .header-intro {
+//     background: linear-gradient(120deg, #EBF3FB 98.84%, rgba(152, 195, 232, 0) 91.60%);
+// }
 

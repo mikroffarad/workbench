@@ -1,21 +1,29 @@
 .intro {
-    
+
     &__inner {
-        // Padding: top | left and right | bottom;
-        padding: 80px 0 60px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 40px 0 60px;
+    }
+
+    &__header {
+        flex-basis: 100%;
         display: flex;
         justify-content: space-between;
     }
 
     &__text-btn {
-        padding-top: 20px;
+        margin-top: 115px;
     }
 
-    .intro__text {
+    &__text {
         color: variables.$text-blue;
     }
 
     &__title {
+        max-width: 508px;
+        letter-spacing: 0.04em;
         margin-bottom: 32px;
     }
 
@@ -30,6 +38,19 @@
         border-radius: 10px;
     }
 
-    // &__image {
-    // }
+    &__image {
+        margin-top: 80px;
+    }
 }
+
+// .header {
+
+//     &__logo {
+//     }
+
+//     &__link {
+//     }
+
+//     &__contact {
+//     }
+// }
