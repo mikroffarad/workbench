@@ -1,18 +1,7 @@
 .footer {
 
-    background: variables.$footer-bg-blue;
-    color: #FFFFFF;
-
-    &__top {
-        padding-top: 90px;
-        padding-bottom: 96px;
-        border-bottom: 1px solid rgba($color: #FFFFFF, $alpha: 0.4);
-        & > * {
-            justify-content: space-between;
-            align-items: center;
-            display: flex;
-        }
-    }
+    // &__top {
+    // }
 
     // &__inner {
 
@@ -21,10 +10,52 @@
     // &__text {
     // }
 
+    // &__subtitle {
+        
+    // }
+
+
+
+    // &__bottom {
+    //     padding: 64px 0;
+    // }
+
+		// &__contacts {
+
+		// }
+
+		// &__contact {
+
+		// }
+
+
+		// &__copyright {
+		// }
+}
+
+.footer {
+
+    background: variables.$footer-bg-blue;
+    color: #FFFFFF;
+
     &__title {
         max-width: 340px;
         margin-bottom: 32px;
     }
+}
+.footer-top {
+
+    &__inner {
+        padding-top: 90px;
+        padding-bottom: 96px;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+
+    // &__text {
+
+    // }
 
     &__subtitle {
         max-width: 495px;
@@ -33,43 +64,125 @@
     &__btn {
         padding: 15px 80px;
     }
+}
 
-    &__bottom {
-        padding: 64px 0;
+.footer-bottom-index {
+
+    &__inner {
+
     }
 
-		&__contacts {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 64px;
-		}
+    &__contacts {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 64px;
+        gap: 32px;
+    }
 
-		&__contact {
-            flex: 0 1 29%;        
-            display: flex;
-            &::before {
-                margin-right: 20px;
-            }
-		}
+    &__contact {
+    }
+}
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 
-        @mixin content($letter) {
-            &::before {
-                content: $letter;
-            }
+}
+.footer-contact {
+    display: flex;
+    gap: 18px;
+    max-width: 316px;
+}
+
+.footer-contact {
+
+    @mixin content($letter) {
+        &::before {
+            content: $letter;
         }
+    }
 
-		&__contact--address {
-            @include content("A.");
-        }
+    &--address {
+        @include content("A.");
+    }
 
-		&__contact--phone {
-            @include content("T.");
-		}
+    &--phone {
+        @include content("T.");
+    }
 
-		&__contact--email {
-            @include content("E.");
-		}
+    &--email {
+        @include content("E.");
+    }
 
-		// &__copyright {
-		// }
+}
+
+// .copyright {
+// }
+
+.footer-bottom-contact {
+
+    &__inner {
+        padding-top: 96px;
+        padding-bottom: 64px;
+        display: flex;
+        gap: 110px;
+        justify-content: space-around;
+    }
+
+    &__title-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.logo-title {
+
+    display: flex;
+    gap: 18px;
+    align-items: center;
+
+    &__logo {
+
+    }
+
+    &__title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    }
+}
+
+.footer-lists {
+    display: flex;
+    gap: 180px;
+}
+
+.footer-list {
+
+    &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        margin-bottom: 32px;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+}
+.subtitle {
+    flex-basis: 100%;
+}
+.footer-copyright {
+    text-align: center;
+    padding-bottom: 64px;
 }
