@@ -1,188 +1,156 @@
 .footer {
 
-    // &__top {
-    // }
-
-    // &__inner {
-
-    // }
-
-    // &__text {
-    // }
-
-    // &__subtitle {
-        
-    // }
-
-
-
-    // &__bottom {
-    //     padding: 64px 0;
-    // }
-
-		// &__contacts {
-
-		// }
-
-		// &__contact {
-
-		// }
-
-
-		// &__copyright {
-		// }
-}
-
-.footer {
-
     background: variables.$footer-bg-blue;
-    color: #FFFFFF;
+    color: #fff;
+
+}
+.footer-top {
+
+    &__inner {
+        padding: 90px 0 64px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     &__title {
         max-width: 340px;
         margin-bottom: 32px;
     }
-}
-.footer-top {
 
-    &__inner {
-        padding-top: 90px;
-        padding-bottom: 96px;
-        justify-content: space-between;
-        align-items: center;
-        display: flex;
+    &__text {
+        max-width: 495px;
     }
 
-    // &__text {
-
-    // }
-
     &__subtitle {
-        max-width: 495px;
     }
 
     &__btn {
         padding: 15px 80px;
     }
 }
-
-.footer-bottom-index {
+.footer-separator {
+    border: 1px solid rgba($color: #FFFFFF, $alpha: 0.4);
+}
+.footer-bottom {
 
     &__inner {
-
+        padding: 64px 0;
     }
 
-    &__contacts {
+    &__contact-list {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 64px;
-        gap: 32px;
     }
 
-    &__contact {
+    &__contact-item {
+        flex: 0 0 355px;
     }
 }
-.footer-contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.contact-list {
 
 }
-.footer-contact {
+.contact-item {
     display: flex;
-    gap: 18px;
-    max-width: 316px;
-}
+    gap: 20px;
+    &::before {
+        font-weight: 500;
+    }
 
-.footer-contact {
-
-    @mixin content($letter) {
+    @mixin contact-before($letter) {
         &::before {
             content: $letter;
         }
     }
 
     &--address {
-        @include content("A.");
+        @include contact-before("A.");
     }
-
     &--phone {
-        @include content("T.");
+        @include contact-before("T.");
     }
-
     &--email {
-        @include content("E.");
-    }
-
+        @include contact-before("E.");
+    }    
 }
-
-// .copyright {
-// }
-
-.footer-bottom-contact {
+.footer-bottom-extended {
 
     &__inner {
-        padding-top: 96px;
-        padding-bottom: 64px;
-        display: flex;
-        gap: 110px;
-        justify-content: space-around;
+        padding: 96px 0 64px 0;
     }
 
-    &__title-contacts {
+    &__row {
         display: flex;
-        flex-direction: column;
-        gap: 32px;
+
     }
 
-    &__contacts {
-        display: flex;
-        flex-direction: column;
+    &__column {
+        flex-basis: 50%;
     }
-}
-
-.logo-title {
-
-    display: flex;
-    gap: 18px;
-    align-items: center;
 
     &__logo {
-
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
-    &__title {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 46px;
-    letter-spacing: 0.02em;
+    &__logo, &__title {
+        margin-bottom: 32px;
     }
-}
 
-.footer-lists {
-    display: flex;
-    gap: 180px;
-}
+    &__contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
 
-.footer-list {
+    &__contact-item {
+        max-width: 284px;
+    }
+
+    &__lists {
+        display: flex;
+        gap: 82px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
 
     &__title {
         font-weight: 500;
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 0.05em;
-        margin-bottom: 32px;
+    }
+
+    &__item {
     }
 
     &__link {
-        display: inline-block;
-        margin-bottom: 16px;
     }
 }
-.subtitle {
-    flex-basis: 100%;
+
+.footer-logo {
+
+    &__icon {
+    }
+
+    &__title {
+        font-weight: 500;
+font-size: 28px;
+line-height: 46px;
+/* identical to box height, or 164% */
+
+letter-spacing: 0.02em;
+    }
 }
+
 .footer-copyright {
-    text-align: center;
-    padding-bottom: 64px;
+
+		&__inner {
+            padding-bottom: 64px;
+		}
 }
