@@ -1,1 +1,19 @@
- 
+.header {
+
+    &__inner {
+
+        padding-top: 40px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+    }
+
+    &__link {
+    }
+
+    &__contact {
+    }
+}
