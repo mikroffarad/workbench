@@ -1,0 +1,103 @@
+@import 'reset';
+
+$color1: #322856;
+$color2: #EB4087;
+$color3: #F5A823;
+
+$body-bg: $color1;
+$body-color: $color2;
+
+$header-border: $color2;
+$header-logo: $color2;
+$header-nav: $color2;
+$header-phone: $color2;
+
+$card-bg: $color3;
+$card-color: $color1;
+
+
+body {
+    font-family: "Noto Sans";
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+
+    .container {
+        padding: 15px 0;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px 0;
+        border: 5px solid $header-border;
+        border-radius: 20px;
+    }
+
+    &__logo {
+        $logoSize: 30px;
+        display: flex;
+        width: $logoSize;
+        height: $logoSize;
+        border-radius: 40%;
+        background-color: $header-logo;
+    }
+
+    &__navigation {
+    }
+
+    &__list {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__item {
+        
+    }
+
+    &__link {
+        color: $header-nav;
+    }
+
+    &__phone {
+        color: $header-phone; 
+    }
+}
+
+.card {
+
+    &__list {
+        display: flex;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+    }
+
+    &__item {
+        flex: 1 1 20%;
+        $card-size: 150px;
+
+        height: $card-size;
+        width: $card-size;
+        background-color: $card-bg;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        font-size: 54px;
+        color: $card-color;
+    }
+}
