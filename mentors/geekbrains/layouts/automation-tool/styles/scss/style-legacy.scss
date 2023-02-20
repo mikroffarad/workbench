@@ -1,0 +1,52 @@
+.project {
+
+
+
+    &__col--1 {
+        flex-basis: 100%;
+    }
+
+    &__col--2, &__col--3 {
+
+    }
+
+}
+
+.footer {
+
+    &__top {
+    }
+
+    &__bottom {
+    }
+}
+
+.footer-top {
+
+    &__info {
+    }
+
+    &__heading {
+        text-align: unset;
+        max-width: 300px;
+    }
+
+    &__text {
+        max-width: 500px;
+    }
+}
+
+.footer-bottom {
+
+    &__info {
+        display: flex;
+    }
+
+    &__item {
+        flex-grow: 1;
+    }
+
+    &__copy {
+        color: $color1;
+    }
+}

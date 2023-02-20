@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,38 +5,6 @@
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-.title {
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 46px;
-  text-align: center;
-  letter-spacing: 0.05em;
-}
-
-.text {
-  font-size: 16px;
-  line-height: 26px;
-  color: #1F3F68;
-  letter-spacing: 0.05em;
-  opacity: 0.6;
-}
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style: none;
-  padding-top: 42px;
 }
 
 .top {
@@ -64,7 +31,7 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.top__title {
+.top__heading {
   max-width: 510px;
   color: #1F3F68;
   font-weight: 300;
@@ -72,7 +39,6 @@ body {
   line-height: 74px;
   letter-spacing: 0.04em;
   margin-bottom: 32px;
-  text-align: unset;
 }
 .top__text {
   max-width: 425px;
@@ -92,11 +58,24 @@ body {
   margin-top: 71px;
 }
 
-.services {
-  padding: 64px 0;
+.text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #1F3F68;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
 }
-.services__title {
-  margin-bottom: 64px;
+
+.services {
+  padding-top: 64px;
+}
+
+.heading {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
 }
 
 .card-row {
@@ -106,21 +85,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.card__image {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-bottom: 51px;
-}
-.card__link {
-  margin-top: 30px;
-  font-size: 14px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-  color: #5A98D0;
-  text-decoration: none;
+  padding: 64px 0;
 }
 
 .card-col {
@@ -141,14 +106,29 @@ body {
           flex-direction: column;
 }
 
-.title-mini {
+.card__link {
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #5A98D0;
+  text-decoration: none;
+}
+
+.card__image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 51px;
+}
+
+.heading-mini {
   font-size: 20px;
   color: #1F3F68;
   letter-spacing: 0.05em;
   margin-bottom: 14px;
 }
 
-.project__text {
+.project__subtitle {
   width: 75%;
   margin: 0 auto;
   text-align: center;
@@ -156,6 +136,27 @@ body {
   margin-top: 32px;
   margin-bottom: 64px;
   opacity: unset;
+}
+.project__image {
+  width: 100%;
+}
+.project__text {
+  font-size: 32px;
+  line-height: 46px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 999;
+  top: 64px;
+  right: 64px;
+}
+.project__col {
+  position: relative;
+  z-index: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .project__row {
   gap: 32px;
@@ -168,40 +169,44 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.project__col {
-  position: relative;
-  z-index: 0;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-.project__image {
-  width: 100%;
-}
-.project__subtitle {
-  position: absolute;
-}
-.project__subtitle--1 {
-  top: 64px;
-  right: 64px;
-}
-.project__subtitle--2, .project__subtitle--3 {
-  top: 32px;
-  left: 32px;
-}
 .project__col--1 {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
-.project__col--2, .project__col--3 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+.footer-top__heading {
+  text-align: unset;
+  max-width: 300px;
+}
+.footer-top__text {
+  max-width: 500px;
 }
 
-.subtitle {
-  font-size: 32px;
-  line-height: 46px;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
+.footer-bottom__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-bottom__item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.footer-bottom__copy {
+  color: #1F3F68;
+}
+
+.contacts-header {
+  background-color: darkgrey;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: 400px;
 }
