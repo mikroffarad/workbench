@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.top {
+  flex-grow: 1;
+}
+.header {
+  height: 80px;
+  background-color: #ccc;
+}
+.main {
+}
+.footer {
+  height: 80px;
+  background-color: grey;
+}
