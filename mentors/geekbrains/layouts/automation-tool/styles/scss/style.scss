@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -55,6 +54,7 @@ $color2: #316099;
         flex-direction: column;
         height: 100%;
         background-image: url(/images/top__background.svg);
+        background-size: 50%;
         background-repeat: no-repeat;
         background-position: right center;
     }
@@ -62,6 +62,10 @@ $color2: #316099;
     &__info {
         padding-top: 115px;
         flex-grow: 1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     &__title {
@@ -84,6 +88,9 @@ $color2: #316099;
         box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
         border-radius: 10px;
         margin-top: 71px;
+        display: inline-block;
+        flex-grow: 0;
+        flex-shrink: 1;
     }
 }
 
@@ -303,3 +310,4 @@ $color2: #316099;
     &__copyright {
     }
 }
+@import 'media-queries';
