@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap');
+
+:root {
+    --color-primary: #262A2F;
+    --color-accent: #FF5533;
+    --color-grey: #868686;
+    --color-white: #FFFFFF;
+}
+
+* {
+    all: unset;
+    display: revert;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #EBEBEB;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 101px);
+}
+
+.container {
+    max-width: 1435px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 38px;
+    padding-bottom: 150px;
+}
+
+.navigation__logo {
+    grid-column: span 4;
+    padding-right: 32px;
+}
+
+.navigation__image {
+    width: 100%;
+}
+
+.navigation__list {
+    list-style: none;
+    grid-column: 5/-1;
+
+    display: flex;
+    gap: 60px;
+}
+
+/* Or use margins instead of gap: */
+/* .navigation__item {
+    margin-right: 60px;
+}
+
+.navigation__item:last-child {
+    margin-right: 0;
+} */
+
+.navigation__link {
+    color: var(--color-primary);
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.navigation__link--active {
+    color: var(--color-accent);
+}
+
+.navigation__link:hover {
+    color: var(--color-accent);
+}
