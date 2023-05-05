@@ -1,0 +1,39 @@
+.navigation {
+  
+  // &__logo {}
+
+  &__image {
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+  }
+
+  /* Or use margins instead of gap: */
+  /* &__item {
+      margin-right: 60px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+  } 
+  */
+
+  &__link {
+    color: variables.$color-primary;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__link--active, &__link:hover {
+    color: variables.$color-accent;
+  }
+
+}
+
+

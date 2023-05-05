@@ -1,0 +1,25 @@
+.small-article {
+  padding-left: 11px;
+  border-left: 9px solid variables.$color-primary;
+  margin-bottom: 35px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: variables.$color-primary;
+    margin-bottom: 14px;
+    
+  }
+
+  &__caption {
+  }
+  
+  &__date {
+  }
+  
+  &__source {
+  
+  }
+
+}
