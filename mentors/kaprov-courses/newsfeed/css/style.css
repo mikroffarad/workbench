@@ -153,6 +153,13 @@
   overflow: hidden;
 }
 
+.main-article__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .footer {
   background-color: #262A2F;
   padding-top: 22px;
