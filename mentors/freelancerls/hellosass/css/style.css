@@ -1,0 +1,184 @@
+/*Zeroing*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto&family=Water+Brush&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #29539b;
+  background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+  text-align: center;
+  font-size: 50px;
+  line-height: 70px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.container .container__text .link {
+  font-family: "Open Sans", sans-serif;
+}
+.container .container__text .link .google {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 80px;
+}
+.container .container__text .link .google li:nth-child(3n+0) {
+  color: #F7B529;
+}
+.container .container__text .link .google li:nth-child(2n+2) {
+  color: #FF3E30;
+}
+.container .container__text .link .google li:nth-child(3n+1) {
+  color: #176BEF;
+}
+.container .container__text .link .google li:nth-child(5n+0) {
+  color: #179C52;
+}
+.container .container__text .link .ddg {
+  font-size: 60px;
+  background: url(../img/icons8-duckduckgo-64.png) 0px no-repeat;
+  padding-left: 64px;
+}
+.container .container__text .link .ddg li {
+  background: -webkit-linear-gradient(#1B6BFB, #C422FA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .container__text p span {
+  color: #DC84AE;
+  font-family: "Water Brush", cursive;
+  font-weight: 700;
+}
+
+.container .container__text .link .ddg, .container .container__text p span {
+  -webkit-animation: hue 5s linear infinite;
+          animation: hue 5s linear infinite;
+}
+@-webkit-keyframes hue {
+  to {
+    -webkit-filter: hue-rotate(1turn);
+            filter: hue-rotate(1turn);
+  }
+}
+@keyframes hue {
+  to {
+    -webkit-filter: hue-rotate(1turn);
+            filter: hue-rotate(1turn);
+  }
+}
+
+.container .container__text .link .google, .container .container__text .link .ddg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 432px) {
+  .ddg li {
+    font-size: 50px;
+  }
+
+  body {
+    height: 100%;
+  }
+}
