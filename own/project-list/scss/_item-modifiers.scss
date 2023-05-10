@@ -1,0 +1,61 @@
+.item--bem-methodology {
+	&::before, &::after {
+		background: linear-gradient(to right, #C1C8E4 0%, #5680E9 50%, #8D6AD2 100%);
+	}
+
+	.item__title {
+		background: linear-gradient(to right, #049FE8 0%, #1EC4F3 100%);
+	}
+}
+
+.item--hello-sass {
+	&::before, &::after {
+			background: linear-gradient(to right, #DC84AE 0%, #CF649A 50%, #DF859A 100%);
+		}
+		
+	.item__title {
+		background: linear-gradient(to right, #DC84AE 0%, #CF649A 100%);
+	}
+}
+
+.item--pseudo-classes-elements {
+	&::before, &::after {
+			background: linear-gradient(to right, #2465F1 0%, #0c27db 50%, #FF004B 100%);
+		}
+	
+	.item__title {
+		background: linear-gradient(to right, #214CE5 0%, #FF004B 100%);
+	}
+}
+
+.item--travel-blog {
+	&::before, &::after {
+		background: linear-gradient(to right, #2465F1 0%, #0c27db 50%, #FF004B 100%);
+	}
+
+	.item__title {
+		background: linear-gradient(to right, #FF757C 0%, #21C0B5 100%);
+	}
+}
+
+.item--gradient-statistics {
+	&::before,	&::after {
+		background: linear-gradient(to right, #4B00E0 0%, #771EE1 50%, #15AAC0 100%);
+	}
+
+	.item__title {
+		background: linear-gradient(to right, #81C91D 0%, #BE4BDC 100%);
+	}
+}
+
+.item--doo-layout {
+
+	&::before,
+	&::after {
+		background: linear-gradient(to right, #64E5A6 0%, #A3F2CB 50%, #ACBEFB 100%);
+	}
+
+	.item__title {
+		background: linear-gradient(to right, #64E5A6 0%, #ACBEFB 100%);
+	}
+}
