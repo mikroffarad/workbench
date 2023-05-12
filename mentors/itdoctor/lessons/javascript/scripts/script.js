@@ -1,26 +1,33 @@
-const str = "Hi there";
+// Template strings ``
+console.log(`Text
+on 5 lines ${5 + 7}.`)
 
-// Displays number of characters in the string
-console.log(str.length);
+// Math object and its methods
+oneDecimal = 3.5
+console.log(
+`${Math.floor(oneDecimal)}
+${Math.ceil(oneDecimal)}
+${Math.round(oneDecimal)}
+${Math.trunc(oneDecimal)}
+`)
 
-// Displays the last char
-console.log(str[str.length - 1]);
+// Round to fixed decimal
+threeDecimal = 7.567;
+console.log(threeDecimal.toFixed(2));
 
-// Displays chars from 1 to 3 index
-console.log(str.slice(1, 3));
+// Convert string to number
+const add = "5";
+console.log(+add + 5);
 
-// Converts string to lowercase
-console.log(str.toLowerCase());
+// Function to check the number
+function isNumber(n) {
+  return !isNaN(parseFloat(n)) && !isNaN(n - 0);
+}
+console.log(isNumber("5"))
 
-// Converts string to uppercase
-console.log(str.toUpperCase());
-
-// trim method clears spaces in beginning and end of string
-const format = "    uNcoRRect STring   ".toLowerCase().trim();
-
-const sentence = `${format[0].toUpperCase() + format.slice(1)}`;
-
-console.log(sentence);
-
-console.log(7 == "7")
-console.log(7 === "7")
+// Function to generate random integer
+function randomInteger(min, max) {
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+}
+console.log(randomInteger(5, 50))
