@@ -1,33 +1,39 @@
-// Template strings ``
-console.log(`Text
-on 5 lines ${5 + 7}.`)
+'use strict'
 
-// Math object and its methods
-oneDecimal = 3.5
-console.log(
-`${Math.floor(oneDecimal)}
-${Math.ceil(oneDecimal)}
-${Math.round(oneDecimal)}
-${Math.trunc(oneDecimal)}
-`)
+// Init array
+let arr1 = [3, 2, "str", true]
+console.log(arr1)
 
-// Round to fixed decimal
-threeDecimal = 7.567;
-console.log(threeDecimal.toFixed(2));
+// Clear first item
+arr1.shift()
+console.log(arr1)
 
-// Convert string to number
-const add = "5";
-console.log(+add + 5);
+// Push item to the end
+arr1.push(128)
+console.log(arr1)
 
-// Function to check the number
-function isNumber(n) {
-  return !isNaN(parseFloat(n)) && !isNaN(n - 0);
-}
-console.log(isNumber("5"))
+// Clear last item
+arr1.pop()
+console.log(arr1)
 
-// Function to generate random integer
-function randomInteger(min, max) {
-  let rand = min + Math.random() * (max + 1 - min);
-  return Math.floor(rand);
-}
-console.log(randomInteger(5, 50))
+// Push item to the beginning
+arr1.unshift(256)
+console.log(arr1)
+
+// Concat with another array
+let arr2 = [4, 5, 6]
+console.log([arr1.concat(arr2)])
+
+// Find item by index
+console.log(arr1.indexOf(true))
+
+// Convert array to string
+console.log(arr1.join()) // comma-separated items
+console.log(arr1.join("")) // without separator 
+
+// Edit array
+arr1.splice(1, 3,  "str1", "str2")
+console.log(arr1)
+
+// String to array
+console.log("Major, Minor, Mixolydian".split(", "))
