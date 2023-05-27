@@ -1,6 +1,6 @@
 let arr = []
 
-for (let i = 30; i > 0; i-=3) {
-        arr.push(i)
+for (let i = 0; i < 10; i++) {
+    arr.push(i**2);
 }
 console.log(arr)
