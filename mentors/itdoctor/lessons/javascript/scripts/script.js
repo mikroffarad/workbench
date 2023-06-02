@@ -44,16 +44,27 @@
 //
 // console.log(sumNum(65536))
 
-function addMul(n) {
-  let arr = n.toString().split('').map((i) => +i)
-  let sum = 0, mul = 1;
-  for (i of arr) {
-    sum += i;
-    mul *= i;
+// function addMul(n) {
+//   let arr = n.toString().split('').map((i) => +i)
+//   let sum = 0, mul = 1;
+//   for (i of arr) {
+//     sum += i;
+//     mul *= i;
+//   }
+//   return {
+//     "Sum": sum,
+//     "Mul": mul
+//   };
+// }
+// console.log(addMul(795));
+
+function numReverse(num) {
+  let arr = num.toString().split('');
+  let newArr = []
+
+  for (i = arr.length-1; i >= 0; i--) {
+    newArr.push(arr[i])
   }
-  return {
-    "Sum": sum,
-    "Mul": mul
-  };
+  return +newArr.join('');
 }
-console.log(addMul(795));
+console.log(numReverse(8192));
