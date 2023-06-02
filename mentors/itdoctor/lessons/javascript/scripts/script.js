@@ -8,7 +8,7 @@
 // console.log(human.introduceMyself())
 
 // let arr = [99,88,77,66,555,44,33,22,1111];
-// let arrSorted = arr.sort((a,b) => a-b) 
+// let arrSorted = arr.sort((a,b) => a-b)
 // console.log(arrSorted)
 
 // function fibonacci(count) {
@@ -19,7 +19,7 @@
 //         } else if (i === 1) {
 //             fib[i] = 2;
 //         } else {
-//             fib[i] = fib[i-2] + fib[i-1]; 
+//             fib[i] = fib[i-2] + fib[i-1];
 //         }
 //     }
 //     return fib;
@@ -43,3 +43,17 @@
 // }
 //
 // console.log(sumNum(65536))
+
+function addMul(n) {
+  let arr = n.toString().split('').map((i) => +i)
+  let sum = 0, mul = 1;
+  for (i of arr) {
+    sum += i;
+    mul *= i;
+  }
+  return {
+    "Sum": sum,
+    "Mul": mul
+  };
+}
+console.log(addMul(795));
