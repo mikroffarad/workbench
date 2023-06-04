@@ -6,9 +6,21 @@
  */
 
 function timeToMinutes(time) {
-  const hours = +time.split(':')[0];
-  const minutes = +time.split(':')[1];
-  return hours * 60 + minutes;
-}
+  try {
+    const hours = +time.split(':')[0];
+    const minutes = +time.split(':')[1];
+    const rangeIncorrect = (!(hours >= 0 && hours <= 23) || !(minutes >= 0 && minutes <= 59));
+  
+    if (rangeIncorrect) {
+      throw new RangeError("Incorrect value");
+    }
 
-console.log(timeToMinutes("02:08"));
+    return hours * 60 + minutes;
+
+  } catch (error) {
+    console.log(error);
+  }
+}
+const a = new Date();
+console.log(timeToMinutes(`${a.getHours()}:${a.getMinutes()}`));
+
