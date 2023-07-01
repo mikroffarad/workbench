@@ -14,7 +14,11 @@
   </div>
 
   <script>
-
+    let keys = ["First name", "Middle name", "Last name"];
+    document.querySelector("p").textContent = `
+    ${keys[0]} - ${keys[1]} - ${keys[2]}`;
+    console.log(document.querySelector("div").innerHTML);
+    console.log(document.querySelector("div").textContent);
   </script>
 </body>
 </html>
