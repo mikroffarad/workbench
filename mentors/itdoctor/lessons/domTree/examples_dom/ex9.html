@@ -10,7 +10,9 @@
   <p>Абзац текста</p>
 
   <script>
-
+    let elem = document.querySelector("p");
+    elem.hidden = true;
+    setInterval(() => elem.hidden = !elem.hidden, 1000);
   </script>
 </body>
 </html>
