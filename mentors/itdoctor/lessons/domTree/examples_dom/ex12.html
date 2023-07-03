@@ -7,10 +7,19 @@
   <title>Пример 12</title>
 </head>
 <body>
-  <p>Разделитель</p>
+  <p>Separator</p>
   <hr>
   <script>
-
+    let divElem = document.createElement('div');
+    divElem.className = "alert";
+    divElem.innerHTML = `Important message!`;
+    document.querySelector("hr").after(divElem);
+    
+    let alertText = document.createElement('div');
+    alertText.textContent = "Important notice!" 
+    alertText.className = "alert";
+    // divElem.append(alertText, document.createElement('hr'));
+    divElem.replaceWith(alertText)
   </script>
 </body>
 </html>

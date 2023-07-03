@@ -7,11 +7,15 @@
 </head>
 <body>
   
-  <p data-about="Это текст">Абзац текста</p>
-  <div data-about-block="Это блок">Блок текста</div>
+  <p data-about="Text section">Абзац текста</p>
+  <div data-about-block="Block section">Блок текста</div>
 
   <script>
-
+    let pSection = document.querySelector("p");
+    let divSection = document.querySelector("div");
+    
+    console.log(pSection.dataset.about);
+    console.log(divSection.dataset.aboutBlock);
   </script>
 </body>
 </html>
