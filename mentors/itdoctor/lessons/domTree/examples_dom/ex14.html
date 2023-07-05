@@ -16,7 +16,10 @@
   <div id="two">Два</div>
 
   <script>
-
+    let div = document.querySelector("p");
+    setInterval(() => {
+      div.textContent = two.textContent;
+    }, 500)
   </script>
 </body>
 </html>
