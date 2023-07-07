@@ -1,0 +1,25 @@
+:root {
+  --backgroundColor: #c8b1e4;
+  --foregroundColor: #532b88;
+}
+
+body {
+  background-color: var(--backgroundColor);
+  color: var(--foregroundColor); 
+}
+
+.header, .footer {
+  border-color: var(--foregroundColor);
+}
+
+.header {
+  font-weight: 700;
+}
+
+.main {
+
+}
+
+.footer textarea {
+  background-color: #A078D0;
+}
