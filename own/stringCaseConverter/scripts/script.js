@@ -1,13 +1,13 @@
-let input = document.getElementById('input')
+let textarea = document.querySelector('.footer__textarea')
 
 function displayOutput() {
-  let inputValue = input.value;
+  let textareaValue = textarea.value;
   
   let weirdCaseString1 = "";
   let isUpperCase = true;
 
-  for (let i = 0; i < inputValue.length; i++) {
-    let char = inputValue.charAt(i);
+  for (let i = 0; i < textareaValue.length; i++) {
+    let char = textareaValue.charAt(i);
     if(isUpperCase) {
       weirdCaseString1 += char.toUpperCase();
     } else {
@@ -26,11 +26,11 @@ function displayOutput() {
       }
   }).join('');
 
-  let output = document.querySelector(".output");
+  let output = document.querySelector(".main");
 
   output.innerHTML = `
-    ${weirdCaseString1} 
+    <p style="margin-bottom: 15px;">${weirdCaseString1}</p>
     <br>
-    ${weirdCaseString2}
+    <p>${weirdCaseString2}</p>
   `;
 }
