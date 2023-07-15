@@ -1,0 +1,21 @@
+[class*="__container"] {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1199.98px) {
+  [class*="__container"] {
+    max-width: 970px;
+  }
+}
+@media (max-width: 990.98px) {
+  [class*="__container"] {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  [class*="__container"] {
+    max-width: none;
+    padding: 0 15px;
+  }
+}

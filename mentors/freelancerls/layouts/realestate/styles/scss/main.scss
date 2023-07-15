@@ -1,0 +1,21 @@
+@import 'reset';
+@import 'container';
+@import 'header';
+@import 'main-block';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+body {
+  font-family: Manrope;
+  color: #333333;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
