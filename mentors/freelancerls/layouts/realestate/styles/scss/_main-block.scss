@@ -8,7 +8,7 @@
       background-color: #BDCCFF;
       content: "";
       position: absolute;
-      width: 100%;
+      width: 200%;
       top: 0;
       left: 68%;
       height: 100%;
@@ -35,13 +35,32 @@
 }
 .content-main-block {
 
+  &__body {
+    padding-right: 80px;
+  }
+
   &__sub-title {
+    font-weight: 700;
+    color: #F90;
+    font-size: 22px;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
   }
 
   &__title {
+    font-weight: 800;
+    font-size: 54px;
+    color: #000;
+    line-height: 73px;
+    margin-bottom: 23px;
   }
 
   &__text {
+    color: var(--text, #31353B);
+    font-size: 17px;
+    line-height: normal;
+    letter-spacing: 0.17px;
   }
 
   &__form {
