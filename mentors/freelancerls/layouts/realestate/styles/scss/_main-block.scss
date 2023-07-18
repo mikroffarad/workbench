@@ -1,5 +1,7 @@
 .main-block {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+                
+  padding-bottom: 110px;
+
   &__container {
     padding-top: 183px;
     position: relative;
@@ -124,14 +126,15 @@
 
 .form-main-block {
   position: relative;
-  z-index: 2;
+  z-index: 5;
   display: flex;
   margin-right: -188px;
-  height: 86px;
-  background: #FFF url('../../images/main/home.svg') 33px 50% no-repeat;
+  min-height: 86px;
   box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.01), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.02), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.03);
   
   &__input {
+    background: #FFF url('../../images/main/home.svg') 33px 50% no-repeat;
+    height: 86px;
     border: 1px solid #DADADA;
     padding: 0 0 0 74px;
     background-color: transparent;
@@ -145,6 +148,7 @@
   }
 
   &__button {
+    height: 86px;
     cursor: pointer;
     width: 188px;
     flex: 0 0 188px;
@@ -170,11 +174,10 @@
 
   &__items {
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
     justify-content: space-between;
     align-items: center;
-    gap: 5px;
+    gap: 25px;
   }
 
   &__item {
@@ -189,6 +192,7 @@
   .main-block {
     &__container {
       padding-top: 100px;
+      padding-bottom: 30px;
     }
     &__body {
       margin-bottom: 44px;
@@ -218,4 +222,37 @@
     z-index: 1;
     max-width: none;
   }
+
+  .form-main-block {
+    display: block;
+    &__button {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .partners-main-block {
+    &__items {
+      justify-content: center;
+    }
+  }
+
+  .content-main-block {
+    &__title {
+      font-size: 30px;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media (max-width: 479.98px) {
+  .form-main-block { 
+    background: #fff;
+    
+    &__input {
+      background: #fff;
+      padding: 0 15px;
+    }
+  } 
 }
