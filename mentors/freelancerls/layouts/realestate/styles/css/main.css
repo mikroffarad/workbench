@@ -166,6 +166,8 @@ body {
 
 .content-main-block {
   padding-top: 40px;
+  position: relative;
+  z-index: 2;
 }
 .content-main-block__body {
   padding-right: 80px;
@@ -262,6 +264,31 @@ body {
   max-width: 100%;
 }
 
+@media (max-width: 1199.98px) {
+  .main-block__container {
+    padding-top: 100px;
+  }
+  .main-block__body {
+    margin-bottom: 44px;
+  }
+  .content-main-block__body {
+    padding-right: 0;
+  }
+  .body-main-block {
+    display: block;
+  }
+  .body-main-block__content {
+    margin-bottom: 40px;
+  }
+  .form-main-block {
+    margin-right: 0;
+  }
+  .partners-main-block {
+    position: relative;
+    z-index: 1;
+    max-width: none;
+  }
+}
 body {
   font-family: Manrope;
   color: #333333;

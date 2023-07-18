@@ -66,6 +66,9 @@
 
   padding-top: 40px;
 
+  position: relative;
+  z-index: 2;
+
   &__body {
     padding-right: 80px;
   }
@@ -168,6 +171,7 @@
   &__items {
     display: flex;
     flex-wrap: wrap;
+    
     justify-content: space-between;
     align-items: center;
     gap: 5px;
@@ -179,3 +183,39 @@
     }
   }
 }  
+
+@media (max-width: 1199.98px) {
+  
+  .main-block {
+    &__container {
+      padding-top: 100px;
+    }
+    &__body {
+      margin-bottom: 44px;
+    }
+  }
+  
+  .content-main-block {
+    &__body {
+      padding-right: 0;
+    }
+  }
+
+  .body-main-block {
+    display: block;
+
+    &__content {
+      margin-bottom: 40px;
+    }
+  }
+
+  .form-main-block {
+    margin-right: 0;
+  }
+
+  .partners-main-block {
+    position: relative;
+    z-index: 1;
+    max-width: none;
+  }
+}
