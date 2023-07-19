@@ -106,15 +106,19 @@ body {
 .header .menu__link:hover {
   text-decoration: underline;
 }
+
 @media (max-width: 767.98px) {
-  .header .menu__list {
+  .header__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .menu__list {
     justify-content: center;
   }
-  .header .menu__link {
+  .menu__link {
     font-size: 18px;
   }
 }
-
 .main-block {
   padding-bottom: 110px;
 }
