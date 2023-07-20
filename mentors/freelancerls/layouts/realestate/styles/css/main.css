@@ -335,18 +335,6 @@ body {
   padding-top: 110px;
   padding-bottom: 110px;
 }
-@media (max-width: 990.98px) {
-  .how-it-works {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-}
-@media (max-width: 767.98px) {
-  .how-it-works {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
 .how-it-works__title {
   margin-bottom: 70px;
 }
@@ -420,18 +408,24 @@ body {
     transform: translate(69%, 0px);
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 990.98px) {
+  .how-it-works {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
   .how-it-works__cards {
     padding: 0 35px;
   }
-}
-@media (max-width: 990.98px) {
   .card-how:not(:last-child)::after {
     width: 130px;
     transform: translate(64%, 0px);
   }
 }
 @media (max-width: 797.98px) {
+  .how-it-works {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .how-it-works__title {
     margin-bottom: 30px;
   }
