@@ -1,7 +1,9 @@
 @import 'reset';
 @import 'container';
+@import 'mixins';
 @import 'header';
 @import 'main-block';
+@import 'how-it-works';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 body {
@@ -18,4 +20,21 @@ body {
 
 .page {
   flex: 1 1 auto;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.375;
+  color: #000;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 30px;
+  } 
 }

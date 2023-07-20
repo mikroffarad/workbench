@@ -67,7 +67,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 50;
+  z-index: 2;
 }
 .header__container {
   display: flex;
@@ -195,7 +195,7 @@ body {
   margin-bottom: 23px;
 }
 .content-main-block__text {
-  color: var(--text, #31353B);
+  color: #31353B;
   font-size: 17px;
   line-height: 23px;
   letter-spacing: 0.01em;
@@ -257,7 +257,7 @@ body {
   max-width: 65%;
 }
 .partners-main-block__label {
-  color: var(--text, #31353B);
+  color: #31353B;
   font-size: 17px;
   letter-spacing: 0.17px;
   margin-bottom: 25px;
@@ -305,7 +305,15 @@ body {
     width: 100%;
   }
 }
+@media (max-width: 990.98px) {
+  .main-block {
+    padding-bottom: 70px;
+  }
+}
 @media (max-width: 767.98px) {
+  .main-block {
+    padding-bottom: 30px;
+  }
   .partners-main-block__items {
     justify-content: center;
   }
@@ -323,6 +331,120 @@ body {
     padding: 0 15px;
   }
 }
+.how-it-works {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+@media (max-width: 990.98px) {
+  .how-it-works {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767.98px) {
+  .how-it-works {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.how-it-works__title {
+  margin-bottom: 70px;
+}
+.how-it-works__cards {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(3, minmax(auto, 260px));
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 45px;
+  justify-content: space-between;
+}
+.card-how {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  position: relative;
+}
+.card-how__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+.card-how__title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  color: #000;
+}
+.card-how__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333;
+}
+.card-how:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 41px;
+  transform: translate(86.5%, 0px);
+  width: 210px;
+  height: 11px;
+}
+.card-how--1 .card-how__icon {
+  background: #9672FF;
+  box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(150, 114, 255, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(150, 114, 255, 0.03), 0px 20px 13px 0px rgba(150, 114, 255, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(150, 114, 255, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(150, 114, 255, 0.05), 0px 100px 80px 0px rgba(150, 114, 255, 0.07);
+}
+.card-how--1::after {
+  background: url("../../images/how-it-works/border_1.svg") 0 0/100% no-repeat;
+}
+.card-how--2 .card-how__icon {
+  background: #4DDFFD;
+  box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(77, 223, 253, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(77, 223, 253, 0.03), 0px 20px 13px 0px rgba(77, 223, 253, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(77, 223, 253, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(77, 223, 253, 0.05), 0px 100px 80px 0px rgba(77, 223, 253, 0.07);
+}
+.card-how--2::after {
+  background: url("../../images/how-it-works/border_2.svg") 0 0/100% no-repeat;
+}
+.card-how--3 .card-how__icon {
+  background: #F2B8EC;
+  box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(242, 184, 236, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(242, 184, 236, 0.03), 0px 20px 13px 0px rgba(242, 184, 236, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(242, 184, 236, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(242, 184, 236, 0.05), 0px 100px 80px 0px rgba(242, 184, 236, 0.07);
+}
+
+@media (max-width: 1199.98px) {
+  .card-how:not(:last-child)::after {
+    width: 170px;
+    transform: translate(69%, 0px);
+  }
+}
+@media (max-width: 991px) {
+  .how-it-works__cards {
+    padding: 0 35px;
+  }
+}
+@media (max-width: 990.98px) {
+  .card-how:not(:last-child)::after {
+    width: 130px;
+    transform: translate(64%, 0px);
+  }
+}
+@media (max-width: 797.98px) {
+  .how-it-works__title {
+    margin-bottom: 30px;
+  }
+  .how-it-works__cards {
+    grid-template-columns: 1fr;
+  }
+  .card-how:not(:last-child)::after {
+    display: none;
+  }
+  .card-how__icon {
+    margin-bottom: 20px;
+  }
+}
 body {
   font-family: Manrope;
   color: #333333;
@@ -337,4 +459,20 @@ body {
 
 .page {
   flex: 1 1 auto;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.375;
+  color: #000;
+}
+.title--center {
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 30px;
+  }
 }
