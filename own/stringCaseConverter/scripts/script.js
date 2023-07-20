@@ -18,7 +18,7 @@ for(let caseItem of casesArray) {
 }
 
 function displayOutput() {
-  let isNoneInput = textarea.value === "";    
+  let isNoneInput = textarea.value === "" || textarea.value === null;    
   if (isNoneInput === true) {
     casesList.hidden = true;
     introText.hidden = false;
