@@ -4,11 +4,12 @@
 @import 'header';
 @import 'main-block';
 @import 'how-it-works';
+@import 'deals';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 body {
   font-family: Manrope;
-  color: #333333;
+  // color: #333333;
 }
 
 .wrapper {
@@ -31,6 +32,10 @@ body {
   &--center {
     text-align: center;
   }
+}
+
+.button {
+
 }
 
 @media (max-width: 767.98px) {
