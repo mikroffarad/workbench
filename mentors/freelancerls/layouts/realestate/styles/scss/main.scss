@@ -5,6 +5,9 @@
 @import 'how-it-works';
 @import 'deals';
 @import 'featured';
+@import 'reviews';
+@import 'subscribe';
+@import 'footer';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 body {
@@ -36,6 +39,12 @@ body {
 
 .button {
 
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: 800;
+  color: inherit;
 }
 
 @media (max-width: 767.98px) {

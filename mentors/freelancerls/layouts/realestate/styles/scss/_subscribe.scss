@@ -1,0 +1,120 @@
+.subscribe {
+
+  padding-top: 110px;
+  padding-bottom: 110px;
+
+  &__container {}
+
+  &__header {
+    text-align: center;
+    margin-bottom: 34px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 144.2%;
+    letter-spacing: 0.02em;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 144.2%;
+  }
+
+  &__form {
+    max-width: 686px;
+    margin: 0 auto;
+  }
+}
+
+.form-subscribe {
+
+  padding: 25px 45px;
+  background: #FFF;
+  display: flex;
+  gap: 15px;
+  box-shadow: 0px 3.0185184478759766px 3.1481480598449707px 0px rgba(0, 0, 0, 0.01), 0px 13.281481742858887px 6.518518447875977px 0px rgba(0, 0, 0, 0.02), 0px 32.599998474121094px 13px 0px rgba(0, 0, 0, 0.02), 0px 62.785186767578125px 25.481481552124023px 0px rgba(0, 0, 0, 0.02), 0px 105.64814758300781px 46.85185241699219px 0px rgba(0, 0, 0, 0.03), 0px 163px 80px 0px rgba(0, 0, 0, 0.04);
+
+  &__content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 10px; 
+    color: rgba(49, 53, 59, 0.2);
+  }
+
+  &__input {
+    font-weight: 700;
+    flex: 1 1 auto;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  &__button {
+    height: 72px;
+    padding: 10px 40px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    background: #F85A47;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(248, 90, 71, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.51852035522461px 25.481481552124023px 0px rgba(248, 90, 71, 0.04), 0px 64.81481170654297px 46.85185241699219px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
+    
+    &:hover {
+      background-color: #b9473a;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .subscribe {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .subscribe {
+    flex-wrap: wrap;
+    row-gap: 30px;
+
+    &__title {
+      font-size: 35px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .subscribe {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+  }
+
+  .form-subscribe {
+    margin: 0 -15px;
+    padding: 10px 15px;
+    flex-direction: column;
+
+    &__button {
+      height: 56px;
+    }
+  }
+}
