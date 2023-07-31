@@ -10,9 +10,13 @@
 @import 'footer';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
+$accentColorMain: #F85A47;
+$accentColorFocus: #F85A47;  
+
 body {
   font-family: Manrope;
   // color: #333333;
+
 }
 
 .wrapper {
@@ -26,6 +30,9 @@ body {
   flex: 1 1 auto;
 }
 
+
+// Blocks:
+
 .title {
   font-weight: 600;
   font-size: 40px;
@@ -35,10 +42,19 @@ body {
   &--center {
     text-align: center;
   }
+
+  @media (max-width: 767.98px) {
+    font-size: 30px;
+  }
 }
 
 .button {
-
+  background-color: $accentColorMain;
+  transition: all 0.3s ease 0s;
+  
+  &:hover {
+    background-color: #b9473a;
+  }
 }
 
 .logo {
@@ -47,8 +63,44 @@ body {
   color: inherit;
 }
 
-@media (max-width: 767.98px) {
-  .title {
-    font-size: 30px;
-  } 
+.menu {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  column-gap: 10px;
+  row-gap: 20px;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 46px;
+    row-gap: 10px;
+  }
+
+  &__item {}
+
+  &__link {
+    font-size: 13px;
+    font-weight: 700;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+ 
+    flex-direction: column;
+
+    &__list {
+      justify-content: center;
+    }
+
+    &__link {
+      font-size: 18px;
+    }
+  }
 }

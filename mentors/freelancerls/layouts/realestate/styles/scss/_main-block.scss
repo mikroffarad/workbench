@@ -146,6 +146,11 @@
     &::placeholder {
       color: rgba(43, 53, 59, 0.3);
     }
+
+    &:focus {
+      outline: none;
+      border: 2px solid #F85A47;
+    }
   }
 
   &__button {
@@ -159,12 +164,6 @@
     line-height: 23px;
     letter-spacing: 0.01em;
     padding: 5px 15px;
-    background-color: #F85A47;
-    transition: all 0.3s ease 0s;
-
-    &:hover {
-      background-color: #b9473a;
-    }
   }
 }
 .partners-main-block {
