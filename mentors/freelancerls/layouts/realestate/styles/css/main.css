@@ -472,6 +472,9 @@ body {
   transition: color 0.3s ease 0s;
   background-color: transparent;
 }
+.tabs-deals__button:focus {
+  outline: none;
+}
 .tabs-deals__button::after {
   content: "";
   position: absolute;

@@ -53,6 +53,10 @@
     transition: color 0.3s ease 0s;
     background-color: transparent;
 
+    &:focus {
+      outline: none;
+    }
+
     &::after {
       content: "";
       position: absolute;
