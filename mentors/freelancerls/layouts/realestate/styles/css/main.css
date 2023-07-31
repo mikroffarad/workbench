@@ -64,42 +64,6 @@ body {
   }
 }
 
-*::-moz-selection {
-  background-color: #F85A47;
-  color: #fff;
-}
-
-*::selection {
-  background-color: #F85A47;
-  color: #fff;
-}
-*:focus {
-  outline-color: #F85A47;
-}
-
-.title {
-  color: #000;
-}
-
-.text {
-  color: #31353B;
-}
-
-.button {
-  background-color: #F85A47;
-}
-.button:hover {
-  background-color: #e55343;
-}
-
-.logo {
-  color: #000;
-}
-
-.content-intro__sub-title {
-  color: #F90;
-}
-
 .header {
   position: absolute;
   top: 0;
@@ -113,6 +77,7 @@ body {
 }
 @media (max-width: 767.98px) {
   .header__container {
+    background-color: #BDCCFF;
     min-height: 0;
     padding: 20px;
   }
@@ -186,6 +151,7 @@ body {
   line-height: 29px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  color: #F90;
 }
 .content-intro__title {
   font-weight: 800;
@@ -1005,7 +971,16 @@ body {
     padding-bottom: 30px;
   }
 }
+*::-moz-selection {
+  background-color: #F85A47;
+  color: #fff;
+}
+*::selection {
+  background-color: #F85A47;
+  color: #fff;
+}
 *:focus {
+  outline-color: #F85A47;
   outline-width: 2px;
   outline-style: solid;
 }
@@ -1036,9 +1011,7 @@ body {
   font-weight: 600;
   font-size: 40px;
   line-height: 1.375;
-}
-.title--center {
-  text-align: center;
+  color: #000;
 }
 @media (max-width: 767.98px) {
   .title {
@@ -1051,6 +1024,7 @@ body {
   font-size: 17px;
   line-height: 23px;
   letter-spacing: 0.01em;
+  color: #31353B;
 }
 
 .button {
@@ -1064,6 +1038,10 @@ body {
   text-align: center;
   -webkit-box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(248, 90, 71, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(248, 90, 71, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
           box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(248, 90, 71, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(248, 90, 71, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
+  background-color: #F85A47;
+}
+.button:hover {
+  background-color: #e55343;
 }
 .button--link {
   padding: 16px 35px;
@@ -1101,6 +1079,7 @@ body {
 .logo {
   font-size: 23px;
   font-weight: 800;
+  color: #000;
 }
 
 .menu {

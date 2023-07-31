@@ -11,8 +11,17 @@
 @import 'footer';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
+$accentColorPrimary: #F85A47;
+$accentColorSecondary: #e55343;
+
 * {
+  &::selection {
+    background-color: $accentColorPrimary;
+    color: #fff;
+  }
+
   &:focus {
+    outline-color: $accentColorPrimary;
     outline-width: 2px;
     outline-style: solid;
   }
@@ -40,10 +49,7 @@ body {
   font-weight: 600;
   font-size: 40px;
   line-height: 1.375;
-
-  &--center {
-    text-align: center;
-  }
+  color: #000;
 
   @media (max-width: 767.98px) {
     font-size: 30px;
@@ -55,6 +61,7 @@ body {
   font-size: 17px;
   line-height: 23px;
   letter-spacing: 0.01em;
+  color: #31353B;
 }
 
 .button {
@@ -66,6 +73,11 @@ body {
   color: #fff;
   text-align: center;
   box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(248, 90, 71, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.51852035522461px 25.481481552124023px 0px rgba(248, 90, 71, 0.04), 0px 64.81481170654297px 46.85185241699219px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
+  background-color: $accentColorPrimary;
+
+  &:hover {
+    background-color: $accentColorSecondary;
+  }
 
   &--link {
     padding: 16px 35px;
@@ -95,6 +107,7 @@ body {
 .logo {
   font-size: 23px;
   font-weight: 800;
+  color: #000;
 }
 
 .menu {
@@ -102,7 +115,7 @@ body {
   justify-content: space-between;
   align-items: center;
   row-gap: 20px;
-  
+
   &__list {
     display: flex;
     flex-wrap: wrap;
