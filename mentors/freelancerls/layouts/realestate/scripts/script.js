@@ -29,8 +29,8 @@ document.addEventListener("click", function (e) {
       }
     });
     targetElement.classList.add('active');
-    tabItems[targetActiveIndex].classList.add('active');
     tabItems[currentActiveIndex].classList.remove('active')
+    tabItems[targetActiveIndex].classList.add('active');
   }
 });
 
