@@ -11,14 +11,14 @@ const swiper = new Swiper('.swiper', {
 
 // Switch between tabs
 
-const tabNavigationItems = document.querySelectorAll('.tabs-deals__button');
+const tabNavigationItems = document.querySelectorAll('.tabs-deals__button-tab');
 const tabItems = document.querySelectorAll('.tabs-deals__tab');
 
 document.addEventListener("click", function (e) {
   const targetElement = e.target;
   let currentActiveIndex = null;
   let targetActiveIndex = null;
-  if (targetElement.closest('.tabs-deals__button')) {
+  if (targetElement.closest('.tabs-deals__button-tab')) {
     tabNavigationItems.forEach((tabNavigationItem, index) => {
       if (tabNavigationItem.classList.contains('active')) {
         currentActiveIndex = index;

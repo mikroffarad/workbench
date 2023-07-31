@@ -73,14 +73,12 @@ body {
 }
 .header__container {
   min-height: 103px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 30px 0;
 }
 @media (max-width: 767.98px) {
   .header__container {
     min-height: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
   }
 }
 .intro__container {
@@ -163,7 +161,6 @@ body {
 .content-intro__title {
   font-weight: 800;
   font-size: 54px;
-  color: #000;
   line-height: 73px;
   margin-bottom: 23px;
 }
@@ -353,7 +350,6 @@ body {
   font-size: 22px;
   line-height: 30px;
   margin-bottom: 15px;
-  color: #000;
 }
 .card-how__text {
   font-size: 16px;
@@ -448,7 +444,6 @@ body {
 }
 .header-deals__text {
   line-height: 24px;
-  color: #000;
   max-width: 470px;
 }
 .tabs-deals__navigation {
@@ -463,7 +458,7 @@ body {
       flex-wrap: wrap;
   margin-bottom: 35px;
 }
-.tabs-deals__button {
+.tabs-deals__button-tab {
   font-size: 19px;
   line-height: 26px;
   cursor: pointer;
@@ -472,10 +467,10 @@ body {
   transition: color 0.3s ease 0s;
   background-color: transparent;
 }
-.tabs-deals__button:focus {
+.tabs-deals__button-tab:focus {
   outline: none;
 }
-.tabs-deals__button::after {
+.tabs-deals__button-tab::after {
   content: "";
   position: absolute;
   bottom: -6px;
@@ -486,16 +481,16 @@ body {
   transition: width 0.3s ease 0s;
   background-color: #F85A47;
 }
-.tabs-deals__button:hover {
+.tabs-deals__button-tab:hover {
   color: #F85A47;
 }
-.tabs-deals__button:hover::after {
+.tabs-deals__button-tab:hover::after {
   width: 100%;
 }
-.tabs-deals__button.active {
+.tabs-deals__button-tab.active {
   color: #F85A47;
 }
-.tabs-deals__button.active::after {
+.tabs-deals__button-tab.active::after {
   width: 100%;
 }
 .tabs-deals__tab {
@@ -573,7 +568,7 @@ body {
   }
 }
 .featured__title {
-  margin-bottom: 95px;
+  margin-bottom: 25px;
 }
 .featured__body {
   background: #F1FFFF;
@@ -1151,6 +1146,11 @@ body {
     padding-top: 100px;
   }
 }
+@media (max-height: 1365.98px) {
+  .page .intro__container {
+    padding-top: 120px;
+  }
+}
 @media (max-width: 991.98px) {
   .page .intro {
     padding-bottom: 70px;
@@ -1166,8 +1166,7 @@ body {
 .page .featured,
 .page .reviews,
 .page .subscription {
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding: 80px 0;
 }
 @media (max-width: 991.98px) {
   .page .how-it-works,
