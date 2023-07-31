@@ -47,7 +47,6 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
-
 @media (max-width: 1199.98px) {
   [class*=__container] {
     max-width: 970px;
@@ -59,11 +58,12 @@ body {
   }
 }
 @media (max-width: 767.98px) {
-  [class*=__container] {
+  [class*=__container] [class*=__container] {
     max-width: none;
     padding: 0 15px;
   }
 }
+
 .header {
   position: absolute;
   top: 0;

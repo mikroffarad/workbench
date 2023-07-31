@@ -1,0 +1,14 @@
+* {
+  &::selection {
+    background-color: #F85A47;
+    color: #fff;
+  }
+
+  &:focus {
+    outline-color:#F85A47;
+  }
+}
+
+.title {
+  color: #000;
+}
