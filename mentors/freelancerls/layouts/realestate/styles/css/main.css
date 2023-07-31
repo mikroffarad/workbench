@@ -276,6 +276,12 @@ body {
   }
 }
 @media (max-width: 767.98px) {
+  .intro__container::after {
+    display: none;
+  }
+  .body-intro__content {
+    margin-bottom: 80px;
+  }
   .partners-intro__items {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -284,6 +290,12 @@ body {
   .content-intro__title {
     font-size: 30px;
     line-height: 1.2;
+  }
+  .content-intro__text {
+    margin-bottom: 25px;
+  }
+  .form-intro {
+    height: 60px;
   }
 }
 @media (max-width: 479.98px) {
@@ -746,7 +758,7 @@ body {
   gap: 30px;
 }
 .reviews__footer {
-  padding-top: 85px;
+  padding-top: 45px;
 }
 
 .col-reviews {
@@ -837,9 +849,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 991.98px) {
   .footer-reviews {
@@ -869,6 +881,7 @@ body {
 }
 
 .form-subscription {
+  display: block;
   padding: 25px 45px;
   background: #FFF;
   -webkit-box-shadow: 0px 3.0185184479px 3.1481480598px 0px rgba(0, 0, 0, 0.01), 0px 13.2814817429px 6.5185184479px 0px rgba(0, 0, 0, 0.02), 0px 32.5999984741px 13px 0px rgba(0, 0, 0, 0.02), 0px 62.7851867676px 25.4814815521px 0px rgba(0, 0, 0, 0.02), 0px 105.648147583px 46.851852417px 0px rgba(0, 0, 0, 0.03), 0px 163px 80px 0px rgba(0, 0, 0, 0.04);
@@ -917,14 +930,18 @@ body {
     font-size: 18px;
   }
   .form-subscription {
-    height: 56px;
-    margin: 0 -15px;
     padding: 10px 15px;
+    gap: 0;
+  }
+  .form-subscription__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 0;
+    height: unset;
+  }
+  .form-subscription__input, .form-subscription__button {
+    height: 60px;
   }
 }
 .footer__container {
@@ -945,6 +962,9 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .footer {
+    padding-top: 60px;
+  }
   .footer__container {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -1135,7 +1155,7 @@ body {
 }
 @media (max-width: 767.98px) {
   .page .intro {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 }
 .page .how-it-works,
@@ -1152,17 +1172,15 @@ body {
   .page .featured,
   .page .reviews,
   .page .subscription {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 70px 0;
   }
 }
-@media (max-width: 797.98px) {
+@media (max-width: 767.98px) {
   .page .how-it-works,
   .page .deals,
   .page .featured,
   .page .reviews,
   .page .subscription {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0;
   }
 }

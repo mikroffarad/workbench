@@ -223,6 +223,20 @@
 
 @media (max-width: 767.98px) {
 
+  .intro {
+    &__container {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .body-intro {
+    &__content {
+      margin-bottom: 80px;
+    }
+  }
+
   .partners-intro {
     &__items {
       justify-content: center;
@@ -234,6 +248,14 @@
       font-size: 30px;
       line-height: 1.2;
     }
+
+    &__text {
+      margin-bottom: 25px;
+    }
+  }
+
+  .form-intro {
+    height: 60px;
   }
 }
 

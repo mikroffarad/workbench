@@ -1,5 +1,6 @@
 .footer {
 
+
   &__container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -22,6 +23,9 @@
 
 @media (max-width: 767.98px) {
   .footer {
+    
+    padding-top: 60px;
+
     &__container {
       padding-top: 30px;
       padding-bottom: 30px;
