@@ -167,20 +167,10 @@
 }
 
 @media (max-width: 991.98px) {
-  .reviews {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
+
 
   .footer-reviews {
     flex-wrap: wrap;
     row-gap: 30px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .reviews {
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
 }

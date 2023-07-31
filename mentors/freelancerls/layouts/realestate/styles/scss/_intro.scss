@@ -1,9 +1,7 @@
-.main-block {
-
-  padding-bottom: 110px;
+.intro {
 
   &__container {
-    padding-top: 183px;
+    
     position: relative;
 
     &::after {
@@ -24,7 +22,7 @@
   &__partners {}
 }
 
-.body-main-block {
+.body-intro {
 
   position: relative;
   display: flex;
@@ -68,7 +66,7 @@
   }
 }
 
-.content-main-block {
+.content-intro {
 
   padding-top: 40px;
 
@@ -107,7 +105,7 @@
   &__form {}
 }
 
-.slider-main-block {
+.slider-intro {
 
   &__wrapper {}
 
@@ -126,15 +124,20 @@
   }
 }
 
-.form-main-block {
+.form-intro {
   height: 86px;
   position: relative;
   z-index: 5;
   display: flex;
   margin-right: -188px;
   box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.01), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.02), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.03);
+  
+  & > * {
+    height: 100%;
+  }
 
   &__input {
+    width: 100%;
     background: #FFF url('../../images/main/home.svg') 33px 50% no-repeat;
     padding-left: 74px;
   }
@@ -146,7 +149,7 @@
   }
 }
 
-.partners-main-block {
+.partners-intro {
 
   max-width: 65%;
 
@@ -174,7 +177,7 @@
 
 @media (max-width: 1199.98px) {
 
-  .main-block {
+  .intro {
     &__container {
       padding-top: 100px;
       padding-bottom: 30px;
@@ -185,31 +188,31 @@
     }
   }
 
-  .content-main-block {
+  .content-intro {
     &__body {
       padding-right: 0;
     }
   }
 
-  .body-main-block {
+  .body-intro {
     display: block;
 
     &__content {
-      margin-bottom: 40px;
+      margin-bottom: 120px;
     }
   }
 
-  .form-main-block {
+  .form-intro {
     margin-right: 0;
   }
 
-  .partners-main-block {
+  .partners-intro {
     position: relative;
     z-index: 1;
     max-width: none;
   }
 
-  .form-main-block {
+  .form-intro {
     display: block;
 
     &__button {
@@ -218,24 +221,15 @@
   }
 }
 
-@media (max-width: 990.98px) {
-  .main-block {
-    padding-bottom: 70px;
-  }
-}
-
 @media (max-width: 767.98px) {
-  .main-block {
-    padding-bottom: 30px;
-  }
 
-  .partners-main-block {
+  .partners-intro {
     &__items {
       justify-content: center;
     }
   }
 
-  .content-main-block {
+  .content-intro {
     &__title {
       font-size: 30px;
       line-height: 1.2;
@@ -244,7 +238,7 @@
 }
 
 @media (max-width: 479.98px) {
-  .form-main-block {
+  .form-intro {
     background: #fff;
 
     &__input {

@@ -1,8 +1,5 @@
 .deals {
 
-  padding-top: 110px;
-  padding-bottom: 110px;
-
   &__container {}
 
   &__header {
@@ -161,17 +158,10 @@
 }
 
 @media (max-width: 990.98px) {
-  .deals {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
+
 }
 
 @media (max-width: 767.98px) {
-  .how-it-works {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 
   .header-deals {
     &__link {

@@ -1,13 +1,8 @@
-.page {
 
-  &__how-it-works {}
-
-}
 
 .how-it-works {
 
-  padding-top: 110px;
-  padding-bottom: 110px;
+
 
   &__container {}
 
@@ -111,12 +106,9 @@
   }
 }
 
-@media (max-width: 990.98px) {
+@media (max-width: 991.98px) {
 
   .how-it-works {
-    padding-top: 70px;
-    padding-bottom: 70px;
-
     &__cards {
       padding: 0 35px;
     }
@@ -133,9 +125,6 @@
 @media (max-width: 797.98px) {
 
   .how-it-works {
-
-    padding-top: 30px;
-    padding-bottom: 30px;
 
     &__title {
       margin-bottom: 30px;

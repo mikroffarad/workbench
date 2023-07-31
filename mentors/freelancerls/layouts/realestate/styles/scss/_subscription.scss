@@ -1,8 +1,5 @@
 .subscription {
 
-  padding-top: 110px;
-  padding-bottom: 110px;
-
   &__container {}
 
   &__header {
@@ -64,10 +61,6 @@
 }
 
 @media (max-width: 991.98px) {
-  .subscription {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
 
   .subscription {
     flex-wrap: wrap;
@@ -85,8 +78,6 @@
 
 @media (max-width: 767.98px) {
   .subscription {
-    padding-top: 30px;
-    padding-bottom: 30px;
     &__title {
       font-size: 24px;
     }
