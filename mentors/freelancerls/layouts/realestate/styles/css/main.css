@@ -199,16 +199,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-right: -188px;
-  min-height: 86px;
   -webkit-box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(0, 0, 0, 0.01), 0px 8.1481485367px 6.5185184479px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.5185203552px 25.4814815521px 0px rgba(0, 0, 0, 0.02), 0px 64.8148117065px 46.851852417px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(0, 0, 0, 0.01), 0px 8.1481485367px 6.5185184479px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.5185203552px 25.4814815521px 0px rgba(0, 0, 0, 0.02), 0px 64.8148117065px 46.851852417px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.03);
 }
 .form-main-block__input {
-  background: #FFF url("../../images/main/home.svg") 33px 50% no-repeat;
   height: 86px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: #FFF url("../../images/main/home.svg") 33px 50% no-repeat;
   border: 1px solid #DADADA;
-  padding: 0 0 0 74px;
-  background-color: transparent;
+  padding-left: 74px;
   width: 100%;
   font-size: 20px;
   -webkit-box-flex: 1;
@@ -232,21 +232,17 @@ body {
 }
 .form-main-block__input:focus {
   outline: none;
-  border: 2px solid #F85A47;
+  border: 1px solid #F85A47;
 }
 .form-main-block__button {
   height: 86px;
-  cursor: pointer;
-  width: 188px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 188px;
           flex: 0 0 188px;
-  font-weight: 600;
-  color: #fff;
-  font-size: 17px;
-  line-height: 23px;
-  letter-spacing: 0.01em;
-  padding: 5px 15px;
+  border-radius: unset !important;
+  font-weight: 700 !important;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
 }
 
 .partners-main-block {
@@ -496,25 +492,6 @@ body {
   color: #000;
   max-width: 470px;
 }
-.header-deals__link {
-  background-color: #F85A47;
-  display: inline-block;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  font-weight: 500;
-  font-size: 17px;
-  text-align: center;
-  color: #FFF;
-  line-height: 23px;
-  padding: 22px 33px;
-  -webkit-box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(248, 90, 71, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(248, 90, 71, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
-          box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(248, 90, 71, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(248, 90, 71, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
-  border-radius: 5px;
-}
-.header-deals__link:hover {
-  background-color: #b9473a;
-}
-
 .tabs-deals__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -710,21 +687,7 @@ body {
   margin-bottom: 55px;
 }
 .content-featured__link {
-  background: #F85A47;
-  color: #FFF;
   text-transform: uppercase;
-  padding: 16px 35px;
-  text-align: center;
-  line-height: 150%;
-  display: block;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  -webkit-box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(248, 90, 71, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(248, 90, 71, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
-          box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(248, 90, 71, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(248, 90, 71, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
-  border-radius: 5px;
-}
-.content-featured__link:hover {
-  background-color: #b9473a;
 }
 
 .options-content-featured__label {
@@ -1032,19 +995,7 @@ body {
 }
 .form-subscribe__button {
   height: 72px;
-  padding: 10px 40px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 18px;
-  background: #F85A47;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  -webkit-box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(248, 90, 71, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(248, 90, 71, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
-          box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(248, 90, 71, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(248, 90, 71, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
-}
-.form-subscribe__button:hover {
-  background-color: #b9473a;
+  border-radius: unset !important;
 }
 
 @media (max-width: 991.98px) {
@@ -1148,12 +1099,23 @@ body {
 }
 
 .button {
-  background-color: #F85A47;
+  cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #F85A47;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 16px 35px;
+  -webkit-box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(248, 90, 71, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(248, 90, 71, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
+          box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(248, 90, 71, 0.02), 0px 8.1481485367px 6.5185184479px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.5185203552px 25.4814815521px 0px rgba(248, 90, 71, 0.04), 0px 64.8148117065px 46.851852417px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
 }
 .button:hover {
-  background-color: #b9473a;
+  background-color: #e55343;
 }
 
 .logo {

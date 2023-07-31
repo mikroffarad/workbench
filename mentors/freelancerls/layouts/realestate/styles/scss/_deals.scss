@@ -35,23 +35,7 @@
     max-width: 470px;
   }
 
-  &__link {
-    background-color: #F85A47;
-    display: inline-block;
-    transition: all 0.3s ease 0s;
-    font-weight: 500;
-    font-size: 17px;
-    text-align: center;
-    color: #FFF;
-    line-height: 23px;
-    padding: 22px 33px;
-    box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(248, 90, 71, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.51852035522461px 25.481481552124023px 0px rgba(248, 90, 71, 0.04), 0px 64.81481170654297px 46.85185241699219px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
-    border-radius: 5px;
-
-    &:hover {
-      background-color: #b9473a;
-    }
-  }
+  &__link {}
 }
 
 .tabs-deals {
