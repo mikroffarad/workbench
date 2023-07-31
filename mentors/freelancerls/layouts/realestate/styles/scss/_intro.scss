@@ -26,14 +26,16 @@
 
   position: relative;
   display: flex;
-  align-items: flex-start;
 
-  &__content {
+  & > * {
     flex: 0 1 50%;
+  }
+  
+  &__content {
+    
   }
 
   &__slider {
-    flex: 0 1 50%;
     min-height: 0;
   }
 
@@ -79,7 +81,6 @@
 
   &__sub-title {
     font-weight: 700;
-    color: #F90;
     font-size: 22px;
     line-height: 29px;
     text-transform: uppercase;
@@ -94,10 +95,6 @@
   }
 
   &__text {
-    color: #31353B;
-    font-size: 17px;
-    line-height: 23px;
-    letter-spacing: 0.01em;
     margin-bottom: 45px;
   }
 
@@ -153,9 +150,6 @@
   max-width: 65%;
 
   &__label {
-    color: #31353B;
-    font-size: 17px;
-    letter-spacing: 0.17px;
     margin-bottom: 25px;
   }
 

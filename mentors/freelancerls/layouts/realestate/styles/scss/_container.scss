@@ -11,9 +11,7 @@
   }
 
   @media (max-width: 767.98px) {
-    [class*="__container"] {
-      max-width: none;
-      padding: 0 15px;
-    }
+    max-width: none;
+    padding: 0 15px;
   }
 }

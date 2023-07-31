@@ -1,14 +1,40 @@
+$accentColorPrimary: #F85A47;
+$accentColorSecondary: #e55343;
+$secondaryColor: #F90;
+
 * {
   &::selection {
-    background-color: #F85A47;
+    background-color: $accentColorPrimary;
     color: #fff;
   }
 
   &:focus {
-    outline-color:#F85A47;
+    outline-color: $accentColorPrimary;
   }
 }
 
 .title {
   color: #000;
+}
+
+.text {
+  color: #31353B;
+}
+
+.button {
+  background-color: $accentColorPrimary;
+
+  &:hover {
+    background-color: $accentColorSecondary;
+  }
+}
+
+.logo {
+  color: #000;
+}
+
+.content-intro {
+  &__sub-title {
+    color: $secondaryColor;
+  }
 }

@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'container';
+@import 'colorScheme';
 @import 'header';
 @import 'intro';
 @import 'how-it-works';
@@ -8,7 +9,6 @@
 @import 'reviews';
 @import 'subscription';
 @import 'footer';
-@import 'colorScheme';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 * {
@@ -50,6 +50,13 @@ body {
   }
 }
 
+.text {
+  color: #31353B;
+  font-size: 17px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+}
+
 .button {
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -57,9 +64,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: #fff;
-  background-color: $accentColorMain;
   text-align: center;
-  display: inline-block;
   box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(248, 90, 71, 0.02), 0px 8.148148536682129px 6.518518447875977px 0px rgba(248, 90, 71, 0.03), 0px 20px 13px 0px rgba(248, 90, 71, 0.04), 0px 38.51852035522461px 25.481481552124023px 0px rgba(248, 90, 71, 0.04), 0px 64.81481170654297px 46.85185241699219px 0px rgba(248, 90, 71, 0.05), 0px 100px 80px 0px rgba(248, 90, 71, 0.07);
 
   &--link {
@@ -68,14 +73,10 @@ body {
   }
 
   &--form {}
-
-  &:hover {
-    background-color: $accentColorFocus;
-  }
 }
 
 .input {
-  transition: all 0.30s linear;
+  transition: all 0.3s ease 0s;
   border: 1px solid #DADADA;
 
   font-size: 20px;
@@ -94,18 +95,14 @@ body {
 .logo {
   font-size: 23px;
   font-weight: 800;
-  color: inherit;
 }
 
 .menu {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  column-gap: 10px;
   row-gap: 20px;
-
+  
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +130,11 @@ body {
       justify-content: center;
     }
 
+    &__item {
+      text-align: center;
+      flex: 1 1 20%;
+    }
+
     &__link {
       font-size: 18px;
     }
@@ -140,8 +142,6 @@ body {
 }
 
 // Paddings between sections:
-
-
 .page {
   .intro {
     &__container {
@@ -163,7 +163,7 @@ body {
       }
 
       @media (max-height: 1365.98px) {
-        padding-top: 120px;
+        padding-top: 110px;
       }
     }
 
