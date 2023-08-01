@@ -980,9 +980,11 @@ body {
   color: #fff;
 }
 *:focus {
-  outline-color: #F85A47;
-  outline-width: 2px;
-  outline-style: solid;
+  outline: 2px solid #F85A47;
+}
+* .menu *:focus {
+  outline: 0;
+  text-decoration: underline;
 }
 
 body {

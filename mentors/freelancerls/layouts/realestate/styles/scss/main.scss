@@ -14,6 +14,8 @@
 $accentColorPrimary: #F85A47;
 $accentColorSecondary: #e55343;
 
+
+// Paint selection and focus into accent colors,except menu block
 * {
   &::selection {
     background-color: $accentColorPrimary;
@@ -21,9 +23,14 @@ $accentColorSecondary: #e55343;
   }
 
   &:focus {
-    outline-color: $accentColorPrimary;
-    outline-width: 2px;
-    outline-style: solid;
+    outline: 2px solid $accentColorPrimary;
+  }
+
+  .menu {
+    *:focus {
+      outline: 0;
+      text-decoration: underline;
+    }
   }
 }
 
