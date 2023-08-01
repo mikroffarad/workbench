@@ -8,7 +8,7 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.body-intro__arrow.swiper-button-prev',
   },
   autoplay: {
-    delay: 2000, // 5 seconds
+    delay: 2000, // milliseconds
   },
 });
 
