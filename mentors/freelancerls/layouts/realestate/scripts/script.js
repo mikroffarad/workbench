@@ -7,6 +7,9 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.body-intro__arrow.swiper-button-next',
     prevEl: '.body-intro__arrow.swiper-button-prev',
   },
+  autoplay: {
+    delay: 2000, // 5 seconds
+  },
 });
 
 // Switch between tabs
