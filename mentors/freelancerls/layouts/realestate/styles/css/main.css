@@ -77,7 +77,7 @@ body {
 }
 @media (max-width: 767.98px) {
   .header__container {
-    background-color: #BDCCFF;
+    border-bottom: 1px solid #DEDFE1;
     min-height: 0;
     padding: 20px;
   }
