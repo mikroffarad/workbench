@@ -9,3 +9,7 @@ Technology stack that was used while development:
 - Local Host: **XAMPP** (Apache and PHP in particular) for backend support + **Prepros** for live page reloading and Sass-compiling 🥰
 - Languages/Frameworks: **HTML**, **CSS**, **SCSS/Sass**, **PHP**
 - Code editor: **Visual Studio Code**
+***
+**Todo list:**
+
+ - [ ] Remake LibreShop by using JSON instead of PHP and migrate page to GitHub Pages
