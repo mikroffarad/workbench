@@ -10,8 +10,6 @@
 | [`own/`](https://github.com/mikroffarad/workbench/tree/main/own)         | <p align="left">Contains my own projects.</p>                                                                                                                                                             |
 
 **Latest Projects:**
-| **Key**                       | **Value**                                                                                                                                                                                                  | Status                                                                                            |
-|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| **`Real Estate Page Layout`** | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/realestate) | ![Completed](https://img.shields.io/badge/Completed-019102?style=for-the-badge)                   |
-| **`stringCaseConverter`**     | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mikroffarad/workbench/tree/main/own/stringCaseConverter)                 | ![Work In Progress](https://img.shields.io/badge/Work%20In%20Progress-f87101?style=for-the-badge) |
-| **`LibreShop`**               | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mikroffarad/workbench/tree/main/mentors/geekbrains/layouts/libreshop)    | ![Completed](https://img.shields.io/badge/Completed-019102?style=for-the-badge)                   |
+ - [**`Real Estate Page Layout`**](https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/realestate)
+ - [**`stringCaseConverter`**](https://github.com/mikroffarad/workbench/tree/main/own/stringCaseConverter)
+ - [**`LibreShop`**](https://github.com/mikroffarad/workbench/tree/main/mentors/geekbrains/layouts/libreshop)
