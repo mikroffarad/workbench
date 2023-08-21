@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__title">The ultimate string case converter</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+
+                <div class="main__greeting">
+                    <p>👉👈</p>
+                    <p>👇👇👇</p>
+                </div>
+
+                <ul class="main__list" hidden>
+                    <li class="main__item">
+                        <h2 class="main__case-name">camelCase</h2>
+                        <div class="main__case-content"></div>
+                    </li>
+                    <li class="main__item">
+                        <h2 class="main__case-name">camelCase</h2>
+                        <div class="main__case-content"></div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                    <input class="footer__input" id="input" autofocus placeholder="Start typing to convert..." oninput="echoValue()">
+            </div>
+        </footer>
+    </div>
+
+    <script>
+
+        const inputNode = document.getElementById('input');
+        
+        const listNode = document.querySelector(".main__list");
+        const greetingNode = document.querySelector(".main__greeting");
+
+        
+        const caseValueArr = document.querySelectorAll(".main__case-content");
+
+
+        function echoValue() {    
+
+            if (inputNode.value.length >= 1) {
+                greetingNode.hidden = true;
+                listNode.hidden = false;
+            } else {
+                greetingNode.hidden = false;
+                listNode.hidden = true;
+            }
+
+            // inputNode.value.length >= 1 ? listNode.hidden = false : listNode.hidden = true;
+
+            for (let item of caseValueArr) {
+                item.textContent = document.querySelector(".footer__input").value;
+            }
+
+
+        }
+
+    </script>
+</body>
+</html>

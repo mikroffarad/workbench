@@ -1,0 +1,100 @@
+/* Reset */
+* {
+	all: unset;
+	display: revert;
+}
+
+[hidden] {
+	display: none !important;
+}
+
+li {
+	list-style: none;
+}
+
+/* Markup structure */
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+	
+.wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Styling */
+body {
+	text-align: center;
+}
+
+.header, .footer {
+	padding: 10px 0;
+}
+
+.header__title {
+	font-weight: 700;
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	overflow: scroll;
+}
+
+.main__list {
+	display: flex;
+	flex-direction: column;
+	/* flex-wrap: wrap; */
+}
+
+.main__item {
+	/* flex: 1 1 auto; */
+	padding: 5px;
+	border: 1px solid #000;
+}
+
+.main__list {
+
+}
+
+.main__list--visible {
+
+}
+
+.main__greeting {
+	
+}
+
+.main__case-name {
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.footer {
+
+}
+
+.footer__container {
+	
+}
+
+.footer__input {
+	display: block;
+	border-radius: 20px;
+	height: 50px;
+	width: 100%;
+	border: 1px solid #fff;
+}
+
