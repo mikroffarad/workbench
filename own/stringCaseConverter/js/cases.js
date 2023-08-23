@@ -31,7 +31,7 @@ function capitalizeAfterHyphen(str) {
 
 const casesArray = [
   {
-    caseName: "WeirdCase 1",
+    caseName: "WeIrDcAsE",
     caseMethod(inputValue) {
 
       let output = "";
@@ -52,9 +52,9 @@ const casesArray = [
     }
   },
   {
-    caseName: "WeirdCase 2",
+    caseName: "wEiRdCaSe",
     caseMethod(inputValue) {
-      return findCase("WeirdCase 1").caseMethod(inputValue).split("").map(function (char) {
+      return findCase("WeIrDcAsE").caseMethod(inputValue).split("").map(function (char) {
         if (char === char.toUpperCase()) {
           return char.toLowerCase();
         } else {
