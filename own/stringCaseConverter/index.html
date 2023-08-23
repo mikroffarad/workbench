@@ -2,35 +2,49 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>String case converter</title>
-  <link rel="stylesheet" href="styles/css/main.css">
-  <link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="theme-color" content="#0e1d31">
 </head>
 
-<body class="body">
-  <header class="header">
-    <h1 class="header__title">The ultimate string case converter</h1>
-  </header>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__title">String Case Converter</h1>
+                <p class="header__hint" hidden>Click on text to copy</p>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="main__greeting">
+                    <p>👉👈</p>
+                    <p>👇👇👇</p>
+                </div>
+                <ul class="main__list" hidden>
+                    <!-- <li class="main__item item">
+                        <h2 class="item__key"></h2>
+                        <div class="item__value"></div>
+                    </li>
+                    <li class="main__item">
+                        <h2 class="item__key"></h2>
+                        <div class="item__value"></div>
+                    </li> -->
+                </ul>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <input type="text" class="footer__input" id="input" autofocus autocomplete="off" placeholder="Start typing to convert" oninput="echoValue()">
+                <p>© 2023 by <a class="link" href="https://github.com/mikroffarad" target="_blank">mikroffarad</a> (<a class="link" href="https://github.com/mikroffarad/workbench/tree/main/own/stringCaseConverter" target="_blank">source code</a>)</p>
+            </div>
+        </footer>
+    </div>
 
-  <main class="main">
-    <p class="main__text">Start typing to convert</p>
-    <ul class="main__cases-list cases-list"></ul>
-  </main>
-
-  <footer class="footer">
-    <textarea class="footer__textarea" placeholder="Type something..." value=" " autocomplete="off"
-      autofocus oninput="displayOutput()"></textarea>
-    <span class="footer__text">
-      <a target="_blank" href="https://icons8.com/icon/12053/document">Document</a> favicon by <a target="_blank"
-        href="https://icons8.com">Icons8</a>
-    </span>
-  </footer>
-  
-  <script src="scripts/cases.js"></script>
-  <script src="scripts/script.js"></script>
-
+    <script src="js/cases.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
