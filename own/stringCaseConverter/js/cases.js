@@ -1,4 +1,4 @@
-function excludeNonAlphanumeric(string) {
+function excludeSpecialCharacters(string) {
   var excludedChars = '';
 
   for (var i = 0; i < string.length; i++) {
@@ -11,7 +11,22 @@ function excludeNonAlphanumeric(string) {
 
   var cleanedString = string.replace(new RegExp('[' + excludedChars + ']', 'g'), '');
 
-  return cleanedString.split(" ");
+  return cleanedString.split(" ").join(" ");
+}
+
+function findCase(caseName) {
+  return casesArray.find(obj => obj.caseName === caseName);
+}
+
+function capitalizeAfterHyphen(str) {
+  const words = str.split('-');
+  const capitalizedWords = words.map((word, index) => {
+    if (index > 0) {
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    }
+    return word;
+  });
+  return capitalizedWords.join('-');
 }
 
 const casesArray = [
@@ -24,7 +39,7 @@ const casesArray = [
 
       for (let i = 0; i < inputValue.length; i++) {
         let char = inputValue.charAt(i);
-        if(isUpperCase) {
+        if (isUpperCase) {
           output += char.toUpperCase();
         } else {
           output += char.toLowerCase();
@@ -39,8 +54,7 @@ const casesArray = [
   {
     caseName: "WeirdCase 2",
     caseMethod(inputValue) {
-      const weirdCasePrevious = casesArray.find(obj => obj.caseName === "WeirdCase 1");
-      return weirdCasePrevious.caseMethod(inputValue).split("").map(function(char) {
+      return findCase("WeirdCase 1").caseMethod(inputValue).split("").map(function (char) {
         if (char === char.toUpperCase()) {
           return char.toLowerCase();
         } else {
@@ -52,21 +66,45 @@ const casesArray = [
   {
     caseName: "camelCase",
     caseMethod(inputValue) {
-      return excludeNonAlphanumeric(inputValue).map(function(word, index) {
+      return inputValue.split(' ').map(excludeSpecialCharacters).map(function (word, index) {
         if (index === 0) {
           return word.toLowerCase();
         } else {
           return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
         }
-      }).join("");;
+      }).join("");
     }
   },
   {
     caseName: "snake_case",
     caseMethod(inputValue) {
-      return excludeNonAlphanumeric(inputValue).map(function(word) {
+      return inputValue.split(' ').map(excludeSpecialCharacters).map(function (word) {
         return word.toLowerCase();
       }).join('_').replace(/_+/g, '_');
     }
   },
-]
+  {
+    caseName: "kebab-case",
+    caseMethod(inputValue) {
+      return findCase("snake_case").caseMethod(inputValue).replace(/_/g, "-");
+    }
+  },
+  {
+    caseName: "PascalCase",
+    caseMethod(inputValue) {
+      return findCase("camelCase").caseMethod(inputValue).split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+    }
+  },
+  {
+    caseName: "MACRO_CASE",
+    caseMethod(inputValue) {
+      return findCase("snake_case").caseMethod(inputValue).toUpperCase();
+    }
+  },
+  {
+    caseName: "Train-Case",
+    caseMethod(inputValue) {
+      return findCase("kebab-case").caseMethod(inputValue).split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).map(capitalizeAfterHyphen).join(' ');
+    }
+  },
+];
