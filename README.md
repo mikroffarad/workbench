@@ -10,7 +10,32 @@
 | [`own/`](https://github.com/mikroffarad/workbench/tree/main/own)         | <p align="left">Contains my own projects.</p>                                                                                                                                                             |
 
 **Latest Projects:**
- - [**`Growfy (Landing Page)`**](https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/growfy)
- - [**`Real Estate (Landing Page)`**](https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/realestate)
- - [**`String Case Converter`**](https://github.com/mikroffarad/workbench/tree/main/own/stringCaseConverter)
- - [**`LibreShop`**](https://github.com/mikroffarad/workbench/tree/main/mentors/geekbrains/layouts/libreshop)
+
+<details>
+  <summary>Single-page websites (Landing Pages)</summary>
+		<br>
+	
+| **Made by tutorials**                                                                                       | **My own** |
+|-------------------------------------------------------------------------------------------------------------|------------|
+| [**`Growfy`**](https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/growfy)          |            |
+| [**`Real Estate`**](https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/realestate) |            |
+</details>
+
+<details>
+  <summary>Multi-page websites</summary>
+		<br>
+	
+| **Made by tutorials**                                                                                       | **My own** |
+|-------------------------------------------------------------------------------------------------------------|------------|
+| [**`LibreShop`**](https://github.com/mikroffarad/workbench/tree/main/mentors/geekbrains/layouts/libreshop)  |            |
+</details>
+
+<details>
+  <summary>Web Applications</summary>
+		<br>
+
+| **Made by tutorials** | **My own**                                                                                                |
+|-----------------------|-----------------------------------------------------------------------------------------------------------|
+|                       | [**`String Case Converter`**](https://github.com/mikroffarad/workbench/tree/main/own/stringCaseConverter) |
+	
+</details>
