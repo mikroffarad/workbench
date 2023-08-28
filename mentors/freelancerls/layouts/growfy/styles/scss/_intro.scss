@@ -1,0 +1,155 @@
+.intro {
+  padding-top: 160px;
+  padding-bottom: 100px;
+
+  &__container {
+    display: flex;
+    gap: 32px;
+    & > * {
+      flex: 0 1 50%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-self: center;
+  }
+
+}
+
+.header-intro {
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url("../../images/intro/decorator.svg") 0 0 / 100% no-repeat;
+    width: 122px;
+    height: 122px;
+    position: absolute;
+    top: -10px;
+    left: -30px;
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+
+    &:not(:last-child) {
+      margin-bottom: 33px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: 32px;
+    row-gap: 15px;
+  }
+}
+
+.images-intro {
+  display: flex;
+  gap: 9.615385%; /* 60/624 */
+
+  justify-content: center;
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  &__item {
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+    }
+
+    &--big {
+      border-radius: 50% / 30%;
+    }
+
+    &--small1 {
+      border-radius: 50% 50% 0 50%;
+    }
+
+    &--small2 {
+      border-radius: 50% 0 50% 50%;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .intro {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .header-intro {
+    &__title {
+      font-size: 44px;
+    }
+  }
+}
+
+@media (min-width: 767.98px) {
+  .intro {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .header-intro {
+    &__title {
+      max-width: 520px;
+    }
+    &__text {
+      max-width: 500px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .intro {
+    padding-top: 100px;
+
+    &__container {
+      flex-direction: column;
+    }
+  }
+
+  .header-intro {
+    &__title,
+    &__text {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__actions {
+      gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 479.98px) {
+  .header-intro {
+    &__title {
+      font-size: 32px;
+    }
+  }
+
+  .header-intro {
+    &__actions {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .intro {
+    padding-top: 140px;
+  }
+}

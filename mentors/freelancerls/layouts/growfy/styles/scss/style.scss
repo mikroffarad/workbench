@@ -1,8 +1,8 @@
 // Reset styles
-@import 'reset';
+@import "reset";
 
 /* Import fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@300;400;500&display=swap");
 
 // Wrapper structure
 .wrapper {
@@ -18,18 +18,18 @@
 
 // Basic styling
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: #9c9c9c;
-  background-color: #0D0D11;
+  background-color: #0d0d11;
 }
 
 [class*="__container"] {
   max-width: 1310px;
   margin: 0 auto;
-  // padding: 0 15px;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
+  padding: 0 15px;
+  // padding-left: 15px !important;
+  // padding-right: 15px !important;
 }
 
 // Blocks
@@ -37,8 +37,8 @@ body {
   display: inline-block;
   text-align: center;
   padding: 16px 30px;
-  background-color: #3D96F4;
-  color: #FFF;
+  background-color: #3d96f4;
+  color: #fff;
   border-radius: 50px;
   letter-spacing: 2px;
   font-size: 14px;
@@ -47,7 +47,15 @@ body {
   line-height: 1.43;
 
   &:hover {
-    background-color: #1474DB;
+    background-color: #1474db;
+  }
+
+  &--dark {
+    background: rgba(129, 129, 139, 0.4);
+
+    &:hover {
+      background: rgba(129, 129, 139, 0.658);
+    }
   }
 
   @media (max-width: 991.98px) {
@@ -55,4 +63,17 @@ body {
   }
 }
 
-@import 'header';
+.title {
+  color: #fff;
+  font-size: 51.2px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.text {
+  line-height: 1.5;
+}
+
+// Sections
+@import "header";
+@import "intro";
