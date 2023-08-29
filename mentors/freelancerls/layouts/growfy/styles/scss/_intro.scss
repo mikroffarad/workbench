@@ -14,7 +14,6 @@
     display: flex;
     align-self: center;
   }
-
 }
 
 .header-intro {
@@ -96,11 +95,6 @@
 }
 
 @media (min-width: 767.98px) {
-  .intro {
-    padding-top: 100px;
-    padding-bottom: 30px;
-  }
-
   .header-intro {
     &__title {
       max-width: 520px;
@@ -114,6 +108,7 @@
 @media (max-width: 767.98px) {
   .intro {
     padding-top: 100px;
+    padding-bottom: 30px;
 
     &__container {
       flex-direction: column;

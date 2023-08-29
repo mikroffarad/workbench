@@ -474,10 +474,6 @@ body {
   }
 }
 @media (min-width: 767.98px) {
-  .intro {
-    padding-top: 100px;
-    padding-bottom: 30px;
-  }
   .header-intro__title {
     max-width: 520px;
   }
@@ -488,6 +484,7 @@ body {
 @media (max-width: 767.98px) {
   .intro {
     padding-top: 100px;
+    padding-bottom: 30px;
   }
   .intro__container {
     -webkit-box-orient: vertical;
