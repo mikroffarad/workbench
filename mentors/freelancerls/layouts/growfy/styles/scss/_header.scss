@@ -220,15 +220,12 @@
 }
 
 @media (max-width: 320px) {
-  
   .header {
-
     &__container {
       flex-wrap: wrap;
       // gap: 5px;
       row-gap: 10px;
       justify-content: space-between;
-      
     }
 
     &__menu {
@@ -246,6 +243,20 @@
   .menu {
     &__body {
       padding-top: 120px;
+    }
+  }
+}
+
+@media (max-width: 270px) {
+  .header {
+    &__container {
+      justify-content: center;
+      gap: 10px;
+    }
+    .menu {
+      &__body {
+        padding-top: 200px;
+      }
     }
   }
 }

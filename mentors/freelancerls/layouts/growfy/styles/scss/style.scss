@@ -68,6 +68,14 @@ body {
   font-size: 51.2px;
   font-weight: 500;
   line-height: 1.2;
+
+  @media (max-width: 991.98px) {
+    font-size: 44px;
+  }
+
+  @media (max-width: 479.98px) {
+    font-size: 32px;
+  }
 }
 
 .text {
@@ -108,6 +116,9 @@ body {
 
     @media (max-width: 330px) {
       padding-top: 140px;
+    }
+    @media (max-width: 270px) {
+      padding-top: 220px;
     }
   }
   &__clients {
