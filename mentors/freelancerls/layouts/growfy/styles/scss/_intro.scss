@@ -11,20 +11,24 @@
     display: flex;
     align-self: center;
   }
+
+  &__header {
+    &::before {
+      content: "";
+      background: url("../../images/decorator.svg") 0 0 / 100% no-repeat;
+      width: 122px;
+      height: 122px;
+      position: absolute;
+      top: -10px;
+      left: -30px;
+    }
+  }
 }
 
-.header-intro {
+.header-main {
   position: relative;
 
-  &::before {
-    content: "";
-    background: url("../../images/intro/decorator.svg") 0 0 / 100% no-repeat;
-    width: 122px;
-    height: 122px;
-    position: absolute;
-    top: -10px;
-    left: -30px;
-  }
+
 
   &__title {
     &:not(:last-child) {
