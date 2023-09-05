@@ -1035,9 +1035,13 @@ body {
 .top-footer__col:first-child {
   flex: 0 1 350px;
 }
+.top-footer__text {
+  text-wrap: balance;
+}
 .top-footer__social {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
 }
 .top-footer__navigation {
@@ -1116,12 +1120,14 @@ body {
     flex-basis: auto;
   }
   .top-footer__col:nth-child(3) {
-    align-items: center;
+    text-align: center;
+  }
+  .top-footer__form {
+    flex-direction: column;
   }
 }
 @media (max-width: 840px) {
   .top-footer__row {
-    flex-direction: column;
     flex-wrap: wrap;
   }
   .top-footer__col {
