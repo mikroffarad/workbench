@@ -149,35 +149,11 @@ body {
     }
   }
 
-  &__why {
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-    @media (max-width: 991.98px) {
-      padding-top: 50px;
-      margin-bottom: 50px;
-    }
-    @media (max-width: 767.98px) {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-  }
-
-  &__advantages {
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-    @media (max-width: 991.98px) {
-      padding-top: 50px;
-      margin-bottom: 50px;
-    }
-    @media (max-width: 767.98px) {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-  }
-
-  &__testimonials {
+  &__why,
+  &__advantages,
+  &__testimonials,
+  &__blog,
+  &__ready {
     padding-top: 100px;
     padding-bottom: 100px;
 
@@ -191,7 +167,18 @@ body {
     }
   }
 }
-
+.footer {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  @media (max-width: 991.98px) {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  @media (max-width: 767.98px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 // Sections
 @import "header";
 @import "intro";
@@ -200,3 +187,6 @@ body {
 @import "why";
 @import "advantages";
 @import "testimonials";
+@import "blog";
+@import "ready";
+@import "footer";
