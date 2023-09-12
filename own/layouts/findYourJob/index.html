@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <section class="hero">
+    <section class="hero hero--bg-secondary">
         <header class="hero__header header">
             <div class="header__container">
                 <a class="header__logo" href="">
@@ -32,44 +32,42 @@
                     <a class="header__sign-in" href="">Войти</a>
                     <a class="header__sign-up button" href="">Регистрация</a>
                 </nav>
-                <div class="header__menu-burger">
+                <div class="header__icon-menu icon-menu">
                     <img src="images/icons/menu-burger.svg" alt="">
                 </div>
             </div>
         </header>
-        <section class="hero__body">
-            <div class="hero__container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Найдите удаленную работу вашей мечты</h1>
-                    <p class="hero__text">
-                        Создайте резюме или отправьте отклик на вакансию <br> в компании с мировым именем и работайте <br> по
-                        свободному графику
-                    </p>
-                    <form class="hero__search" action="#">
-                        <input class="hero__input" type="text" placeholder="Начните поиск">
-                        <button type="button" class="hero__button button">Искать вакансии</button>
+        <div class="hero__body body-hero">
+            <div class="body-hero__container">
+                <div class="body-hero__content">
+                    <h1 class="body-hero__title title title--big">Найдите удаленную работу вашей мечты</h1>
+                    <p class="body-hero__text">Создайте резюме или отправьте отклик на&nbsp;вакансию  в&nbsp;компании с&nbsp;мировым именем и&nbsp;работайте по&nbsp;свободному графику</p>
+                    <form class="body-hero__search" action="#">
+                        <input class="body-hero__input" type="text" placeholder="Начните поиск">
+                        <button type="button" class="body-hero__button button">
+                            <span>Искать вакансии</span>
+                        </button>
                     </form>
-                    <div class="hero__examples examples">
-                        <span class="examples__text">Например:</span>
-                        <ul class="examples__list">
-                            <li class="examples__item">
+                    <div class="body-hero__hint hint">
+                        <span class="hint__text">Например:</span>
+                        <ul class="hint__list">
+                            <li class="hint__item">
                                 Front-end
                             </li>
-                            <li class="examples__item">
+                            <li class="hint__item">
                                 Back-end
                             </li>
-                            <li class="examples__item">
+                            <li class="hint__item">
                                 Designer
                             </li>
                         </ul>
                     </div>
-                    
                 </div>
-                <div class="hero__image">
+                <div class="body-hero__image">
                     <img src="images/hero-image.svg" alt="">
                 </div>
             </div>
-        </section>
+        </div>
     </section>
     <main class="main">
         <div class="main__container">
@@ -81,6 +79,7 @@
             Footer section
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

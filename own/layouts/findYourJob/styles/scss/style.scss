@@ -1,31 +1,17 @@
+// Import variables
+@use 'variables';
 // Import Font
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&display=swap");
 
 @import "reset";
 
-[class*="__container"] {
-    max-width: 1161px;
-    margin: 0 auto;
-    padding: 0 15px;
-    // padding-left: 15px !important;
-    // padding-right: 15px !important;
-}
-
-$textPrimary: #111238;
-$buttonsPrimary: #1a75e8;
-$textSecondary: #b2b2b2;
-
 body {
-    color: $textPrimary;
+    color: variables.$textPrimary;
     font-family: "Fira Sans", sans-serif;
 }
 
-.button {
-    background-color: $buttonsPrimary;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
-}
+@import 'blocks';
+@import 'hero';
 
 .main {
     &__container {
@@ -33,152 +19,5 @@ body {
 }
 .footer {
     &__container {
-    }
-}
-
-.header {
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__logo {
-    }
-
-    &__menu {
-    }
-
-    &__list {
-        display: flex;
-        gap: 20px;
-    }
-
-    &__item {
-    }
-
-    &__link,
-    &__sign-in {
-        &:hover {
-            color: $buttonsPrimary;
-        }
-    }
-
-    &__authorize {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-    }
-
-    &__sign-in {
-    }
-
-    &__sign-up {
-    }
-
-    &__menu-burger {
-        display: none;
-    }
-}
-
-.hero {
-    background: #f2f3f6;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-    &__header {
-        padding-top: 50px;
-        // padding-bottom: 75px;
-    }
-
-    &__body {
-        flex-grow: 1;
-        align-items: center;
-        display: flex;
-    }
-
-    &__body > * {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    &__container {
-    }
-
-    &__content {
-        padding-top: 43px;
-        flex-basis: 41.666667%; /* 5/12 */
-    }
-
-    &__title {
-        color: $textPrimary;
-        font-size: 44px;
-        font-weight: 900;
-        margin-bottom: 15px;
-    }
-
-    &__text {
-        font-size: 18px;
-        margin-bottom: 30px;
-        line-height: 1.4;
-    }
-
-    &__search {
-        display: flex;
-        border-radius: 5px;
-        background-color: #fff;
-        padding: 10px;
-        max-width: 450px;
-        margin-bottom: 25px;
-        column-gap: 8px;
-        border: 1px solid rgba(209, 209, 209, 0.1);
-        box-shadow: 0px 4px 25px 0px rgba(15, 17, 56, 0.1);
-    }
-
-    &__input {
-        flex-grow: 1;
-        padding-left: 20px;
-        &:focus {
-            // outline: none;
-            // border: 2px solid $buttonsPrimary;
-
-            border-radius: 5px;
-        }
-    }
-
-    &__button {
-        // font-size: 16px;
-    }
-
-    &__examples {
-        color: $textSecondary;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        column-gap: 15px;
-    }
-
-    &__image {
-        flex-basis: 50%; /* 6/12 */
-        img {
-            max-width: 100%;
-        }
-    }
-}
-
-.examples {
-    &__text {
-    }
-
-    &__list {
-        display: flex;
-        column-gap: 10px;
-    }
-
-    &__item {
-        padding: 5px 10px;
-        border: 1px solid $textSecondary;
-        border-radius: 5px;
     }
 }
