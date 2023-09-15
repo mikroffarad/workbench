@@ -1,5 +1,5 @@
 // Import variables
-@use 'variables';
+@use "variables";
 // Import Font
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&display=swap");
 
@@ -10,8 +10,9 @@ body {
     font-family: "Fira Sans", sans-serif;
 }
 
-@import 'blocks';
-@import 'hero';
+@import "blocks";
+@import "hero";
+@import "categories";
 
 .main {
     &__container {
@@ -19,5 +20,18 @@ body {
 }
 .footer {
     &__container {
+    }
+}
+
+.main {
+
+    &__categories {
+        padding-top: 70px;
+        padding-bottom: 90px;
+
+        @media (max-width: 7671101.98px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
     }
 }
