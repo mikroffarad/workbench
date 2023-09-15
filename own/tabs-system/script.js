@@ -1,7 +1,7 @@
 // Клас для типів вакансій
 class VacancyType {
-    constructor(title, vacancies) {
-        // this.icon = icon;
+    constructor(icon, title, vacancies) {
+        this.icon = icon;
         this.title = title;
         this.vacancies = vacancies;
         this.tabButton = this.generateTabButton();
@@ -13,7 +13,7 @@ class VacancyType {
         const button = document.createElement('button');
         button.classList.add('tab-button');
         button.setAttribute('data-type', this.title.toLowerCase());
-        button.innerHTML = `${this.title}`;
+        button.innerHTML = `<img src="${this.icon}" alt="${this.title}">${this.title}`;
         return button;
     }
 
@@ -45,7 +45,7 @@ fetch('database.json')
 
         // Створюємо об'єкти типів вакансій та додаємо їх до сторінки
         vacancyTypes.forEach(typeData => {
-            const vacancyType = new VacancyType(typeData.title, typeData.vacancies);
+            const vacancyType = new VacancyType(typeData.icon, typeData.title, typeData.vacancies);
 
             const tabsContainer = document.querySelector('.tabs');
             const vacanciesContainer = document.querySelector('.vacancies');
@@ -58,11 +58,41 @@ fetch('database.json')
         const tabButtons = document.querySelectorAll('.tab-button');
         tabButtons.forEach(button => {
             button.addEventListener('click', () => {
-                const type = button.getAttribute('data-type');
-                const matchingVacancies = document.querySelectorAll(`.vacancy[data-type="${type}"]`);
-                matchingVacancies.forEach(vacancy => {
-                    vacancy.classList.toggle('hidden'); // Перемикаємо видимість блоку
+                // Визначаємо, чи вже має кнопка клас 'active'
+                const isActive = button.classList.contains('active');
+                tabButtons.forEach(tabButton => {
+                    tabButton.classList.remove('active'); // Видаляємо клас 'active' у всіх кнопок
                 });
+                if (!isActive) {
+                    button.classList.add('active'); // Додаємо клас 'active' лише якщо кнопка не має його
+                }
+
+                // Показуємо/приховуємо блоки вакансій відповідно до натиснутої кнопки
+                const type = button.getAttribute('data-type');
+                const vacancyBlocks = document.querySelectorAll('.vacancy');
+                vacancyBlocks.forEach(vacancy => {
+                    if (vacancy.getAttribute('data-type') === type) {
+                        if (!isActive) {
+                            vacancy.classList.remove('hidden'); // Показуємо блок, якщо кнопка активна
+                        } else {
+                            vacancy.classList.add('hidden'); // Приховуємо блок, якщо кнопка неактивна
+                        }
+                    } else {
+                        vacancy.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Додаємо обробник подій для блоків вакансій
+        const vacancyBlocks = document.querySelectorAll('.vacancy');
+        vacancyBlocks.forEach(block => {
+            block.addEventListener('click', () => {
+                if (block.classList.contains('active')) {
+                    block.classList.remove('active');
+                } else {
+                    block.classList.add('active');
+                }
             });
         });
     })

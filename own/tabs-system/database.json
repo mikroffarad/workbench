@@ -7,6 +7,11 @@
                     "companyName": "Company 1",
                     "salary": "$5000",
                     "requirements": "досвід роботи, знання HTML/CSS/JS"
+                },
+                {
+                    "companyName": "Company 2",
+                    "salary": "$5000",
+                    "requirements": "досвід роботи, знання React"
                 }
                 
             ]
