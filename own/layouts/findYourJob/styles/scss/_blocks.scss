@@ -60,14 +60,32 @@ a {
 
     &__list {
         display: flex;
-        justify-content: center;
         gap: 10px;
         flex-wrap: wrap;
     }
 
     &__item {
+        // text-align: center;
         padding: 5px 10px;
         border: 1px solid variables.$textSecondary;
         border-radius: 5px;
+    }
+}
+
+.search {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+
+    border-radius: 5px;
+    border: 1px solid rgba(209, 209, 209, 0.1);
+    background: var(--inputs-light, #fff);
+    box-shadow: 0px 4px 25px 0px rgba(15, 17, 56, 0.1);
+    margin-bottom: 25px;
+
+    & > * {
+        flex: 1 1 auto;
     }
 }

@@ -1,0 +1,48 @@
+.subscription {
+    &__container {
+        max-width: 460px;
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    &__title {
+        font-size: 36px;
+        margin-bottom: 20px;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+        line-height: 1.4;
+    }
+
+    &__search {
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        line-height: 17px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: url("../../images/icon-email.svg") no-repeat;
+        }
+    }
+}
+
+.body-hero {
+    &__input {
+    }
+
+    &__button {
+    }
+}
+.button {
+}

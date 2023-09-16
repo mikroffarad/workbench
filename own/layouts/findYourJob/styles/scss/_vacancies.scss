@@ -17,7 +17,7 @@
 
     &__item {
         display: flex;
-        // justify-content: space-around;
+        gap: 50px;
         align-items: center;
         padding: 30px 55px 30px 30px;
         border-radius: 10px;
@@ -26,49 +26,70 @@
 }
 
 .item-vacancies {
-    & > * {
-        flex: 1 1 auto;
+    &__col {
+        display: flex;
+        align-items: center;
+        flex: 1 1 50%;
+        gap: 20px;
+    }
+
+    &__company {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-grow: 1;
     }
 
     &__logo {
-        width: 100px;
         height: 100px;
+        flex: 0 1 100px;
+
         border-radius: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
-        overflow: hidden;
-        flex-grow: 0;
-        margin-right: 20px;
         img {
             max-width: 100%;
         }
     }
 
-    &__about-company {
-        // margin-right: 46px;
-    }
-
-    &__vacancy-title {
-        margin-bottom: 10px;
+    &__about {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 
     &__location {
         font-size: 14px;
     }
 
-    &__price {
+    &__salary {
         padding: 10px 25px;
         background-color: variables.$buttonsPrimary;
         border-radius: 5px;
         color: #fff;
-        // margin-right: 60px;
-        flex-grow: 0;
+        flex-shrink: 0;
     }
 
     &__hint {
+        flex-direction: column;
         font-size: 14px;
+        flex-grow: 1;
+        line-height: 1.4;
+        & > [class*="__list"] {
+            flex-grow: 1;
 
-        justify-content: center;
+            align-content: center;
+            justify-content: center;
+
+            & > [class*="__item"] {
+                flex: 1 1 auto;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     }
 
     &__link {
@@ -76,9 +97,92 @@
         font-size: 14px;
         display: flex;
         justify-content: flex-end;
+        flex-shrink: 0;
     }
 
     &__button {
         align-self: center;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .vacancies {
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__item {
+            flex-direction: column;
+            padding: 30px;
+            gap: 30px;
+        }
+    }
+
+    .item-vacancies {
+        &__col,
+        &__company {
+            flex-direction: column;
+            gap: unset;
+        }
+
+        &__col {
+            min-height: 220px;
+            justify-content: space-between;
+        }
+
+        &__company {
+        }
+
+        &__hint {
+            flex-direction: column;
+
+            & > [class*="__list"] {
+                justify-content: center;
+                align-content: flex-start;
+                width: 100%;
+            }
+        }
+
+        &__about {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .vacancies {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .vacancies {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .item-vacancies {
+        &__col {
+            min-height: unset;
+        }
+
+        &__company,
+        &__hint {
+            margin-bottom: 20px;
+        }
+
+        &__hint {
+            & > [class*="__list"] {
+                flex-direction: column;
+
+                & > [class*="__item"] {
+                    flex: unset;
+                }
+            }
+        }
     }
 }

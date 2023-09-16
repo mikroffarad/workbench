@@ -14,30 +14,51 @@ body {
 @import "hero";
 @import "categories";
 @import "vacancies";
+@import "subscription";
+@import "footer";
 
 .footer {
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    @media (max-width: 767.98px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
     &__container {
     }
 }
 
 .main {
     &__categories {
-        padding-top: 70px;
-        padding-bottom: 90px;
+        padding-top: 35px;
+        padding-bottom: 45px;
 
         @media (max-width: 767.98px) {
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-top: 25px;
+            padding-bottom: 25px;
         }
     }
 
     &__vacancies {
-        padding-top: 70px;
-        padding-bottom: 80px;
+        padding-top: 35px;
+        padding-bottom: 45px;
 
         @media (max-width: 767.98px) {
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+
+    &__subscription {
+        padding-top: 35px;
+        padding-bottom: 45px;
+
+        @media (max-width: 767.98px) {
+            padding-top: 25px;
+            padding-bottom: 25px;
         }
     }
 }

@@ -1,135 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FindYourJob</title>
-    <link rel="stylesheet" href="styles/css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FindYourJob</title>
+        <link rel="stylesheet" href="styles/css/style.css">
+    </head>
 
-<body>
-    <section class="hero hero--bg-secondary">
-        <header class="hero__header header">
-            <div class="header__container">
-                <a class="header__logo" href="">
-                    <img src="images/logo.svg" alt="">
-                </a>
-                <nav class="header__menu">
-                    <ul class="header__list">
-                        <li class="header__item">
-                            <a class="header__link" href="">Главная</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link" href="">Вакансии</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link" href="">Компании</a>
-                        </li>
-                    </ul>
-                </nav>
-                <nav class="header__authorize">
-                    <a class="header__sign-in" href="">Войти</a>
-                    <a class="header__sign-up button" href="">Регистрация</a>
-                </nav>
-                <div class="header__icon-menu icon-menu">
-                    <img src="images/icons/menu-burger.svg" alt="">
-                </div>
-            </div>
-        </header>
-        <div class="hero__body body-hero">
-            <div class="body-hero__container">
-                <div class="body-hero__content">
-                    <h1 class="body-hero__title title title--big">Найдите удаленную работу вашей мечты</h1>
-                    <p class="body-hero__text">Создайте резюме или отправьте отклик на&nbsp;вакансию в&nbsp;компании
-                        с&nbsp;мировым именем и&nbsp;работайте по&nbsp;свободному графику</p>
-                    <form class="body-hero__search" action="#">
-                        <input class="body-hero__input" type="text" placeholder="Начните поиск">
-                        <button type="button" class="body-hero__button button">
-                            <span>Искать вакансии</span>
-                        </button>
-                    </form>
-                    <div class="body-hero__hint hint">
-                        <span class="hint__text">Например:</span>
-                        <ul class="hint__list">
-                            <li class="hint__item">
-                                Front-end
+    <body>
+        <section class="hero hero--bg-secondary">
+            <header class="hero__header header">
+                <div class="header__container">
+                    <a class="header__logo" href="">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a class="header__link" href="">Главная</a>
                             </li>
-                            <li class="hint__item">
-                                Back-end
+                            <li class="header__item">
+                                <a class="header__link" href="">Вакансии</a>
                             </li>
-                            <li class="hint__item">
-                                Designer
+                            <li class="header__item">
+                                <a class="header__link" href="">Компании</a>
                             </li>
                         </ul>
+                    </nav>
+                    <nav class="header__authorize">
+                        <a class="header__sign-in" href="">Войти</a>
+                        <a class="header__sign-up button" href="">Регистрация</a>
+                    </nav>
+                    <div class="header__icon-menu icon-menu">
+                        <img src="images/icons/menu-burger.svg" alt="">
                     </div>
                 </div>
-                <div class="body-hero__image">
-                    <img src="images/hero-image.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <main class="main">
-        <section class="main__categories categories">
-            <div class="categories__container">
-                <h2 class="categories__title title title--medium">Категории</h2>
-                <nav class="categories__navigation">
-                    <!-- <button class="categories__button button-navigation" type="button">
-                        <img class="button-navigation__icon" src="images/categories/design.svg" alt="">
-                        <span class="button-navigation__text">Дизайн</span>
-                    </button> -->
-                </nav>
-            </div>
-        </section>
-        <section class="main__vacancies vacancies">
-            <div class="vacancies__container">
-                <h2 class="vacancies__title title title--medium">
-                    Свежие вакансии
-                </h2>
-                <ul class="vacancies__list">
-                    <li class="vacancies__item item-vacancies">
-                        <div class="item-vacancies__logo">
-                            <img src="images/companies/logo-company.png" alt="logo-company">
-                        </div>
-                        <div class="item-vacancies__about-company">
-                            <h3 class="item-vacancies__vacancy-title title title--small">Front-end разработчик</h3>
-                            <p class="item-vacancies__location">Технопарк, Казань</p>
-                        </div>
-                        <div class="item-vacancies__price">
-                            65 000 ₽
-                        </div>
-                        <div class="item-vacancies__hint hint">
-                            <div class="hint__text">
-                                Требования:
-                            </div>
+            </header>
+            <div class="hero__body body-hero">
+                <div class="body-hero__container">
+                    <div class="body-hero__content">
+                        <h1 class="body-hero__title title title--big">Найдите удаленную работу вашей мечты</h1>
+                        <p class="body-hero__text">Создайте резюме или отправьте отклик на&nbsp;вакансию в&nbsp;компании
+                            с&nbsp;мировым именем и&nbsp;работайте по&nbsp;свободному графику</p>
+                        <form class="body-hero__search search" action="#">
+                            <input class="body-hero__input" type="text" placeholder="Начните поиск">
+                            <button type="button" class="body-hero__button button">
+                                <span>Искать вакансии</span>
+                            </button>
+                        </form>
+                        <div class="body-hero__hint hint">
+                            <span class="hint__text">Например:</span>
                             <ul class="hint__list">
                                 <li class="hint__item">
-                                    React
+                                    Front-end
                                 </li>
                                 <li class="hint__item">
-                                    Sass
+                                    Back-end
                                 </li>
                                 <li class="hint__item">
-                                    Figma
+                                    Designer
                                 </li>
                             </ul>
                         </div>
-                    
-                        <a href="" class="item-vacancies__link">Подробнее →</a>
-                    </li>
-                </ul>
-                <a class="item-vacancies__button button" href="">Больше вакансий</a>
+                    </div>
+                    <div class="body-hero__image">
+                        <img src="images/hero-image.svg" alt="">
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__container">
-            Footer section
-        </div>
-    </footer>
-    <script src="js/script.js"></script>
-    <script src="js/tabs.js"></script>
-</body>
+        <main class="main">
+            <section class="main__categories categories">
+                <div class="categories__container">
+                    <h2 class="categories__title title title--medium">Категории</h2>
+                    <nav class="categories__navigation">
+                        <!-- <button class="categories__button button-navigation" type="button">
+                        <img class="button-navigation__icon" src="images/categories/design.svg" alt="">
+                        <span class="button-navigation__text">Дизайн</span>
+                    </button> -->
+                    </nav>
+                </div>
+            </section>
+            <section class="main__vacancies vacancies">
+                <div class="vacancies__container">
+                    <h2 class="vacancies__title title title--medium">
+                        Свіжі вакансії
+                    </h2>
+                    <ul class="vacancies__list"></ul>
+                    <a class="item-vacancies__button button" href="">Більше вакансій</a>
+                </div>
+            </section>
+            <div class="main__subscription subscription subscription--bg-secondary">
+                <div class="subscription__container">
+                    <h2 class="subscription__title">Підпишіться на розсилку з новими вакансіями</h2>
+                    <p class="subscription__text">
+                        Ми надсилаємо по одному листу на тиждень з підходящими вам вакансіями
+                    </p>
+                    <form class="subscription__search search" action="#">
+                        <input class="body-hero__input" type="text" placeholder="E-mail">
+                        <button type="button" class="subscription__button button">
+                            <span>Підписатися</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__logo-copy">
+                    <a href="" class="logo">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                    <p class="footer__copyright">
+                        © 2023 Coded by <a class="footer__link" href="https://github.com/mikroffarad"
+                            target="_blank">mikroffarad</a>
+                    </p>
+                    <a class="footer__link"
+                        href="https://github.com/mikroffarad/workbench/tree/main/own/layouts/findYourJob"
+                        target="_blank">Source code</a>
+                    <a class="footer__link" href="https://www.figma.com/file/nAsaQE6gK3EUMjSHqWNA53/FindYourJob"
+                        target="_blank">Design</a>
+                    <a class="footer__link"
+                        href="https://fierce-link-c4b.notion.site/workbench-s-projects-88e6979e1be34995a275169080dcb854?pvs=4"
+                        target="_blank">More projects</a>
+                </div>
+                <div class="footer__row">
+                    <div class="footer__col col">
+                        <h3 class="col__title title">Свяжитесь с нами</h3>
+                        <div class="col__list">
+                            <a href="tel:+1234567890" class="col__item">+1 (234) 567-890</a>
+                            <a href="mailto:example@example.com" class="col__item">example@example.com</a>
+                        </div>
+
+                    </div>
+                    <nav class="footer__col col">
+                        <h3 class="col__title title">Информация</h3>
+                        <ul class="col__list">
+                            <li class="col__item">
+                                <a class="col__link" href="">Обработка данных</a>
+                            </li>
+                            <li class="col__item">
+                                <a class="col__link" href="">Конфиденциальность</a>
+                            </li>
+                            <li class="col__item">
+                                <a class="col__link" href="">Публичная оферта</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                    <nav class="footer__col col">
+                        <h3 class="col__title title">Навигация по сайту</h3>
+                        <ul class="col__list">
+                            <li class="col__item">
+                                <a class="col__link" href="">Вакансии</a>
+                            </li>
+                            <li class="col__item">
+                                <a class="col__link" href="">Компании</a>
+                            </li>
+                            <li class="col__item">
+                                <a class="col__link" href="">Контакты</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/tabs.js"></script>
+    </body>
 
 </html>
