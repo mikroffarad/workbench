@@ -71,20 +71,57 @@
         </div>
     </section>
     <main class="main">
-        <div class="main__categories categories">
+        <section class="main__categories categories">
             <div class="categories__container">
                 <h2 class="categories__title title title--medium">Категории</h2>
-                
-                <nav class="categories__navigation navigation-categories">
-                    <div class="navigation-categories__list">
-                        <button class="navigation-categories__item item-navigation" type="button">
-                            <img class="item-navigation__icon" src="images/categories/01.svg" alt="">
-                            <span class="item-navigation__link">Дизайн</span>
-                        </button>
-                    </div>
+                <nav class="categories__navigation">
+                    <!-- <button class="categories__button button-navigation" type="button">
+                        <img class="button-navigation__icon" src="images/categories/design.svg" alt="">
+                        <span class="button-navigation__text">Дизайн</span>
+                    </button> -->
                 </nav>
             </div>
-        </div>
+        </section>
+        <section class="main__vacancies vacancies">
+            <div class="vacancies__container">
+                <h2 class="vacancies__title title title--medium">
+                    Свежие вакансии
+                </h2>
+                <ul class="vacancies__list">
+                    <li class="vacancies__item item-vacancies">
+                        <div class="item-vacancies__logo">
+                            <img src="images/companies/logo-company.png" alt="logo-company">
+                        </div>
+                        <div class="item-vacancies__about-company">
+                            <h3 class="item-vacancies__vacancy-title title title--small">Front-end разработчик</h3>
+                            <p class="item-vacancies__location">Технопарк, Казань</p>
+                        </div>
+                        <div class="item-vacancies__price">
+                            65 000 ₽
+                        </div>
+                        <div class="item-vacancies__hint hint">
+                            <div class="hint__text">
+                                Требования:
+                            </div>
+                            <ul class="hint__list">
+                                <li class="hint__item">
+                                    React
+                                </li>
+                                <li class="hint__item">
+                                    Sass
+                                </li>
+                                <li class="hint__item">
+                                    Figma
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <a href="" class="item-vacancies__link">Подробнее →</a>
+                    </li>
+                </ul>
+                <a class="item-vacancies__button button" href="">Больше вакансий</a>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__container">
@@ -92,6 +129,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/tabs.js"></script>
 </body>
 
 </html>

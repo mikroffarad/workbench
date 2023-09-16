@@ -1,101 +1,69 @@
-// Клас для типів вакансій
-class VacancyType {
-    constructor(icon, title, vacancies) {
+// Клас для вкладок
+class Tab {
+    constructor(icon, title, content) {
         this.icon = icon;
         this.title = title;
-        this.vacancies = vacancies;
+        this.content = content;
         this.tabButton = this.generateTabButton();
-        this.vacancyBlock = this.generateVacancyBlock();
+        this.tabContent = this.generateTabContent();
     }
 
     // Метод для генерації HTML кнопки вкладки
     generateTabButton() {
         const button = document.createElement('button');
         button.classList.add('tab-button');
-        button.setAttribute('data-type', this.title.toLowerCase());
         button.innerHTML = `<img src="${this.icon}" alt="${this.title}">${this.title}`;
         return button;
     }
 
-    // Метод для генерації HTML блоку з вакансіями
-    generateVacancyBlock() {
-        const block = document.createElement('div');
-        block.classList.add('vacancy');
-        block.classList.add('hidden'); // Приховуємо блок за замовчуванням
-        block.setAttribute('data-type', this.title.toLowerCase());
-        this.vacancies.forEach(vacancy => {
-            const vacancyElement = document.createElement('div');
-            vacancyElement.innerHTML = `
-                <h3>${vacancy.companyName} (${this.title})</h3>
-                <p>Назва компанії: ${vacancy.companyName}</p>
-                <p>Заробітна плата: ${vacancy.salary}</p>
-                <p>Вимоги: ${vacancy.requirements}</p>
-            `;
-            block.appendChild(vacancyElement);
-        });
-        return block;
+    // Метод для генерації HTML блоку контенту вкладки
+    generateTabContent() {
+        const contentNode = document.createElement('div');
+        contentNode.classList.add('tab-content-item');
+        // Використовуємо appendChild для додавання вмісту
+        contentNode.appendChild(this.content);
+        return contentNode;
     }
 }
 
-// Завантажуємо дані з JSON-файлу та обробляємо їх
-fetch('database.json')
-    .then(response => response.json())
-    .then(data => {
-        const vacancyTypes = data.vacancyTypes;
+// Загальна функція для завантаження даних з JSON та обробки їх
+function loadDataAndInitializeTabs() {
+    fetch('tabs.json')
+        .then(response => response.json())
+        .then(data => {
+            const tabsData = data.tabs;
 
-        // Створюємо об'єкти типів вакансій та додаємо їх до сторінки
-        vacancyTypes.forEach(typeData => {
-            const vacancyType = new VacancyType(typeData.icon, typeData.title, typeData.vacancies);
+            // Створюємо об'єкти вкладок та додаємо їх до сторінки
+            tabsData.forEach(tabData => {
+                const tab = new Tab(tabData.icon, tabData.title, tabData.contentNode);
 
-            const tabsContainer = document.querySelector('.tabs');
-            const vacanciesContainer = document.querySelector('.vacancies');
+                const tabsContainer = document.querySelector('.tabs');
+                const tabContentContainer = document.querySelector('.tab-content');
 
-            tabsContainer.appendChild(vacancyType.tabButton);
-            vacanciesContainer.appendChild(vacancyType.vacancyBlock);
-        });
+                tabsContainer.appendChild(tab.tabButton);
+                tabContentContainer.appendChild(tab.tabContent);
 
-        // Додаємо обробник подій для кнопок вкладок
-        const tabButtons = document.querySelectorAll('.tab-button');
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Визначаємо, чи вже має кнопка клас 'active'
-                const isActive = button.classList.contains('active');
-                tabButtons.forEach(tabButton => {
-                    tabButton.classList.remove('active'); // Видаляємо клас 'active' у всіх кнопок
-                });
-                if (!isActive) {
-                    button.classList.add('active'); // Додаємо клас 'active' лише якщо кнопка не має його
-                }
+                // Додаємо обробник подій для кнопок вкладок
+                tab.tabButton.addEventListener('click', () => {
+                    // Визначаємо, чи вже має кнопка клас 'active'
+                    const isActive = tab.tabButton.classList.contains('active');
 
-                // Показуємо/приховуємо блоки вакансій відповідно до натиснутої кнопки
-                const type = button.getAttribute('data-type');
-                const vacancyBlocks = document.querySelectorAll('.vacancy');
-                vacancyBlocks.forEach(vacancy => {
-                    if (vacancy.getAttribute('data-type') === type) {
-                        if (!isActive) {
-                            vacancy.classList.remove('hidden'); // Показуємо блок, якщо кнопка активна
-                        } else {
-                            vacancy.classList.add('hidden'); // Приховуємо блок, якщо кнопка неактивна
-                        }
-                    } else {
-                        vacancy.classList.add('hidden');
+                    // Знімаємо клас 'active' у всіх кнопок
+                    document.querySelectorAll('.tab-button').forEach(button => {
+                        button.classList.remove('active');
+                    });
+
+                    // Додаємо/видаляємо клас 'active' для натиснутої кнопки
+                    if (!isActive) {
+                        tab.tabButton.classList.add('active');
                     }
                 });
             });
+        })
+        .catch(error => {
+            console.error('Помилка завантаження даних з JSON:', error);
         });
+}
 
-        // Додаємо обробник подій для блоків вакансій
-        const vacancyBlocks = document.querySelectorAll('.vacancy');
-        vacancyBlocks.forEach(block => {
-            block.addEventListener('click', () => {
-                if (block.classList.contains('active')) {
-                    block.classList.remove('active');
-                } else {
-                    block.classList.add('active');
-                }
-            });
-        });
-    })
-    .catch(error => {
-        console.error('Помилка завантаження даних з JSON:', error);
-    });
+// Викликаємо функцію для завантаження даних та ініціалізації вкладок
+loadDataAndInitializeTabs();

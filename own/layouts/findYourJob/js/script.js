@@ -26,18 +26,3 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	});
 });
-
-// Categories list
-const categoriesList = [
-	{
-		"icon": "design",
-		"title": "Design"
-	},
-	{
-		"icon": "develop",
-		"title": "Development"
-	},
-]
-
-const buttonNavigationNode = document.createElement("button");
-buttonNavigationNode.classList.add("")
