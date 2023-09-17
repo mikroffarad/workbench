@@ -539,6 +539,7 @@ a:focus-visible {
   .footer__row {
     flex-grow: 0;
     flex-direction: column;
+    text-align: center;
     justify-content: flex-start;
   }
 }
