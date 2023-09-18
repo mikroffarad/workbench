@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700;800&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+[class*=__container] {
+  max-width: 955px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #48555B;
+  font-size: 12px;
+  line-height: normal;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+.wrapper__main {
+  flex-grow: 1;
+}
+.title {
+  color: #48555b;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2.306px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #00A4E5;
+}
+
+.highlight {
+  letter-spacing: 0.2px;
+  color: #00A4E5;
+}
+
+.text {
+  line-height: 1.77;
+  font-size: 13px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  background: url("../../images/hero-background.png") 0 0/cover no-repeat;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  color: #fff;
+}
+.hero__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  letter-spacing: 5.709px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.hero__subtitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+.hero__hint {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+}
+
+.header {
+  border-bottom: 1px solid #E6E6E6;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  row-gap: 10px;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+.header__item:hover {
+  color: #00A4E5;
+}
+.header__menu-burger {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .header__menu-burger {
+    display: block;
+  }
+  .header__navigation {
+    display: none;
+  }
+  .menu-opened .header__navigation {
+    display: block;
+    order: 3;
+    flex-basis: 100%;
+    height: 135px;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+    padding-top: 10px;
+    border-top: 1px solid #E6E6E6;
+  }
+  @starting-style {
+    .menu-opened .header__navigation {
+      height: 0px;
+      opacity: 0;
+    }
+  }
+  .header__list {
+    align-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+  }
+}
+.story__title {
+  margin-bottom: 60px;
+  align-items: center;
+}
+.story__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+.story__col {
+  flex-basis: 50%;
+}
+.story__col:last-child {
+  align-self: flex-end;
+  display: flex;
+}
+.story__upper-text {
+  color: #48555B;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  margin-bottom: 30px;
+}
+.story__image {
+  width: 140px;
+  height: 224px;
+  flex-shrink: 0;
+  padding: 15px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+}
+.story__image:not(:last-child) {
+  margin-right: 10px;
+}
+.story__image:nth-child(1) {
+  background: url("../../images/story/01.png");
+}
+.story__image:nth-child(2) {
+  background: url("../../images/story/02.png");
+}
+.story__image:nth-child(3) {
+  background: url("../../images/story/03.png");
+}
+
+@media (max-width: 891.98px) {
+  .story__row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .story__col:last-child {
+    align-self: unset;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+}
+.wrapper__header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.main__story {
+  padding-top: 60px;
+  padding-bottom: 115px;
+}

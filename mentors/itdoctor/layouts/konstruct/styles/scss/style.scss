@@ -1,0 +1,25 @@
+@use "variables";
+
+@import "reset";
+@import "defaults";
+
+@import "blocks";
+
+// Sections
+@import "hero";
+@import "header";
+@import "story";
+
+.wrapper {
+    &__header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+.main {
+    &__story {
+        padding-top: 60px;
+        padding-bottom: 115px;
+    }
+}

@@ -1,0 +1,39 @@
+// Imported fonts: Open Sans (400, 600, 700, 800), Bebas Neue (400)
+
+// body {
+//     font-family: "Bebas Neue", sans-serif;
+//     font-family: "Open Sans", sans-serif;
+// }
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700;800&display=swap");
+
+[class*="__container"] {
+    max-width: 940+15px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: variables.$textColor;
+    font-size: 12px;
+    line-height: normal;
+}
+
+.wrapper {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+
+    &__header {
+    }
+
+    &__main {
+        flex-grow: 1;
+    }
+
+    &__footer {
+    }
+}
