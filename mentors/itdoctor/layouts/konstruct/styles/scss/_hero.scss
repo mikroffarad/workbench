@@ -3,13 +3,11 @@
     flex-direction: column;
     min-height: 100%;
     overflow: hidden;
-    background: url("../../images/hero-background.png") 0 0 / cover no-repeat;
+    background: url("../../images/hero-background.png") 0 0 / cover no-repeat, lightgray;
 
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 70px;
     color: #fff;
     // overflow: hidden;
 
@@ -30,6 +28,7 @@
     &__subtitle {
         font-size: 16px;
         font-weight: 600;
+        text-wrap: balance;
     }
 
     &__hint {
@@ -37,5 +36,20 @@
         font-weight: 600;
         letter-spacing: 3.7px;
         text-transform: uppercase;
+    }
+}
+
+@media (max-width: 999.98px) {
+    .hero {
+        background: url("../../images/hero-background.png") 50% / cover no-repeat, lightgray;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero {
+        padding: 20px;
+        &__title {
+            font-size: 50px;
+        }
     }
 }
