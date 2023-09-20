@@ -125,7 +125,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
-  background: url("../../images/hero-background.png") 0 0/cover no-repeat, lightgray;
+  background: url("../../images/hero-background.jpg") 0 0/cover no-repeat, lightgray;
   justify-content: space-between;
   align-items: center;
   text-align: center;
@@ -152,7 +152,7 @@ body {
 
 @media (max-width: 999.98px) {
   .hero {
-    background: url("../../images/hero-background.png") 50%/cover no-repeat, lightgray;
+    background: url("../../images/hero-background.jpg") 50%/cover no-repeat, lightgray;
   }
 }
 @media (max-width: 767.98px) {
