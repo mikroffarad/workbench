@@ -9,6 +9,10 @@
 @import "hero";
 @import "header";
 @import "story";
+@import "capabilities";
+@import "touch";
+@import "signup";
+@import "footer";
 
 // Paddings between sections
 .hero {
@@ -25,6 +29,11 @@
         padding-top: 24px;
         padding-bottom: 24px;
     }
+
+    &__footer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }   
 }
 
 .main {
@@ -36,5 +45,37 @@
             padding-top: 40px;
             padding-bottom: 80px;                
         }
+
+        @media (max-width: 767.98px) {
+            padding-bottom: 40px;                
+        }
+    }
+
+    &__capabilities {
+        padding-bottom: 115px;
+
+        @media (max-width: 991.98px) {
+            // padding-top: 40px;
+            padding-bottom: 80px;                
+        }
+    }
+
+    &__touch {
+    
+    }
+
+    &__signup {
+    }
+}
+
+.copyright {
+    background-color: #171819;
+    color: #FFF;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a {
+        color: variables.$accentColor;
+        font-weight: 700;
     }
 }

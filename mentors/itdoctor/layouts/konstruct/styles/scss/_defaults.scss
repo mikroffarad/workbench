@@ -7,6 +7,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700;800&display=swap");
 
+* {
+    &:focus {
+        outline-color: variables.$accentColor;
+    }
+}
+
 [class*="__container"] {
     max-width: 940+15px;
     margin: 0 auto;
