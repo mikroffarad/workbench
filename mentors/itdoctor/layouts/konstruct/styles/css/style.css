@@ -452,6 +452,7 @@ body {
 }
 .footer__col--contacts {
   flex: 0 1 150px;
+  text-wrap: balance;
 }
 .footer__title {
   text-transform: uppercase;
