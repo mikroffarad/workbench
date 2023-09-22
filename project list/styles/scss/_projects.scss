@@ -1,0 +1,49 @@
+.projects {
+    &__container {
+    }
+
+    &__list {
+    }
+
+    &__item {
+        background-color: #fff;
+        padding: 0 20px;
+        color: #000;
+        border-radius: 20px;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+.item-projects {
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        user-select: none;
+        cursor: pointer;
+    
+    }
+
+    &[open] > &__summary {
+        border-bottom: 4px solid #000;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__title {
+        line-height: 2;
+    }
+
+    &__details {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__badges-navigation {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 5px;
+    }
+}

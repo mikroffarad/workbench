@@ -405,3 +405,41 @@ button {
 .sub-tabs__icon {
   font-size: 2rem;
 }
+
+.projects__item {
+  background-color: #fff;
+  padding: 0 20px;
+  color: #000;
+  border-radius: 20px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.item-projects__summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.item-projects[open] > .item-projects__summary {
+  border-bottom: 4px solid #000;
+}
+.item-projects__icon {
+  width: 20px;
+  height: 20px;
+}
+.item-projects__title {
+  line-height: 2;
+}
+.item-projects__details {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.item-projects__badges-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
