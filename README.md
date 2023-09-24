@@ -59,5 +59,4 @@ So, I created a page in Notion where I structured my projects
 <h3>My own:</h3>
 
 [starting-style](https://github.com/mikroffarad/workbench/tree/main/own/snippets/starting-style) <br>
-[project-list-2022](https://github.com/mikroffarad/workbench/tree/main/own/snippets/project-list-2022) <br>
-[project-list-2023](https://github.com/mikroffarad/workbench/tree/main/own/snippets/project-list-2023)
+[project-list](https://github.com/mikroffarad/workbench/tree/main/own/snippets/project-list)
