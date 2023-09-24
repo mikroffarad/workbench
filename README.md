@@ -22,21 +22,21 @@ So, I created a page in Notion where I structured my projects
 
 <h3>Made by tutorials:</h3>
 
-[Real Estate](https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/realestate) <br>
-[Growfy](https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/growfy) <br>
-[Konstruct](https://github.com/mikroffarad/workbench/tree/main/mentors/itdoctor/layouts/konstruct)
+[**`Konstruct`**](https://github.com/mikroffarad/workbench/tree/main/mentors/itdoctor/layouts/konstruct) <br>
+[**`Growfy`**](https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/growfy) <br>
+[**`Real Estate`**](https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/realestate) <br>
 
 <h3>My own:</h3>
 
-[Find Your Job](https://github.com/mikroffarad/workbench/tree/main/own/layouts/findYourJob) <br>
+[**`Find Your Job`**](https://github.com/mikroffarad/workbench/tree/main/own/layouts/findYourJob) <br>
 
 <h2>Multi-page websites</h2>
 
 <h3>Made by tutorials:</h3>
 
-[Automation tool](https://github.com/mikroffarad/workbench/tree/main/mentors/geekbrains/layouts/automation-tool) <br>
-[LibreShop](https://github.com/mikroffarad/workbench/tree/main/mentors/geekbrains/layouts/libreshop) <br>
-[NewsFeed](https://github.com/mikroffarad/workbench/tree/main/mentors/kaprov-courses/newsfeed)
+[**`NewsFeed`**](https://github.com/mikroffarad/workbench/tree/main/mentors/kaprov-courses/newsfeed) <br>
+[**`Automation tool`**](https://github.com/mikroffarad/workbench/tree/main/mentors/geekbrains/layouts/automation-tool) <br>
+[**`LibreShop`**](https://github.com/mikroffarad/workbench/tree/main/mentors/geekbrains/layouts/libreshop) <br>
 
 <h3>My own:</h3>
 
@@ -46,17 +46,17 @@ So, I created a page in Notion where I structured my projects
 
 <h3>My own:</h3>
 
-[stringCaseConverter](https://github.com/mikroffarad/workbench/tree/main/own/webapps/stringCaseConverter)
+[**`stringCaseConverter`**](https://github.com/mikroffarad/workbench/tree/main/own/webapps/stringCaseConverter)
 
 <h2>Snippets</h2>
 
 <h3>Made by tutorials:</h3>
 
-[fullheight-block](https://github.com/mikroffarad/workbench/tree/main/mentors/ione-digital/snippets/fullheight-block) <br>
-[gradient_statistics](https://github.com/mikroffarad/workbench/tree/main/mentors/itdoctor/snippets/gradient_statistics) <br>
-[sticky-sidebar](https://github.com/mikroffarad/workbench/tree/main/mentors/ione-digital/snippets/sticky-sidebar)
+[**`fullheight-block`**](https://github.com/mikroffarad/workbench/tree/main/mentors/ione-digital/snippets/fullheight-block) <br>
+[**`sticky-sidebar`**](https://github.com/mikroffarad/workbench/tree/main/mentors/ione-digital/snippets/sticky-sidebar) <br>
+[**`gradient_statistics`**](https://github.com/mikroffarad/workbench/tree/main/mentors/itdoctor/snippets/gradient_statistics)
 
 <h3>My own:</h3>
 
-[starting-style](https://github.com/mikroffarad/workbench/tree/main/own/snippets/starting-style) <br>
-[project-list](https://github.com/mikroffarad/workbench/tree/main/own/snippets/project-list)
+[**`starting-style`**](https://github.com/mikroffarad/workbench/tree/main/own/snippets/starting-style) <br>
+[**`project-list`**](https://github.com/mikroffarad/workbench/tree/main/own/snippets/project-list)
