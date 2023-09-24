@@ -18,58 +18,46 @@ So, I created a page in Notion where I structured my projects
 <br>
 [![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)](https://fierce-link-c4b.notion.site/workbench-s-projects-88e6979e1be34995a275169080dcb854?pvs=4)
 
-<h2>Single page (Landing)</h2>
+<h2>Single page websites (Landing pages)</h2>
 
 <h3>Made by tutorials:</h3>
 
-[Link 1](https://example.com) <br>
-[Link 2](https://example.com) <br>
-[Link 3](https://example.com)
+[Real Estate](https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/realestate) <br>
+[Growfy](https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/growfy) <br>
+[Konstruct](https://github.com/mikroffarad/workbench/tree/main/mentors/itdoctor/layouts/konstruct)
 
-<h3>My own</h3>
+<h3>My own:</h3>
 
-[Link 4](https://example.com) <br>
-[Link 5](https://example.com) <br>
-[Link 6](https://example.com)
+[Find Your Job](https://github.com/mikroffarad/workbench/tree/main/own/layouts/findYourJob) <br>
 
 <h2>Multi-page websites</h2>
 
 <h3>Made by tutorials:</h3>
 
-[Link 7](https://example.com) <br>
-[Link 8](https://example.com) <br>
-[Link 9](https://example.com)
+[Automation tool](https://github.com/mikroffarad/workbench/tree/main/mentors/geekbrains/layouts/automation-tool) <br>
+[LibreShop](https://github.com/mikroffarad/workbench/tree/main/mentors/geekbrains/layouts/libreshop) <br>
+[NewsFeed](https://github.com/mikroffarad/workbench/tree/main/mentors/kaprov-courses/newsfeed)
 
-<h3>My own</h3>
+<h3>My own:</h3>
 
-[Link 10](https://example.com) <br>
-[Link 11](https://example.com) <br>
-[Link 12](https://example.com)
-
-<h2>Web apps</h2>
+<h2>Web Applications</h2>
 
 <h3>Made by tutorials:</h3>
 
-[Link 13](https://example.com) <br>
-[Link 14](https://example.com) <br>
-[Link 15](https://example.com)
+<h3>My own:</h3>
 
-<h3>My own</h3>
-
-[Link 16](https://example.com) <br>
-[Link 17](https://example.com) <br>
-[Link 18](https://example.com)
+[stringCaseConverter](https://github.com/mikroffarad/workbench/tree/main/own/webapps/stringCaseConverter)
 
 <h2>Snippets</h2>
 
 <h3>Made by tutorials:</h3>
 
-[Link 19](https://example.com) <br>
-[Link 20](https://example.com) <br>
-[Link 21](https://example.com)
+[fullheight-block](https://github.com/mikroffarad/workbench/tree/main/mentors/ione-digital/snippets/fullheight-block) <br>
+[gradient_statistics](https://github.com/mikroffarad/workbench/tree/main/mentors/itdoctor/snippets/gradient_statistics) <br>
+[sticky-sidebar](https://github.com/mikroffarad/workbench/tree/main/mentors/ione-digital/snippets/sticky-sidebar)
 
-<h3>My own</h3>
+<h3>My own:</h3>
 
-[Link 22](https://example.com) <br>
-[Link 23](https://example.com) <br>
-[Link 24](https://example.com)
+[starting-style](https://github.com/mikroffarad/workbench/tree/main/own/snippets/starting-style) <br>
+[project-list-2022](https://github.com/mikroffarad/workbench/tree/main/own/snippets/project-list-2022) <br>
+[project-list-2023](https://github.com/mikroffarad/workbench/tree/main/own/snippets/project-list-2023)
