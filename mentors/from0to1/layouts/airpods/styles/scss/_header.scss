@@ -1,0 +1,59 @@
+.header {
+
+    min-height: 100vh;
+    background: linear-gradient(180deg, #F3D6D1 0%, rgba(235, 235, 235, 0.00) 100%);
+
+    &__container {
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    &__logo {
+        
+    }
+
+    &__navigation {
+
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 40px;
+    }
+
+    &__item {
+    }
+
+    &__button {
+        font-weight: 700;
+        color: #FFF;
+        background-color: #000;
+        padding: 15px 58px;
+        border-radius: 30px;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        font-size: 210px;
+        font-weight: 700;
+        position: absolute;
+    }
+
+    &__images {
+        text-align: center;
+
+        img {
+        }
+    }
+}
