@@ -1,0 +1,44 @@
+.footer {
+    padding: 50px 0 40px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+
+    &__col {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    &__tel,
+    &__link {
+        text-decoration: underline;
+    }
+
+    &__col,
+    &__row,
+    &__copyright,
+    &__navigation {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__row {
+    }
+
+    &__logo {
+    }
+
+    &__copyright {
+    }
+
+    &__tel {
+    }
+
+    &__navigation {
+    }
+
+    &__link {
+    }
+}
