@@ -1,0 +1,24 @@
+.battery {
+
+    background-color: #FAFAFA;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    &__container {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__number {
+        font-size: 210px;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
