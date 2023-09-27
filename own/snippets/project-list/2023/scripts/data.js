@@ -32,9 +32,9 @@ const projectsList = {
                 "icon": `<i class="fa-solid fa-fingerprint"></i>`,
                 "projects": [
                     {
-                        "customStyles": "background: #F2F3F6; color: #111238;",
+                        "customStyles": "background: #1A75E8; color: #FFF;",
                         "title": "Find Your Job",
-                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/own/layouts/findYourJob/images/favicon.ico",
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/own/layouts/findYourJob/images/favicon-white.svg",
                         "linkToPage": "https://mikroffarad.github.io/workbench/own/layouts/findYourJob/",
                         "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/own/layouts/findYourJob"
                     },
