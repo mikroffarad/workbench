@@ -7,43 +7,26 @@
 
     &__item {
         background-color: $accentColor;
-        padding: 0 20px;
-        color: #000;
+        padding: 8px 20px;
         border-radius: 20px;
         -webkit-tap-highlight-color: transparent;
-    }
-}
-.item-projects {
-    &__summary {
         display: flex;
         align-items: center;
-        gap: 10px;
-        user-select: none;
-        cursor: pointer;
-    
-    }
-
-    &[open] > &__summary {
-        border-bottom: 4px solid #000;
+        justify-content: center;
+        gap: 15px;
+        color: #FFF;
+        text-decoration: none;
+        width: 100%;
     }
 
     &__icon {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
     }
 
     &__title {
-        line-height: 2;
-    }
-
-    &__details {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    &__badges-navigation {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 5px;
+        // font-size: 16px;
+        font-weight: 600;
     }
 }
+
