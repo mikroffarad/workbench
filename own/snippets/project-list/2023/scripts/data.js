@@ -6,22 +6,18 @@ const projectsList = {
                 "icon": `<i class="fa-brands fa-youtube"></i>`,
                 "projects": [
                     {
-                        "title": "проєкт1",
-                        "customStyles": "background: #0f0; color: #000;",
-                        "icon": "",
-                        "link": ""
+                        "customStyles": "background: #0d0d11; color: #FFF;",
+                        "title": "Growfy",
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/freelancerls/layouts/growfy/images/favicon.svg",
+                        "linkToPage": "https://mikroffarad.github.io/workbench/mentors/freelancerls/layouts/growfy/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/growfy"
                     },
                     {
-                        "name": "проєкт2"
-                    },
-                    {
-                        "name": "проєкт3"
-                    },
-                    {
-                        "name": "проєкт4"
-                    },
-                    {
-                        "name": "проєкт5"
+                        "customStyles": "background: #F85A47; color: #FFF;",
+                        "title": "Real Estate",
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/freelancerls/layouts/growfy/images/favicon.svg",
+                        "linkToPage": "https://mikroffarad.github.io/workbench/mentors/freelancerls/layouts/growfy/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/growfy"
                     },
                 ]
             },
@@ -29,19 +25,11 @@ const projectsList = {
                 "icon": `<i class="fa-solid fa-fingerprint"></i>`,
                 "projects": [
                     {
-                        "name": "проєкт6"
-                    },
-                    {
-                        "name": "проєкт7"
-                    },
-                    {
-                        "name": "проєкт8"
-                    },
-                    {
-                        "name": "проєкт9"
-                    },
-                    {
-                        "name": "проєкт10"
+                        "customStyles": "background: #F2F3F6; color: #111238;",
+                        "title": "Find Your Job",
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/own/layouts/findYourJob/images/favicon.ico",
+                        "linkToPage": "https://mikroffarad.github.io/workbench/own/layouts/findYourJob/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/own/layouts/findYourJob"
                     },
                 ]
             }

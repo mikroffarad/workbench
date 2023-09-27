@@ -3,30 +3,61 @@
     }
 
     &__list {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
     }
 
     &__item {
-        background-color: $accentColor;
-        padding: 8px 20px;
+        flex: 1 1 20%;
+        transform: translate(0, 0);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
         border-radius: 20px;
-        -webkit-tap-highlight-color: transparent;
+        padding: 8px 20px;
+
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 15px;
-        color: #FFF;
-        text-decoration: none;
-        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__about {
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     &__icon {
-        width: 25px;
-        height: 25px;
     }
 
     &__title {
-        // font-size: 16px;
-        font-weight: 600;
+        text-align: center;
+    }
+
+    &__link-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__link-item {
+        text-decoration: none;
+        color: inherit;
+        text-align: center;
+        &:hover {
+            text-decoration: underline;
+        }
+
+        // &:not(:last-child) {
+        //     &::after {
+        //         margin: 10px;
+        //         content: "|";
+        //     }
+        // }
     }
 }
-

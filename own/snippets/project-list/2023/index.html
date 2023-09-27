@@ -10,28 +10,42 @@
     </head>
 
     <body>
-        <section class="tabs">
-            <div class="tabs__container">
-                <div class="main-tabs">
-                    <nav class="main-tabs__navigation"></nav>
-                </div>
-                <div class="sub-tabs">
-                    <nav class="sub-tabs__navigation"></nav>
-                </div>
+        <header class="header">
+            <div class="header__container">
+                <code>Per aspera ad astra</code>
             </div>
-        </section>
-
-        <section class="projects">
-            <div class="projects__container">
-                <nav class="projects__list">
-                    <!-- <a href="" class="projects__item" style="background: #f00; color: #0f0;">
-                        <img class="projects__icon" src="https://raw.githubusercontent.com/mikroffarad/workbench/main/own/layouts/findYourJob/images/favicon.ico" alt="icon">
-                        <h2 class="projects__title">Find Your Job</h2>
-                    </a> -->
-                </nav>
-            </div>
-        </section>
-
+        </header>
+        <main class="main">
+            <section class="tabs">
+                <div class="tabs__container">
+                    <div class="main-tabs">
+                        <nav class="main-tabs__navigation"></nav>
+                    </div>
+                    <div class="sub-tabs">
+                        <nav class="sub-tabs__navigation"></nav>
+                    </div>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="projects__container">
+                    <nav class="projects__list">
+                        <div class="projects__item" style="background: #F2F3F6; color: #111238;">
+                            <div class="projects__about">
+                                <img class="projects__icon"
+                                    src="https://raw.githubusercontent.com/mikroffarad/workbench/main/own/layouts/findYourJob/images/favicon.ico"
+                                    alt="icon">
+                                <h2 class="projects__title">Find Your Job</h2>
+                            </div>
+                            <nav class="projects__link-list">
+                                <a class="projects__link-item" href="https://mikroffarad.github.io/workbench/own/layouts/findYourJob">Page</a>
+                                <a class="projects__link-item" href="">Source Code & Details</a>
+                            </nav>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </main>
+        
         <script src="https://kit.fontawesome.com/1a58f43100.js" crossorigin="anonymous"></script>
         <script src="scripts/data.js"></script>
         <script src="scripts/tabs.js"></script>

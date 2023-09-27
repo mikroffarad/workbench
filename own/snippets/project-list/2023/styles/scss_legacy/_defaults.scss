@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-*, 
-*::before,
-*::after {
+* {
     margin: 0;
     padding: 0;
-    -webkit-tap-highlight-color: transparent;
 }
 
 [class*="__container"] {
@@ -14,9 +11,12 @@
     margin: 0 auto;
 }
 
+$backgroundColor: #060638;
+$accentColor: #5c94e8;
+
 body {
-    background-color: variables.$backgroundColor;
-    color: variables.$accentColor;
+    background-color: $backgroundColor;
+    color: $accentColor;
     font-family: 'Roboto', sans-serif;
 }
 

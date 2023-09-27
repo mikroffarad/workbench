@@ -65,25 +65,20 @@ function outputProjects(projects) {
     projectsListElement.innerHTML = "";
 
     for (const project of projects) {
-        const projectItem = document.createElement("a");
-        projectItem.href = project.link;
-        projectItem.classList.add("projects__item");
-        projectItem.style = project.customStyles;
-
-        const projectIcon = document.createElement("img");
-        projectIcon.src = project.icon;
-        projectIcon.alt = "icon";
-        projectIcon.classList.add("projects__icon");
-
-        const projectTitle = document.createElement("h2");
-        projectTitle.textContent = project.title;
-        projectTitle.classList.add("projects__title");
-
-        projectItem.appendChild(projectIcon);
-        projectItem.appendChild(projectTitle);
-
-        projectsListElement.appendChild(projectItem);
+        projectsListElement.innerHTML += `
+            <div class="projects__item" style="${project.customStyles}">
+                <div class="projects__about">
+                    <img class="projects__icon" src="${project.icon}" alt="icon">
+                    <h2 class="projects__title">${project.title}</h2>
+                </div>
+                <nav class="projects__link-list">
+                    <a class="projects__link-item" href="${project.linkToPage}">Page</a>
+                    <a class="projects__link-item" href="${project.linkToSourceCode}">Source Code & Details</a>
+                </nav>
+            </div>
+        `;
     }
 }
+
 
 createMainTabs();
