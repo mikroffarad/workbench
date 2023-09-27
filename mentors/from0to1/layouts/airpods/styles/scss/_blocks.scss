@@ -1,6 +1,14 @@
 .title {
     font-size: 64px;
     font-weight: 700;
+    text-wrap: balance;
+    @media (max-width: 767.98px) {
+        font-size: 36px;
+    }
+}
+
+.text, p {
+    text-wrap: balance;
 }
 
 .button {

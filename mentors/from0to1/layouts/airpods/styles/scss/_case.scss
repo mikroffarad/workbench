@@ -1,8 +1,5 @@
 .case {
-
-    background-color: #FAFAFA;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    background-color: #fafafa;
 
     &__container {
         text-align: center;
@@ -17,5 +14,8 @@
     }
 
     &__image {
+        img {
+            max-width: 100%;
+        }
     }
 }

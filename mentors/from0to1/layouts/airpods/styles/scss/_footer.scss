@@ -1,5 +1,4 @@
 .footer {
-    padding: 50px 0 40px;
     background-color: #000;
     color: #fff;
     text-align: center;
@@ -40,5 +39,21 @@
     }
 
     &__link {
+    }
+}
+
+@media (max-width: 767.98px) {
+    .footer {
+
+        &__col {
+            margin-bottom: 20px;
+        }
+
+        &__col,
+        &__row,
+        &__copyright,
+        &__navigation {
+            flex-direction: column;
+        }
     }
 }

@@ -136,6 +136,16 @@ body {
 .title {
   font-size: 64px;
   font-weight: 700;
+  text-wrap: balance;
+}
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+.text, p {
+  text-wrap: balance;
 }
 
 .button {
@@ -208,10 +218,6 @@ body {
   z-index: -2;
 }
 
-.choose-color {
-  padding-top: 45px;
-  padding-bottom: 180px;
-}
 .choose-color__container {
   text-align: center;
 }
@@ -225,6 +231,7 @@ body {
 }
 .choose-color__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
 }
@@ -235,8 +242,15 @@ body {
   cursor: pointer;
 }
 
-.composition {
-  padding-bottom: 180px;
+@media (max-width: 767.98px) {
+  .choose-color__list {
+    gap: 16px;
+  }
+}
+@media (max-width: 575.98px) {
+  .choose-color__text {
+    margin-bottom: 40px;
+  }
 }
 .composition__title {
   margin-bottom: 20px;
@@ -253,6 +267,7 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .composition__row > * {
   flex-basis: 230px;
@@ -263,10 +278,26 @@ body {
   justify-content: space-between;
   gap: 15px;
 }
+@media (max-width: 767.98px) {
+  .composition__text {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .composition__row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .composition__col-text {
+    flex: unset;
+    justify-content: unset;
+    text-align: center;
+    text-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
 .case {
-  background-color: #FAFAFA;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  background-color: #fafafa;
 }
 .case__container {
   text-align: center;
@@ -277,10 +308,12 @@ body {
 .case__text {
   margin-bottom: 40px;
 }
+.case__image img {
+  max-width: 100%;
+}
+
 .battery {
   background-color: #FAFAFA;
-  padding-top: 80px;
-  padding-bottom: 100px;
 }
 .battery__container {
   text-align: center;
@@ -297,6 +330,12 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 767.98px) {
+  .battery__number {
+    font-size: 110px;
+    margin-bottom: 20px;
+  }
+}
 .audio {
   background-image: url(../../images/audio-background-full.jpg);
   background-repeat: no-repeat;
@@ -328,7 +367,6 @@ body {
 }
 
 .footer {
-  padding: 50px 0 40px;
   background-color: #000;
   color: #fff;
   text-align: center;
@@ -345,4 +383,77 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+@media (max-width: 767.98px) {
+  .footer__col {
+    margin-bottom: 20px;
+  }
+  .footer__col, .footer__row, .footer__copyright, .footer__navigation {
+    flex-direction: column;
+  }
+}
+.main__choose-color {
+  padding-top: 45px;
+  padding-bottom: 180px;
+}
+@media (max-width: 767.98px) {
+  .main__choose-color {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 575.98px) {
+  .main__choose-color {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.main__composition {
+  padding-bottom: 180px;
+}
+@media (max-width: 767.98px) {
+  .main__composition {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 575.98px) {
+  .main__composition {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.main__case {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media (max-width: 767.98px) {
+  .main__case {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 575.98px) {
+  .main__case {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.main__battery {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+@media (max-width: 767.98px) {
+  .main__battery {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 575.98px) {
+  .main__battery {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.footer {
+  padding-top: 50px;
+  padding-bottom: 40px;
 }

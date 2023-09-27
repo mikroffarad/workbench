@@ -1,8 +1,5 @@
 .choose-color {
 
-    padding-top: 45px;
-    padding-bottom: 180px;
-
     &__container {
         text-align: center;
     }
@@ -19,7 +16,7 @@
 
     &__list {
         display: flex;
-        
+        flex-wrap: wrap;
         justify-content: center;
         gap: 40px;
     }
@@ -29,5 +26,21 @@
         border-radius: 20px;
         padding: 50px 55px;
         cursor: pointer;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .choose-color {
+        &__list {
+            gap: 16px;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .choose-color {
+        &__text {
+            margin-bottom: 40px;
+        }
     }
 }

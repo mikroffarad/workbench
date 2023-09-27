@@ -10,3 +10,74 @@
 @import "battery";
 @import "audio";
 @import "footer";
+
+// Paddings between sections
+.header {
+
+}
+.main {
+    &__choose-color {
+        padding-top: 45px;
+        padding-bottom: 180px;
+
+        @media (max-width: 767.98px) {
+            padding-bottom: 60px;
+        }
+
+        @media (max-width: 575.98px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__composition {
+        padding-bottom: 180px;
+
+        @media (max-width: 767.98px) {
+            padding-bottom: 60px;
+        }
+
+        @media (max-width: 575.98px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__case {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        @media (max-width: 767.98px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        @media (max-width: 575.98px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__battery {
+        padding-top: 80px;
+        padding-bottom: 100px;
+
+        @media (max-width: 767.98px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        @media (max-width: 575.98px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    &__audio {
+
+    }
+}
+.footer {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}

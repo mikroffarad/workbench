@@ -1,7 +1,5 @@
 .composition {
 
-    padding-bottom: 180px;
-
     &__container {
     }
 
@@ -22,7 +20,7 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        
+        flex-wrap: wrap;
 
         & > * {
             flex-basis: 230px;
@@ -37,5 +35,30 @@
     }
 
     &__col-image {
+    }
+}
+
+@media (max-width: 767.98px) {
+    .composition {
+        &__text {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .composition {
+        &__row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__col-text {
+            flex: unset;
+            justify-content: unset;
+            text-align: center;
+            text-wrap: wrap;
+            margin-bottom: 20px;
+        }
     }
 }
