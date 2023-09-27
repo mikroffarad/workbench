@@ -22,9 +22,9 @@ const projectsList = {
                     {
                         "customStyles": "background: #00a4e5; color: #FFF;",
                         "title": "Konstruct",
-                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/itdoctor/layouts/konstruct/images/favicon.ico",
-                        "linkToPage": "https://mikroffarad.github.io/workbench/mentors/freelancerls/layouts/growfy/",
-                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/growfy"
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/itdoctor/layouts/konstruct/images/logo-white.svg",
+                        "linkToPage": "https://mikroffarad.github.io/workbench/mentors/itdoctor/layouts/konstruct/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/itdoctor/layouts/konstruct"
                     },
                 ]
             },

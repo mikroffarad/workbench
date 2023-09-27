@@ -426,6 +426,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5px;
 }
 .projects__link-item {
   text-decoration: none;
