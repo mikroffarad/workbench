@@ -6,6 +6,13 @@ const projectsList = {
                 "icon": `<i class="fa-brands fa-youtube"></i>`,
                 "projects": [
                     {
+                        "customStyles": "background: #F85A47; color: #FFF;",
+                        "title": "Real Estate",
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/freelancerls/layouts/realestate/images/favicon.png",
+                        "linkToPage": "https://mikroffarad.github.io/workbench/mentors/freelancerls/layouts/realestate/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/realestate"
+                    },
+                    {
                         "customStyles": "background: #0d0d11; color: #FFF;",
                         "title": "Growfy",
                         "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/freelancerls/layouts/growfy/images/favicon.svg",
@@ -13,9 +20,9 @@ const projectsList = {
                         "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/growfy"
                     },
                     {
-                        "customStyles": "background: #F85A47; color: #FFF;",
-                        "title": "Real Estate",
-                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/freelancerls/layouts/growfy/images/favicon.svg",
+                        "customStyles": "background: #00a4e5; color: #FFF;",
+                        "title": "Konstruct",
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/itdoctor/layouts/konstruct/images/favicon.ico",
                         "linkToPage": "https://mikroffarad.github.io/workbench/mentors/freelancerls/layouts/growfy/",
                         "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/freelancerls/layouts/growfy"
                     },

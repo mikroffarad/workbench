@@ -64,7 +64,10 @@ function setActiveTab(tabButton, tabContainer) {
 function outputProjects(projects) {
     projectsListElement.innerHTML = "";
 
-    for (const project of projects) {
+    // Reverse the array of projects
+    const reversedProjects = projects.slice().reverse();
+
+    for (const project of reversedProjects) {
         projectsListElement.innerHTML += `
             <div class="projects__item" style="${project.customStyles}">
                 <div class="projects__about">
@@ -79,6 +82,7 @@ function outputProjects(projects) {
         `;
     }
 }
+
 
 
 createMainTabs();

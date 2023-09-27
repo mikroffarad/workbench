@@ -394,7 +394,7 @@ button {
   flex-wrap: wrap;
 }
 .projects__item {
-  flex: 1 1 20%;
+  flex: 1 1 40%;
   transform: translate(0, 0);
   transition: transform 0.3s ease;
   border-radius: 20px;
@@ -411,6 +411,13 @@ button {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.projects__icon {
+  width: 40px;
+  height: 40px;
+}
+.projects__icon img {
+  max-width: 100%;
 }
 .projects__title {
   text-align: center;
