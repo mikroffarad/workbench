@@ -9,6 +9,11 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 40px;
+        flex-wrap: wrap;
+
+        @media (max-width: 575.98px) {
+            padding-top: 20px;
+        }
     }
 
     &__logo {
@@ -43,7 +48,6 @@
         margin-top: 55px;
 
         &--air {
-            
         }
 
         &--pod {
@@ -71,18 +75,64 @@
 
     &__images {
         text-align: center;
-        
+
+        img {
+            max-width: 100%;
+        }
+
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            width: 100%;
+            // width: 100%;
             background: linear-gradient(180deg, #f3d6d1 0%, rgba(235, 235, 235, 0) 100%);
             z-index: -2;
-            
+        }
+    }
+
+    &__burger-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1469px) {
+    .header {
+        &__title {
+            position: relative;
+            font-size: clamp(1rem, 10vw, 10rem);
+            text-wrap: unset;
+            text-align: center;
+
+            & > * {
+                transform: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .header {
+        &__burger-menu {
+            display: block;
+        }
+
+        &__navigation {
+            display: none;
+        }
+
+        .menu-open &__navigation {
+            display: block;
+            order: 3;
+            flex: 1 1 100%;
+        }
+
+        .menu-open &__list {
+            margin-top: 20px;
+            flex-direction: column;
+            gap: 20px;
         }
     }
 }
