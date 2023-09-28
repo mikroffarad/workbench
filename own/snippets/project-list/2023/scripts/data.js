@@ -95,10 +95,9 @@ const projectsList = {
                 "icon": `<i class="fa-solid fa-fingerprint"></i>`,
                 "projects": [
                     {
-                        "customStyles": "--backgroundColor: #171d3b; --mainColor: #0088ee;",
                         "customStyles": "--backgroundColor: #0088ee; --mainColor: #171d3b;",
                         "title": "String Case Converter",
-                        "icon": "",
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/own/webapps/stringCaseConverter/images/logo.png",
                         "linkToPage": "https://mikroffarad.github.io/workbench/own/webapps/stringCaseConverter/",
                         "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/own/webapps/stringCaseConverter"
                     },
@@ -130,8 +129,8 @@ const projectsList = {
                         "customStyles": "--backgroundColor: #cb079e; --mainColor: #b573ff;",
                         "title": "Gradient Statistics",
                         "icon": "https://img.icons8.com/external-itim2101-flat-itim2101/64/000000/external-statistics-network-technology-itim2101-flat-itim2101.png",
-                        "linkToPage": "",
-                        "linkToSourceCode": ""
+                        "linkToPage": "https://mikroffarad.github.io/workbench/mentors/itdoctor/snippets/gradient_statistics/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/itdoctor/snippets/gradient_statistics"
                     }
                 ]
             },
