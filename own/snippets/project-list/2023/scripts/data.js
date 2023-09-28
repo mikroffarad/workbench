@@ -66,8 +66,8 @@ const projectsList = {
                         "customStyles": "--backgroundColor: #5a98d0; --mainColor: #FFF;",
                         "title": "Automation Tool",
                         "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/geekbrains/layouts/automation-tool/images/logo.svg",
-                        "linkToPage": "",
-                        "linkToSourceCode": ""
+                        "linkToPage": "https://mikroffarad.github.io/workbench/mentors/geekbrains/layouts/automation-tool/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/geekbrains/layouts/automation-tool"
                     },
                     {
                         "customStyles": "--backgroundColor: #3e3e3e; --mainColor: #9d9d9d;",
@@ -141,10 +141,24 @@ const projectsList = {
                     {
                         "customStyles": "--backgroundColor: #87c232; --mainColor: #000;",
                         "title": "@starting-style",
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/own/snippets/starting-style/images/logo.png",
+                        "linkToPage": "https://mikroffarad.github.io/workbench/own/snippets/starting-style/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/own/snippets/starting-style"
+                    },
+                    {
+                        "customStyles": "--backgroundColor: #040113; --mainColor: #ba0a72;",
+                        "title": "Project list (legacy 2022)",
                         "icon": "",
-                        "linkToPage": "",
-                        "linkToSourceCode": ""
-                    }
+                        "linkToPage": "https://mikroffarad.github.io/workbench/own/snippets/project-list/2022/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/own/snippets/project-list/2022"
+                    },
+                    {
+                        "customStyles": "--backgroundColor: #5c94e8; --mainColor: #060638;",
+                        "title": "Project list (2023)",
+                        "icon": "",
+                        "linkToPage": "https://mikroffarad.github.io/workbench/own/snippets/project-list/2023/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/own/snippets/project-list/2023"
+                    },
                 ]
             }
         }
