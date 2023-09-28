@@ -55,6 +55,7 @@ const projectsList = {
             "Made by Tutorials": {
                 "icon": `<i class="fa-brands fa-youtube"></i>`,
                 "projects": [
+                    // No NewsFeed
                     {
                         "customStyles": "--backgroundColor: #5a98d0; --mainColor: #FFF;",
                         "title": "Automation Tool",
