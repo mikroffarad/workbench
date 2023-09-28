@@ -41,9 +41,9 @@ const projectsList = {
                     {
                         "customStyles": "--backgroundColor: #1A75E8; --mainColor: #FFF;",
                         "title": "Find Your Job",
-                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/own/layouts/findYourJob/images/favicon-white.svg",
-                        "linkToPage": "https://mikroffarad.github.io/workbench/own/layouts/findYourJob/",
-                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/own/layouts/findYourJob"
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/own/layouts/single-page/findYourJob/images/favicon-white.svg",
+                        "linkToPage": "https://mikroffarad.github.io/workbench/own/layouts/single-page/findYourJob/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/own/layouts/single-page/findYourJob"
                     },
                 ]
             }
