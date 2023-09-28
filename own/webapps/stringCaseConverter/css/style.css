@@ -116,8 +116,8 @@ body {
 }
 
 .item__value:active {
-	 color: var(--accent-color1);
-	 background-color: #fff;
+	color: var(--accent-color1);
+	background-color: #fff;
 }
 
 .footer__input {
@@ -136,4 +136,8 @@ body {
 
 .footer__input::placeholder {
 	color: var(--accent-color2);
+}
+
+.footer__container p:not(:last-child) {
+	margin-bottom: 5px;
 }
