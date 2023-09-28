@@ -56,13 +56,6 @@ const projectsList = {
                 "icon": `<i class="fa-brands fa-youtube"></i>`,
                 "projects": [
                     {
-                        "customStyles": "--backgroundColor: #fc563c; --mainColor: #FFF;",
-                        "title": "News Feed",
-                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/kaprov-courses/newsfeed/images/logo.svg",
-                        "linkToPage": "https://mikroffarad.github.io/workbench/mentors/kaprov-courses/newsfeed/",
-                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/kaprov-courses/newsfeed"
-                    },
-                    {
                         "customStyles": "--backgroundColor: #5a98d0; --mainColor: #FFF;",
                         "title": "Automation Tool",
                         "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/geekbrains/layouts/automation-tool/images/logo.svg",
