@@ -122,7 +122,14 @@ const projectsList = {
                     {
                         "customStyles": "--backgroundColor: #dddddd; --mainColor: #999999;",
                         "title": "Sticky Sidebar",
-                        "icon": "",
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/ione-digital/snippets/sticky-sidebar/images/logo.png",
+                        "linkToPage": "https://mikroffarad.github.io/workbench/mentors/ione-digital/snippets/sticky-sidebar/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/ione-digital/snippets/sticky-sidebar"
+                    },
+                    {
+                        "customStyles": "--backgroundColor: #cb079e; --mainColor: #b573ff;",
+                        "title": "Gradient Statistics",
+                        "icon": "https://img.icons8.com/external-itim2101-flat-itim2101/64/000000/external-statistics-network-technology-itim2101-flat-itim2101.png",
                         "linkToPage": "",
                         "linkToSourceCode": ""
                     }
@@ -131,7 +138,13 @@ const projectsList = {
             "Made my own": {
                 "icon": `<i class="fa-solid fa-fingerprint"></i>`,
                 "projects": [
-
+                    {
+                        "customStyles": "--backgroundColor: #87c232; --mainColor: #000;",
+                        "title": "@starting-style",
+                        "icon": "",
+                        "linkToPage": "",
+                        "linkToSourceCode": ""
+                    }
                 ]
             }
         }
