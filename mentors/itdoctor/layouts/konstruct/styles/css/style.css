@@ -542,6 +542,11 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.copyright__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .copyright a {
   color: #00A4E5;
   font-weight: 700;

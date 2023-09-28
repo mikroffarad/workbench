@@ -74,6 +74,13 @@
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
     a {
         color: variables.$accentColor;
         font-weight: 700;
