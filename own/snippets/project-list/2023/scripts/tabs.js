@@ -75,8 +75,8 @@ function outputProjects(projects) {
                     <h2 class="projects__title">${project.title}</h2>
                 </div>
                 <nav class="projects__link-list">
-                    <a class="projects__link-item" href="${project.linkToPage}">Page</a>
-                    <a class="projects__link-item" href="${project.linkToSourceCode}">Source Code & Details</a>
+                    <a class="projects__link-item" href="${project.linkToPage}" target="_blank">Page</a>
+                    <a class="projects__link-item" href="${project.linkToSourceCode}" target="_blank">Source Code & Details</a>
                 </nav>
             </div>
         `;
