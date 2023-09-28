@@ -147,14 +147,14 @@ const projectsList = {
                     {
                         "customStyles": "--backgroundColor: #040113; --mainColor: #ba0a72;",
                         "title": "Project list (legacy 2022)",
-                        "icon": "",
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/own/snippets/project-list/2022/img/favicon.png",
                         "linkToPage": "https://mikroffarad.github.io/workbench/own/snippets/project-list/2022/",
                         "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/own/snippets/project-list/2022"
                     },
                     {
                         "customStyles": "--backgroundColor: #5c94e8; --mainColor: #060638;",
                         "title": "Project list (2023)",
-                        "icon": "",
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/own/snippets/project-list/2023/images/logo.png",
                         "linkToPage": "https://mikroffarad.github.io/workbench/own/snippets/project-list/2023/",
                         "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/own/snippets/project-list/2023"
                     },
