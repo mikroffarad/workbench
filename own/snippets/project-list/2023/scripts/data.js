@@ -55,7 +55,6 @@ const projectsList = {
             "Made by Tutorials": {
                 "icon": `<i class="fa-brands fa-youtube"></i>`,
                 "projects": [
-                    // No NewsFeed
                     {
                         "customStyles": "--backgroundColor: #5a98d0; --mainColor: #FFF;",
                         "title": "Automation Tool",
@@ -119,18 +118,18 @@ const projectsList = {
                         "linkToPage": "https://mikroffarad.github.io/workbench/mentors/ione-digital/snippets/sticky-sidebar/",
                         "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/ione-digital/snippets/sticky-sidebar"
                     },
-                    {
-                        "customStyles": "--backgroundColor: #cb079e; --mainColor: #b573ff;",
-                        "title": "Gradient Statistics",
-                        "icon": "https://img.icons8.com/external-itim2101-flat-itim2101/64/000000/external-statistics-network-technology-itim2101-flat-itim2101.png",
-                        "linkToPage": "https://mikroffarad.github.io/workbench/mentors/itdoctor/snippets/gradient_statistics/",
-                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/itdoctor/snippets/gradient_statistics"
-                    }
                 ]
             },
             "Made my own": {
                 "icon": `<i class="fa-solid fa-fingerprint"></i>`,
                 "projects": [
+                    {
+                        "customStyles": "--backgroundColor: #cb079e; --mainColor: #b573ff;",
+                        "title": "Gradient Statistics",
+                        "icon": "https://img.icons8.com/external-itim2101-flat-itim2101/64/000000/external-statistics-network-technology-itim2101-flat-itim2101.png",
+                        "linkToPage": "https://mikroffarad.github.io/workbench/own/snippets/gradient_statistics",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/own/snippets/gradient_statistics"
+                    },
                     {
                         "customStyles": "--backgroundColor: #87c232; --mainColor: #000;",
                         "title": "@starting-style",
