@@ -113,8 +113,15 @@ const projectsList = {
                 "icon": `<i class="fa-brands fa-youtube"></i>`,
                 "projects": [
                     {
-                        "customStyles": "--backgroundColor: ; --mainColor: ;",
-                        "title": "",
+                        "customStyles": "--backgroundColor: #f2b832; --mainColor: #FFF;",
+                        "title": "Full-height Block",
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/ione-digital/snippets/fullheight-block/images/logo-icon.svg",
+                        "linkToPage": "https://mikroffarad.github.io/workbench/mentors/ione-digital/snippets/fullheight-block/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/ione-digital/snippets/fullheight-block"
+                    },
+                    {
+                        "customStyles": "--backgroundColor: #dddddd; --mainColor: #999999;",
+                        "title": "Sticky Sidebar",
                         "icon": "",
                         "linkToPage": "",
                         "linkToSourceCode": ""
