@@ -74,3 +74,19 @@
         color: var(--backgroundColor, variables.$mainColor);
     }
 }
+
+@media (max-width: 767.98px) {
+    .projects {
+        &__list {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 399.99px) {
+    .projects {
+        &__link-list {
+            flex-direction: column;
+        }
+    }
+}

@@ -342,6 +342,9 @@ button {
   padding-bottom: 20px;
   text-align: center;
 }
+.header * {
+  color: inherit;
+}
 
 .tabs {
   padding-bottom: 40px;
@@ -363,6 +366,7 @@ button {
 }
 .tabs [class*=__navigation] {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .tabs [class*=__navigation] > * {
@@ -446,4 +450,15 @@ button {
   text-decoration: underline;
   background-color: var(--backgroundColor, #5c94e8);
   color: var(--mainColor, #060638);
+}
+
+@media (max-width: 767.98px) {
+  .projects__list {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 399.99px) {
+  .projects__link-list {
+    flex-direction: column;
+  }
 }
