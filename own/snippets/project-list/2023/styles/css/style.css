@@ -346,9 +346,6 @@ button {
   color: inherit;
 }
 
-.tabs {
-  padding-bottom: 40px;
-}
 .tabs__container {
   display: flex;
   flex-direction: column;
@@ -393,6 +390,10 @@ button {
   width: 100%;
 }
 
+.projects {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .projects__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
