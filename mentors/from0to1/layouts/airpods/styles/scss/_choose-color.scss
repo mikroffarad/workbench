@@ -26,6 +26,10 @@
         border-radius: 20px;
         padding: 50px 55px;
         cursor: pointer;
+
+        &--active {
+            display: none;
+        }
     }
 }
 

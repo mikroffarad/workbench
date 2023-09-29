@@ -75,7 +75,6 @@
 
     &__images {
         text-align: center;
-
         img {
             max-width: 100%;
         }
@@ -88,8 +87,38 @@
             right: 0;
             bottom: 0;
             // width: 100%;
-            background: linear-gradient(180deg, #f3d6d1 0%, rgba(235, 235, 235, 0) 100%);
             z-index: -2;
+            transition: background-color 0.3s ease;
+        }
+
+        &.color--pink {
+            &::before {
+                background: linear-gradient(180deg, #f3d6d1 0%, rgba(235, 235, 235, 0) 100%);
+            }
+        }
+
+        &.color--green {
+            &::before {
+                background: linear-gradient(180deg, #DDEAD9 0%, rgba(235, 235, 235, 0.00) 100%);
+            }
+        }
+
+        &.color--skyblue {
+            &::before {
+                background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
+            }
+        }
+
+        &.color--silver {
+            &::before {
+                background: linear-gradient(180deg, #FAFAFA 0%, rgba(235, 235, 235, 0.00) 100%);
+            }
+        }
+
+        &.color--spacegray {
+            &::before {
+                background: linear-gradient(180deg, #B6B6B6 0%, rgba(235, 235, 235, 0.00) 100%);
+            }
         }
     }
 

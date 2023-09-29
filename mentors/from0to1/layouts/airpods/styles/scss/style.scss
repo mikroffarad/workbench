@@ -81,3 +81,11 @@
     padding-top: 50px;
     padding-bottom: 40px;
 }
+
+.content-item {
+    display: none;
+
+    &--active {
+        display: inline-block;
+    }
+}
