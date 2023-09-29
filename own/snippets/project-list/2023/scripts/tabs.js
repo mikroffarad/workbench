@@ -36,12 +36,16 @@ function createSubTabs(subTabs) {
             subTabButton.setAttribute("type", "button");
 
             const subTabIconInnerHTML = subTabs[subTabItem].icon;
+            const projectCount = subTabs[subTabItem].projects.length;
 
             subTabButton.innerHTML = `
                 <div class="sub-tabs__icon">
                     ${subTabIconInnerHTML}
                 </div>
-                <h2 class="sub-tabs__title">${subTabItem}</h2>
+                <div class="sub-tabs__data">
+                    <h3 class="sub-tabs__title">${subTabItem}</h3>
+                    <span class="sub-tabs__count">${projectCount}</span>
+                </div>
             `;
             subTabNavigation.appendChild(subTabButton);
 

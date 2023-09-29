@@ -351,6 +351,14 @@ button {
   flex-direction: column;
   gap: 10px;
 }
+.tabs__container > *::after {
+  margin-top: 10px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #5c94e8;
+}
 .tabs [class*=-tabs] {
   text-align: center;
 }
@@ -364,6 +372,7 @@ button {
 .tabs [class*=__navigation] {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 .tabs [class*=__navigation] > * {
@@ -388,6 +397,23 @@ button {
 }
 .tabs [class*=__button]:hover::after, .tabs [class*=__button].active::after {
   width: 100%;
+}
+.tabs [class*=__count] {
+  background-color: #5c94e8;
+  color: #060638;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.tabs [class*=__data] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .projects {
