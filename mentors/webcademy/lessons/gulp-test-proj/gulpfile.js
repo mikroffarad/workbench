@@ -33,7 +33,8 @@ const plumberNotify = (title) => {
 }
 
 gulp.task('html', function () {
-    return gulp.src('./src/*.html')
+    return gulp
+        .src(['./src/html/**/*.html', '!./src/html/blocks/*.html'])
         .pipe(changed('./dist/'))
         .pipe(plumber(plumberNotify("HTML")))
         .pipe(fileInclude({

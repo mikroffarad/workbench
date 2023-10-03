@@ -10,25 +10,14 @@
 
     <body>
         <div class="wrapper">
-            <header class="header">
-    <div class="header__container">
-        Lorem ipsum dolor sit amet.
-    </div>
-</header>
+            @@include('./blocks/header.html')
             <main class="main">
                 <div class="main__container">
-                    <nav class="navigation">
-    <a href="../blog/post-1.html">Post 1</a>
-    <a href="../blog/post-2.html">Post 2</a>
-</nav>
+                    @@include('./blocks/navigation.html')
                     <h1>Content goes here</h1>
                 </div>
             </main>
-            <footer class="footer">
-    <div class="footer__container">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, quis!
-    </div>
-</footer>
+            @@include('./blocks/footer.html')
         </div>
     </body>
 
