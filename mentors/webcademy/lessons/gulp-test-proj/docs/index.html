@@ -10,10 +10,17 @@
 
     <body>
         <div class="wrapper">
-            @@include('./blocks/header.html')
+            <header class="header">
+    <div class="header__container">
+        Lorem ipsum dolor sit amet.
+    </div>
+</header>
             <main class="main">
                 <div class="main__container">
-                    @@include('./blocks/navigation.html')
+                    <nav class="navigation">
+    <a href="../blog/post-1.html">Post 1</a>
+    <a href="../blog/post-2.html">Post 2</a>
+</nav>
                     <h1>Content goes here</h1>
                     <input type="date" id="date">
                     <button class="main__button" type="submit">
@@ -21,7 +28,11 @@
                     </button>
                 </div>
             </main>
-            @@include('./blocks/footer.html')
+            <footer class="footer">
+    <div class="footer__container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, quis!
+    </div>
+</footer>
         </div>
 
         <script src="./js/index.bundle.js"></script>
