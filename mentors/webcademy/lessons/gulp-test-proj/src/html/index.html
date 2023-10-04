@@ -1,30 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Main page</title>
-        <link rel="stylesheet" href="./css/main.css">
-    </head>
-
-    <body>
-        <div class="wrapper">
-            @@include('./blocks/header.html')
-            <main class="main">
-                <div class="main__container">
-                    @@include('./blocks/navigation.html')
-                    <h1>Content goes here</h1>
-                    <input type="date" id="date">
-                    <button class="main__button" type="submit">
-                        Submit
-                    </button>
-                </div>
-            </main>
-            @@include('./blocks/footer.html')
-        </div>
-
-        <script src="./js/index.bundle.js"></script>
-    </body>
-
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Стартовый шаблон</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		@@include('blocks/header.html')
+		@@include('blocks/footer.html')
+		<script src="./js/index.bundle.js"></script>
+	</body>
 </html>

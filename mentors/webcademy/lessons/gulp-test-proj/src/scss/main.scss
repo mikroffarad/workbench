@@ -1,56 +1,10 @@
-// @import "blocks/header";
-// @import "blocks/footer";
-@import 'blocks/*.scss'
+/* Base */
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/sticky-footer";
 
-*,
-*::before,
-*::after {
-    all: unset;
-    display: revert;
-    box-sizing: border-box;
-}
-
-[class*="__container"] {
-    min-width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.main {
-    flex-grow: 1;
-
-    display: flex;
-    align-items: center;
-    &__container {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        flex-direction: column;
-    }
-}
-
-.header,
-.footer {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.header {
-    background-color: tomato;
-}
-
-.footer {
-    background-color: burlywood;
-}
-
-a {
-    text-decoration: underline;
-}
+/* Blocks */
+@import "./blocks/*.scss";

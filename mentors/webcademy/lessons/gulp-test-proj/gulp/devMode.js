@@ -1,7 +1,17 @@
 const gulp = require('gulp');
+
+// HTML
 const fileInclude = require('gulp-file-include');
+const htmlclean = require('gulp-htmlclean');
+const webpHTML = require('gulp-webp-html');
+
+// Sass
 const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
+const autoprefixer = require('gulp-autoprefixer');
+const csso = require('gulp-csso');
+const webpCss = require('gulp-webp-css');
+
 const server = require('gulp-server-livereload');
 const fs = require('fs');
 const clean = require('gulp-clean');
@@ -10,8 +20,13 @@ const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const webpack = require('webpack-stream');
 const babel = require('gulp-babel');
-const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
+
+// Images
+const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
+
+
 
 gulp.task('');
 
@@ -36,12 +51,14 @@ const plumberNotify = (title) => {
 gulp.task('html:dev', function () {
     return gulp
         .src(['./src/html/**/*.html', '!./src/html/blocks/*.html'])
-        .pipe(changed('./build/'))
+        .pipe(changed('./build/', { hasChanged: changed.compareContents }))
         .pipe(plumber(plumberNotify("HTML")))
         .pipe(fileInclude({
             prefix: '@@',
             basepath: '@file',
         }))
+        .pipe(webpHTML())
+        .pipe(htmlclean())
         .pipe(gulp.dest('./build/'))
 });
 
@@ -50,8 +67,11 @@ gulp.task('sass:dev', function () {
         .pipe(changed('./build/css/'))
         .pipe(plumber(plumberNotify("SCSS")))
         .pipe(sourceMaps.init())
+        .pipe(autoprefixer())
         .pipe(sassGlob())
+        // .pipe(webpCss())
         .pipe(sass())
+        .pipe(csso())
         .pipe(sourceMaps.write())
         .pipe(gulp.dest('./build/css/'))
 })
@@ -59,7 +79,11 @@ gulp.task('sass:dev', function () {
 gulp.task('images:dev', function () {
     return gulp.src('./src/img/**/*')
         .pipe(changed('./build/img'))
-        // .pipe(imagemin({ verbose: true }))
+        .pipe(webp())
+        .pipe(gulp.dest('./build/img'))
+        .pipe(gulp.src('./src/img/**/*'))
+        .pipe(changed('./build/img'))
+        .pipe(imagemin({ verbose: true }))
         .pipe(gulp.dest('./build/img/'))
 })
 
