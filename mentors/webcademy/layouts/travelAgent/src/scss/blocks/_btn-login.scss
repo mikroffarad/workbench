@@ -7,22 +7,23 @@
     align-items: center;
     column-gap: 10px;
 
-    padding: 10px 15px;
-    height: 30px;
+    padding: 8px 20px;
+    height: 40px;
 
-    border-radius: 12px;
-    background-color: #333333;
+    border-radius: 8px;
+    border: 1px solid #b7b7b7;
+    background: #fff;
 
+    color: #454545;
     font-size: 16px;
-    color: #fff;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 150%; /* 24px */
 
-    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
 }
 
-.btn-login:hover, .btn-login:focus {
-    background-color: #404040;
-}
-
-.btn-login:active {
-    background-color: #222222;
+.btn-login:hover,
+.btn-login:focus {
+    opacity: 0.8;
 }

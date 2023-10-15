@@ -1,29 +1,29 @@
 .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
 
-	display: flex;
-	justify-content: space-between;
-    align-items: center;
-    gap: 32px;
-
-		&__list {
+      &__list {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 24px;
-		}
+      }
 
-        &__link {
+      &__link {
             color: #181818;
-        }
+      }
 
-		&__link:hover, .active {
-            color: #35AFF4;
-		}
+      &__link:hover,
+      .active {
+            color: #35aff4;
+      }
 
-		&__btns {
+      &__btns {
             display: flex;
             gap: 12px;
-		}
+      }
 }
 
 .active {

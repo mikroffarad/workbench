@@ -1,0 +1,44 @@
+.discover {
+
+    padding: 60px 0;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+        align-items: center;
+    }
+
+    &__desc {
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+    }
+
+    &__form {
+    }
+
+    &__picture {
+        position: relative;
+    }
+
+    &__hint {
+        position: absolute;
+        top: 95px;
+        left: 40px;
+    }
+
+    &__picture-img {
+    }
+
+    &__scroll-down {
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
+    }
+}
