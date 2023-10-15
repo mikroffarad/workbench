@@ -32,7 +32,14 @@ const projectsList = {
                         "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/from0to1/layouts/airpods/images/logo-dark.svg",
                         "linkToPage": "https://mikroffarad.github.io/workbench/mentors/from0to1/layouts/airpods/",
                         "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/from0to1/layouts/airpods"
-                    }
+                    },
+                    {
+                        "customStyles": "--backgroundColor: #35AFF4; --mainColor: #FFF;",
+                        "title": "Travel Agent",
+                        "icon": "https://raw.githubusercontent.com/mikroffarad/workbench/main/mentors/webcademy/layouts/travelAgent/build/img/icons/favicon.svg",
+                        "linkToPage": "https://mikroffarad.github.io/workbench/mentors/webcademy/layouts/travelAgent/build/",
+                        "linkToSourceCode": "https://github.com/mikroffarad/workbench/tree/main/mentors/webcademy/layouts/travelAgent"
+                    },
                 ]
             },
             "Made my own": {
