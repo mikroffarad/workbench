@@ -39,12 +39,44 @@
 
     &__prev {
         background-image: url("../../img/icons/btn-back.svg");
-        border: 1px solid var(--text-muted);
+        // border: 1px solid var(--text-muted);
         margin-right: 15px;
     }
 
     &__next {
         background-image: url("../../img/icons/btn-next.svg");
-        background-color: var(--accent);
+        // background-color: var(--accent);
+    }
+}
+
+.destinations {
+    &__bottom {
+    }
+
+    &__list {
+        display: flex;
+        
+        gap: 32px;
+    }
+
+    &__item {
+        max-width: 304px;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+
+    &__image {
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 16px;
+    }
+
+    &__desc {
+    }
+}
+
+.desc--card {
+    .desc__title {
+        font-size: 20px;
     }
 }
