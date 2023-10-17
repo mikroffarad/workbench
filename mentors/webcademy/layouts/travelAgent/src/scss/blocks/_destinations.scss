@@ -1,0 +1,50 @@
+.destinations {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+    }
+
+    &__title {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        color: var(--text-muted);
+
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: 150%; /* 27px */
+    }
+
+    &__buttons {
+        & > * {
+            width: 48px;
+            height: 48px;
+            border-radius: 50px;
+        }
+    }
+
+    &__prev {
+        background-image: url("../../img/icons/btn-back.svg");
+        border: 1px solid var(--text-muted);
+        margin-right: 15px;
+    }
+
+    &__next {
+        background-image: url("../../img/icons/btn-next.svg");
+        background-color: var(--accent);
+    }
+}
