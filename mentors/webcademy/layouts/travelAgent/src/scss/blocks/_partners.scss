@@ -1,0 +1,35 @@
+.partners {
+
+    padding: 60px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 64px;
+    }
+
+    &__title {
+
+        color: var(--text-muted);
+
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 33.6px */
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__item {
+    }
+
+    &__logo {
+    }
+}
+.container {
+}
