@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Mariupol Symbols';
+    src: local('Mariupol Symbols'), local('MariupolSymbols'),
+        url('MariupolSymbols.woff2') format('woff2'),
+        url('MariupolSymbols.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mariupol';
+    src: local('Mariupol Medium'), local('Mariupol-Medium'),
+        url('Mariupol-Medium.woff2') format('woff2'),
+        url('Mariupol-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mariupol';
+    src: local('Mariupol'), local('Mariupol-Regular'),
+        url('Mariupol-Regular.woff2') format('woff2'),
+        url('Mariupol-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mariupol';
+    src: local('Mariupol Bold'), local('Mariupol-Bold'),
+        url('Mariupol-Bold.woff2') format('woff2'),
+        url('Mariupol-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
