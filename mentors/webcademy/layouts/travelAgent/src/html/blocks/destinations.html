@@ -1,90 +1,23 @@
-<div class="destinations">
-    <div class="container">
-        <div class="destinations__top">
-            <div class="destinations__text">
-                <h2 class="destinations__title">
-                    Popular Destinations
-                </h2>
-                <h3 class="destinations__subtitle">
-                    See our popular destinations that our client choose
-                </h3>
-            </div>
-            <div class="destinations__buttons buttons">
-                <button class="destinations__prev"></button>
-                <button class="destinations__next buttons--active"></button>
-            </div>
-        </div>
-        <div class="destinations__bottom">
-            <div class="destinations__list">
-                <div class="destinations__item">
-                    <div class="destinations__image">
-                        <img src="./../../img/popular/venice.jpg" alt="destination">
-                    </div>
-                    <div class="destinations__desc desc desc--card">
-                        <div class="desc__row">
-                            <h2 class="desc__title">Venice, Italy</h2>
-                            <div class="desc__rating">(4.5)</div>
-                        </div>
-                        <div class="desc__price">
-                            <span class="desc__text">Starts from</span>
-                            <span class="desc__value">
-                                <span class="desc__currency">$</span><span class="desc__value">900</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="destinations__item">
-                    <div class="destinations__image">
-                        <img src="./../../img/popular/bali.jpg" alt="destination">
-                    </div>
-                    <div class="destinations__desc desc desc--card">
-                        <div class="desc__row">
-                            <h2 class="desc__title">Bali, Indonesia</h2>
-                            <div class="desc__rating">(4.5)</div>
-                        </div>
-                        <div class="desc__price">
-                            <span class="desc__text">Starts from</span>
-                            <span class="desc__value">
-                                <span class="desc__currency">$</span><span class="desc__value">480</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="destinations__item">
-                    <div class="destinations__image">
-                        <img src="./../../img/popular/bangkok.jpg" alt="destination">
-                    </div>
-                    <div class="destinations__desc desc desc--card">
-                        <div class="desc__row">
-                            <h2 class="desc__title">Bangkok, Thailand</h2>
-                            <div class="desc__rating">(4.5)</div>
-                        </div>
-                        <div class="desc__price">
-                            <span class="desc__text">Starts from</span>
-                            <span class="desc__value">
-                                <span class="desc__currency">$</span><span class="desc__value">440</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="destinations__item">
-                    <div class="destinations__image">
-                        <img src="./../../img/popular/santorini.jpg" alt="destination">
-                    </div>
-                    <div class="destinations__desc desc desc--card">
-                        <div class="desc__row">
-                            <h2 class="desc__title">Santorini, Greek</h2>
-                            <div class="desc__rating">(4.5)</div>
-                        </div>
-                        <div class="desc__price">
-                            <span class="desc__text">Starts from</span>
-                            <span class="desc__value">
-                                <span class="desc__currency">$</span><span class="desc__value">900</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<section class="destinations">
+	<div class="container">
+		<div class="destinations__top">
+			<div class="destinations__text">
+				<h2 class="destinations__title">
+					Popular Destinations
+				</h2>
+				<h3 class="destinations__subtitle">
+					See our popular destinations that our client choose
+				</h3>
+			</div>
+			<div class="destinations__buttons buttons">
+				<button class="destinations__prev"></button>
+				<button class="destinations__next buttons--active"></button>
+			</div>
+		</div>
+	</div>
+	<div class="container-right">
+		<div class="destinations__slider">
+			@@include('./elements/swiper.html')
+		</div>
+	</div>
+</section>

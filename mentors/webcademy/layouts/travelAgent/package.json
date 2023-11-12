@@ -36,6 +36,7 @@
   "dependencies": {
     "@easepick/bundle": "^1.2.1",
     "@tarekraafat/autocomplete.js": "^10.2.7",
-    "air-datepicker": "^3.4.0"
+    "air-datepicker": "^3.4.0",
+    "swiper": "^11.0.4"
   }
 }

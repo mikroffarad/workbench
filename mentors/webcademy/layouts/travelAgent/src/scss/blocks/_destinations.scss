@@ -59,20 +59,7 @@
         gap: 32px;
     }
 
-    &__item {
-        max-width: 304px;
-        flex-grow: 1;
-        flex-shrink: 0;
-    }
 
-    &__image {
-        border-radius: 12px;
-        overflow: hidden;
-        margin-bottom: 16px;
-    }
-
-    &__desc {
-    }
 }
 
 .desc--card {
