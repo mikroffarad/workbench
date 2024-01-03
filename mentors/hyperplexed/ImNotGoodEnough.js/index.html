@@ -9,84 +9,20 @@
 </head>
 
 <body>
-    <div class="card-container">
-        <div class="card-group">
-            <div class="card card--little">
 
-            </div>
-            <div class="card card--big" data-id="1">
 
-            </div>
-            <div class="card card--little">
-
-            </div>
-            <div class="card card--big" data-id="2">
-
-            </div>
-            <div class="card card--little">
-
-            </div>
-            <div class="card card--big" data-id="3">
-
-            </div>
-            <div class="card card--little">
-
-            </div>
-            <div class="card card--big" data-id="4">
-
-            </div>
-        </div>
+    <div class="card-group" data-index="0" data-status="active">
+        <div class="card card--little"></div>
+        <div class="card card--big"></div>
+        <div class="card card--little"></div>
+        <div class="card card--big"></div>
+        <div class="card card--little"></div>
+        <div class="card card--big"></div>
+        <div class="card card--little"></div>
+        <div class="card card--big"></div>
     </div>
 
-    <script>
-        const cardsBig = document.querySelectorAll(".card--big");
-        const cardGroup = document.querySelector(".card-group");
-
-        cardsBig.forEach((card) => {
-            card.addEventListener("click", () => {
-
-
-                if (card.classList.contains("enlarged")) {
-                    document.querySelectorAll(".hidden").forEach((card) => {
-                        cardGroup.removeChild(card);
-                    })
-                    card.classList.remove("enlarged");
-                } else {
-                    const rect = card.getBoundingClientRect(); // Отримання координат оригінальної карти
-                    const clone = card.cloneNode(true);
-
-                    // Встановлення позиції для клону
-                    clone.style.position = "absolute";
-                    clone.style.top = `${rect.top}px`;
-                    clone.style.left = `${rect.left}px`;
-                    clone.classList.add("hidden");
-
-                    cardGroup.appendChild(clone); // Додавання клону до контейнера
-
-                    card.classList.add("enlarged");
-                }
-            })
-        })
-
-        cardGroup.addEventListener("mouseleave", () => {
-            document.querySelector(".enlarged").classList.remove("enlarged");
-
-        })
-
-        // const cardsBig = document.querySelectorAll(".card--big");
-        // const cardGroup = document.querySelector(".card-group");
-
-        // cardsBig.forEach((card) => {
-        //     card.addEventListener("click", () => {
-        //         card.classList.toggle("enlarged");
-        //         cardGroup.classList.toggle("active");
-        //     })
-        // })
-
-        // cardGroup.addEventListener("mouseleave", () => {
-        //     document.querySelector(".enlarged").classList.remove("enlarged");
-        // })
-    </script>
+    <script src="./js/enlargeCard.js"></script>
 </body>
 
 </html>

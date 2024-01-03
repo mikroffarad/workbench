@@ -17,19 +17,24 @@ body {
   aspect-ratio: 5/7;
 }
 
-.active {
-  border: 1px solid #fff;
-}
-
+.card-container,
 .card-group,
 .card--big {
   width: 30vmin;
+}
+
+.card-group {
+  position: absolute;
 }
 
 .enlarged {
   transform: scale(1.05) !important;
   z-index: 9;
   position: relative;
+}
+
+.hidden {
+  border: 1px solid white;
 }
 
 .card {
@@ -81,9 +86,6 @@ body {
   background-size: cover;
 }
 
-.card-group:hover {
-  border: 1px solid #fff;
-}
 .card-group:hover .card--big:nth-child(2) {
   transform: translate(-75%, 16%) rotate(-24deg);
 }
@@ -107,4 +109,32 @@ body {
 }
 .card-group:hover .card--little:nth-child(7) {
   transform: translate(-280%, 140%) rotate(-15deg);
+}
+
+.card-group[data-status=unknown] {
+  transform: scale(0);
+}
+
+.card-buttons {
+  margin-top: 8vmin;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.button {
+  display: grid;
+  place-items: center;
+  width: 7vmin;
+  height: 7vmin;
+  border: 0.4vmin solid rgb(200, 200, 200);
+  border-radius: 100%;
+  color: #fff;
+  font-size: 2.5vmin;
+  background-color: transparent;
+  cursor: pointer;
+}
+.button--love {
+  color: rgb(33, 150, 243);
+  border-color: rgb(33, 150, 243);
 }
