@@ -12,20 +12,33 @@ body {
     place-items: center;
 }
 
-
+.card-swiper,
+.card-container,
 .card-group,
 .card {
     aspect-ratio: 5 / 7;
 }
 
+.card-swiper,
 .card-container,
 .card-group,
 .card--big {
     width: 30vmin;
 }
 
+// .card-container,
 .card-group {
     position: absolute;
+    transition: transform 400ms ease;
+}
+
+.card-title {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-size: 8vmin;
+    transform: translateY(-150%);
+    color: #fff;
 }
 
 .enlarged {
@@ -51,21 +64,21 @@ body {
         background-size: cover !important;
 
         &:nth-child(2) {
-            background: url('./../../images/1.jpg');
+            background: url('./../../images/1.webp');
         }
 
         &:nth-child(4) {
-            background: url('./../../images/2.jpg');
+            background: url('./../../images/2.webp');
             transform: rotate(2deg);
         }
 
         &:nth-child(6) {
-            background: url('./../../images/3.jpg');
+            background: url('./../../images/3.webp');
             transform: translateX(-6%) rotate(-3deg);
         }
 
         &:nth-child(8) {
-            background: url('./../../images/4.jpg');
+            background: url('./../../images/4.webp');
             transform: translate(10%, 3%) rotate(5deg);
         }
     }
@@ -79,28 +92,28 @@ body {
         transform: translate(-50%, -50%);
 
         &:nth-child(1) {
-            background: url('./../../images/5.jpg');
+            background: url('./../../images/5.webp');
             background-size: cover;
         }
 
         &:nth-child(3) {
-            background: url('./../../images/6.jpg');
+            background: url('./../../images/6.webp');
             background-size: cover;
         }
 
         &:nth-child(5) {
-            background: url('./../../images/7.jpg');
+            background: url('./../../images/7.webp');
             background-size: cover;
         }
 
         &:nth-child(7) {
-            background: url('./../../images/8.jpg');
+            background: url('./../../images/8.webp');
             background-size: cover;
         }
     }
 }
 
-.card-group:hover {
+.active.card-group:hover {
 
     .card {
         &--big {
@@ -144,6 +157,28 @@ body {
 
 .card-group[data-status="unknown"] {
     transform: scale(0);
+}
+
+.card-group[data-status="active"] {
+    transition-delay: 300ms;
+}
+
+.card-group[data-status="before"] {
+    transform: translateX(-50%) scale(0);
+}
+
+.card-group[data-status="after"] {
+    transform: translateX(50%) scale(0);
+}
+
+.card-group[data-status="becoming-active-from-before"] {
+    transform: translateX(-50%) scale(0) !important;
+    transition: none;
+}
+
+.card-group[data-status="becoming-active-from-after"] {
+    transform: translateX(50%) scale(0);
+    transition: none;
 }
 
 .card-buttons {
