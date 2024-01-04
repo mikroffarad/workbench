@@ -38,6 +38,7 @@ cardsBig.forEach((card) => {
             console.log("doesn't contain active");
         }
     })
+
     card.parentNode.parentNode.addEventListener("mouseleave", () => {
         document.querySelectorAll(".enlarged").forEach((card) => {
             card.classList.remove("enlarged");

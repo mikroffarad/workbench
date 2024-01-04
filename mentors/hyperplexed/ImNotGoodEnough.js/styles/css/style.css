@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
 [data-index="0"] .card--big:nth-child(2) {
   background-image: url("./../../images/selfies/1.jpg");
   background-position: 70%;
@@ -66,18 +67,19 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+body,
+html {
+  overflow-y: hidden;
+  position: relative;
+}
+
 body {
   background-color: #000;
   color: #fff;
   height: 100vh;
   display: grid;
   place-items: center;
-}
-
-body,
-html {
-  overflow-y: hidden;
-  position: relative;
+  font-family: "Chewy", system-ui;
 }
 
 .hint {
@@ -109,14 +111,14 @@ html {
 .card-title {
   position: absolute;
   text-align: center;
-  width: 100vh;
+  width: 100%;
   font-size: 8vmin;
-  transform: translateY(-150%) translateX(-35.5%);
+  transform: translateY(-150%);
 }
 
 .enlarged {
   transform: scale(1.05) !important;
-  z-index: 10;
+  z-index: 10 !important;
   position: relative;
 }
 .enlarged--little {
@@ -229,12 +231,14 @@ html {
   cursor: pointer;
 }
 .button--hate:active {
-  background-color: rgb(200, 200, 200);
+  background-color: red;
 }
 .button--love {
   color: rgb(33, 150, 243);
   border-color: rgb(33, 150, 243);
 }
 .button--love:active {
+  color: #fff;
+  border-color: #fff;
   background-color: rgb(33, 150, 243);
 }

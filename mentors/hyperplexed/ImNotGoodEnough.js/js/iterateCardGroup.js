@@ -34,7 +34,6 @@ const handleHateClick = () => {
 
 cardGroups.forEach((group) => {
 
-
     group.addEventListener("mouseenter", () => {
 
         setTimeout(() => {
@@ -50,19 +49,14 @@ cardGroups.forEach((group) => {
         }, 300)
     })
 
-
-
     group.addEventListener("mouseleave", () => {
         group.classList.remove("active")
     })
 
     document.addEventListener('click', function (event) {
-
-        // Перевірка, чи не було натиснуто на "card-group" або його дочірні елементи
+        // Check if "card-group" or its child elements are clicked
         if (event.target !== group && !group.contains(event.target)) {
-            // Перевірка, чи "card-group" має клас "active"
             if (group.classList.contains('active')) {
-                // Якщо має, то прибрати клас "active"
                 group.classList.remove('active');
             }
         }

@@ -1,4 +1,5 @@
 @import 'images';
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 
 *,
 *::before,
@@ -9,19 +10,19 @@
 
 }
 
+body,
+html {
+    overflow-y: hidden;
+    position: relative;
+}
+
 body {
     background-color: #000;
     color: #fff;
     height: 100vh;
     display: grid;
     place-items: center;
-
-}
-
-body,
-html {
-    overflow-y: hidden;
-    position: relative;
+    font-family: 'Chewy', system-ui;
 }
 
 .hint {
@@ -47,7 +48,6 @@ html {
     width: 30vmin;
 }
 
-// .card-container,
 .card-group {
     position: absolute;
     transition: transform 400ms ease;
@@ -56,15 +56,14 @@ html {
 .card-title {
     position: absolute;
     text-align: center;
-
-    width: 100vh;
+    width: 100%;
     font-size: 8vmin;
-    transform: translateY(-150%) translateX(-35.5%);
+    transform: translateY(-150%);
 }
 
 .enlarged {
     transform: scale(1.05) !important;
-    z-index: 10;
+    z-index: 10 !important;
     position: relative;
 
     &--little {
@@ -76,7 +75,6 @@ html {
 }
 
 .hidden {
-    // position: fixed !important;
     filter: blur(1vmin) brightness(0.5) !important;
     z-index: 5 !important;
 }
@@ -92,7 +90,7 @@ html {
         border-radius: 1vmin;
 
 
-        &:nth-child(2) {}
+        // &:nth-child(2) {}
 
         &:nth-child(4) {
             transform: rotate(2deg);
@@ -209,7 +207,7 @@ html {
 
     &--hate {
         &:active {
-            background-color: rgb(200, 200, 200);
+            background-color: red;
         }
     }
 
@@ -218,6 +216,8 @@ html {
         border-color: rgb(33, 150, 243);
 
         &:active {
+            color: #fff;
+            border-color: #fff;
             background-color: rgb(33, 150, 243);
         }
     }
