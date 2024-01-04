@@ -5,6 +5,8 @@
 *::after {
     all: unset;
     display: revert;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 body {
@@ -54,9 +56,10 @@ html {
 .card-title {
     position: absolute;
     text-align: center;
-    width: 100%;
+
+    width: 100vh;
     font-size: 8vmin;
-    transform: translateY(-150%);
+    transform: translateY(-150%) translateX(-35.5%);
 }
 
 .enlarged {
@@ -204,10 +207,18 @@ html {
     background-color: transparent;
     cursor: pointer;
 
-    // &--hate {}
+    &--hate {
+        &:active {
+            background-color: rgb(200, 200, 200);
+        }
+    }
 
     &--love {
         color: rgb(33, 150, 243);
         border-color: rgb(33, 150, 243);
+
+        &:active {
+            background-color: rgb(33, 150, 243);
+        }
     }
 }
