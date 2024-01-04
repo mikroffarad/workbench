@@ -1,5 +1,4 @@
-const cardsBig = document.querySelectorAll(".card--big");
-
+const cardsBig = document.querySelectorAll(".card--big, .card--little");
 
 
 cardsBig.forEach((card) => {
@@ -10,15 +9,30 @@ cardsBig.forEach((card) => {
                     card.parentNode.removeChild(card);
                 })
                 card.classList.remove("enlarged");
+                card.classList.remove("enlarged--little")
             } else {
                 const clone = card.cloneNode(true);
 
-                const transformValue = window.getComputedStyle(card).getPropertyValue('transform');
-                clone.style.transform = transformValue;
+                // const transformValue = window.getComputedStyle(card).getPropertyValue('transform');
+                const allCSSValues = window.getComputedStyle(card)
+                // clone.style.transform = transformValue;
 
-                clone.classList.add("hidden");
-                card.parentNode.appendChild(clone); // Adding hidden card to container
-                card.classList.add("enlarged");
+
+                setTimeout(() => {
+                    clone.classList.add("hidden");
+                    card.parentNode.appendChild(clone); // Adding hidden card to container
+                    card.classList.add("enlarged");
+
+                    if (card.classList.contains("card--little")) {
+                        card.classList.add("enlarged--little");
+                    }
+                })
+
+                for (let i = 0; i < allCSSValues.length; i++) {
+                    const propertyName = allCSSValues[i];
+                    const propertyValue = allCSSValues.getPropertyValue(propertyName);
+                    clone.style.setProperty(propertyName, propertyValue)
+                }
             }
         } else {
             console.log("doesn't contain active");
@@ -27,9 +41,16 @@ cardsBig.forEach((card) => {
     card.parentNode.parentNode.addEventListener("mouseleave", () => {
         document.querySelectorAll(".enlarged").forEach((card) => {
             card.classList.remove("enlarged");
+            card.classList.remove("enlarged--little");
         });
         document.querySelectorAll(".hidden").forEach((card) => {
             card.parentNode.removeChild(card)
+        });
+        document.querySelectorAll(".enlarged--little").forEach((card) => {
+            card.classList.remove(".enlarged--little");
+        });
+        document.querySelectorAll(".card--little").forEach((card) => {
+            card.style.zIndex = "unset";
         });
     })
 })

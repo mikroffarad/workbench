@@ -36,9 +36,17 @@ cardGroups.forEach((group) => {
 
 
     group.addEventListener("mouseenter", () => {
+        group.classList.add("active")
+
+
         setTimeout(() => {
-            group.classList.add("active")
-        })
+            document.querySelectorAll(".card--little").forEach((card) => {
+
+                if (group.classList.contains("active")) {
+                    card.style.zIndex = "9999";
+                }
+            })
+        }, 500)
     })
 
 
