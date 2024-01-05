@@ -1,122 +1,122 @@
 @import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
 [data-index="0"] .card--big:nth-child(2) {
-  background-image: url("./../../images/selfies/1.jpg");
+  background-image: url("./../../images/selfies/1.webp");
   background-position: 70%;
 }
 [data-index="0"] .card--big:nth-child(4) {
-  background-image: url("./../../images/selfies/2.jpg");
+  background-image: url("./../../images/selfies/2.webp");
   background-position: 70%;
 }
 [data-index="0"] .card--big:nth-child(6) {
-  background-image: url("./../../images/selfies/10.jpg");
+  background-image: url("./../../images/selfies/10.webp");
   background-position: 70%;
 }
 [data-index="0"] .card--big:nth-child(8) {
-  background-image: url("./../../images/selfies/11.jpg");
+  background-image: url("./../../images/selfies/11.webp");
   background-position: 100%;
 }
 [data-index="0"] .card--little:nth-child(1) {
-  background-image: url("./../../images/selfies/7.jpg");
+  background-image: url("./../../images/selfies/7.webp");
 }
 [data-index="0"] .card--little:nth-child(3) {
-  background-image: url("./../../images/selfies/8.jpg");
+  background-image: url("./../../images/selfies/8.webp");
 }
 [data-index="0"] .card--little:nth-child(5) {
-  background-image: url("./../../images/selfies/5.jpg");
+  background-image: url("./../../images/selfies/5.webp");
 }
 [data-index="0"] .card--little:nth-child(7) {
-  background-image: url("./../../images/selfies/3.jpg");
+  background-image: url("./../../images/selfies/3.webp");
   background-position: 50%;
 }
 
 [data-index="1"] .card--big:nth-child(2) {
-  background-image: url("./../../images/nature/6.jpg");
+  background-image: url("./../../images/nature/6.webp");
   background-position: 70%;
 }
 [data-index="1"] .card--big:nth-child(4) {
-  background-image: url("./../../images/nature/2.jpg");
+  background-image: url("./../../images/nature/2.webp");
   background-position: 70%;
 }
 [data-index="1"] .card--big:nth-child(6) {
-  background-image: url("./../../images/nature/8.jpg");
+  background-image: url("./../../images/nature/8.webp");
 }
 [data-index="1"] .card--big:nth-child(8) {
-  background-image: url("./../../images/nature/3.jpg");
+  background-image: url("./../../images/nature/3.webp");
   background-position: 70%;
 }
 [data-index="1"] .card--little:nth-child(1) {
-  background-image: url("./../../images/nature/11.jpg");
+  background-image: url("./../../images/nature/11.webp");
 }
 [data-index="1"] .card--little:nth-child(3) {
-  background-image: url("./../../images/nature/12.jpg");
+  background-image: url("./../../images/nature/12.webp");
   background-position: 50%;
 }
 [data-index="1"] .card--little:nth-child(5) {
-  background-image: url("./../../images/nature/10.jpg");
+  background-image: url("./../../images/nature/10.webp");
 }
 [data-index="1"] .card--little:nth-child(7) {
-  background-image: url("./../../images/nature/7.jpg");
+  background-image: url("./../../images/nature/7.webp");
   background-position: 50%;
 }
 
 [data-index="2"] .card--big:nth-child(2) {
-  background-image: url("./../../images/animals/11.jpg");
+  background-image: url("./../../images/animals/11.webp");
 }
 [data-index="2"] .card--big:nth-child(4) {
-  background-image: url("./../../images/animals/6.jpg");
+  background-image: url("./../../images/animals/6.webp");
   background-position: 70%;
 }
 [data-index="2"] .card--big:nth-child(6) {
-  background-image: url("./../../images/animals/5.jpg");
+  background-image: url("./../../images/animals/5.webp");
   background-position: 50%;
 }
 [data-index="2"] .card--big:nth-child(8) {
-  background-image: url("./../../images/animals/1.jpg");
+  background-image: url("./../../images/animals/1.webp");
 }
 [data-index="2"] .card--little:nth-child(1) {
-  background-image: url("./../../images/animals/13.jpg");
-  background-position: 50%;
+  background-image: url("./../../images/animals/10.webp");
+  background-position: 80%;
 }
 [data-index="2"] .card--little:nth-child(3) {
-  background-image: url("./../../images/animals/14.jpg");
+  background-image: url("./../../images/animals/14.webp");
   background-position: 45%;
 }
 [data-index="2"] .card--little:nth-child(5) {
-  background-image: url("./../../images/animals/2.jpg");
+  background-image: url("./../../images/animals/2.webp");
 }
 [data-index="2"] .card--little:nth-child(7) {
-  background-image: url("./../../images/animals/7.jpg");
+  background-image: url("./../../images/animals/7.webp");
   background-position: 50%;
 }
 
 [data-index="3"] .card--big:nth-child(2) {
-  background-image: url("./../../images/tech/4.jpg");
+  background-image: url("./../../images/tech/4.webp");
 }
 [data-index="3"] .card--big:nth-child(4) {
-  background-image: url("./../../images/tech/1.jpg");
+  background-image: url("./../../images/tech/1.webp");
   background-position: 60%;
 }
 [data-index="3"] .card--big:nth-child(6) {
-  background-image: url("./../../images/tech/3.jpg");
+  background-image: url("./../../images/tech/3.webp");
   background-position: 50%;
 }
 [data-index="3"] .card--big:nth-child(8) {
-  background-image: url("./../../images/tech/9.jpg");
+  background-image: url("./../../images/tech/9.webp");
 }
 [data-index="3"] .card--little:nth-child(1) {
-  background-image: url("./../../images/tech/10.jpg");
+  background-image: url("./../../images/tech/10.webp");
   background-position: 50%;
 }
 [data-index="3"] .card--little:nth-child(3) {
-  background-image: url("./../../images/tech/11.jpg");
-  background-position: 5 5%;
+  background-image: url("./../../images/tech/11.webp");
+  background-position: 55%;
 }
 [data-index="3"] .card--little:nth-child(5) {
-  background-image: url("./../../images/tech/7.jpg");
+  background-image: url("./../../images/tech/7.webp");
   background-position: 30%;
 }
 [data-index="3"] .card--little:nth-child(7) {
-  background-image: url("./../../images/tech/6.jpg");
+  background-image: url("./../../images/tech/6.webp");
   background-position: 50%;
 }
 
