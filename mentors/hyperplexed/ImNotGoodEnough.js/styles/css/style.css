@@ -59,6 +59,67 @@
   background-position: 50%;
 }
 
+[data-index="2"] .card--big:nth-child(2) {
+  background-image: url("./../../images/animals/11.jpg");
+}
+[data-index="2"] .card--big:nth-child(4) {
+  background-image: url("./../../images/animals/6.jpg");
+  background-position: 70%;
+}
+[data-index="2"] .card--big:nth-child(6) {
+  background-image: url("./../../images/animals/5.jpg");
+  background-position: 50%;
+}
+[data-index="2"] .card--big:nth-child(8) {
+  background-image: url("./../../images/animals/1.jpg");
+}
+[data-index="2"] .card--little:nth-child(1) {
+  background-image: url("./../../images/animals/13.jpg");
+  background-position: 50%;
+}
+[data-index="2"] .card--little:nth-child(3) {
+  background-image: url("./../../images/animals/14.jpg");
+  background-position: 45%;
+}
+[data-index="2"] .card--little:nth-child(5) {
+  background-image: url("./../../images/animals/2.jpg");
+}
+[data-index="2"] .card--little:nth-child(7) {
+  background-image: url("./../../images/animals/7.jpg");
+  background-position: 50%;
+}
+
+[data-index="3"] .card--big:nth-child(2) {
+  background-image: url("./../../images/tech/4.jpg");
+}
+[data-index="3"] .card--big:nth-child(4) {
+  background-image: url("./../../images/tech/1.jpg");
+  background-position: 60%;
+}
+[data-index="3"] .card--big:nth-child(6) {
+  background-image: url("./../../images/tech/3.jpg");
+  background-position: 50%;
+}
+[data-index="3"] .card--big:nth-child(8) {
+  background-image: url("./../../images/tech/9.jpg");
+}
+[data-index="3"] .card--little:nth-child(1) {
+  background-image: url("./../../images/tech/10.jpg");
+  background-position: 50%;
+}
+[data-index="3"] .card--little:nth-child(3) {
+  background-image: url("./../../images/tech/11.jpg");
+  background-position: 5 5%;
+}
+[data-index="3"] .card--little:nth-child(5) {
+  background-image: url("./../../images/tech/7.jpg");
+  background-position: 30%;
+}
+[data-index="3"] .card--little:nth-child(7) {
+  background-image: url("./../../images/tech/6.jpg");
+  background-position: 50%;
+}
+
 *,
 *::before,
 *::after {

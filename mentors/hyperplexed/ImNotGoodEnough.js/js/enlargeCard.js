@@ -4,6 +4,20 @@ const cardsBig = document.querySelectorAll(".card--big, .card--little");
 cardsBig.forEach((card) => {
     card.addEventListener("click", () => {
         if (card.parentNode.parentNode.classList.contains("active")) {
+
+
+            const cards = document.querySelectorAll(".card")
+            cards.forEach((otherCard) => {
+                if (otherCard !== card && otherCard.classList.contains("enlarged")) {
+                    otherCard.classList.remove('enlarged');
+                    document.querySelector(".hidden").remove();
+                }
+                if (otherCard !== card && otherCard.classList.contains("enlarged--little")) {
+                    otherCard.classList.remove('enlarged--little');
+                    // document.querySelector(".hidden").remove();
+                }
+            })
+
             if (card.classList.contains("enlarged")) {
                 document.querySelectorAll(".hidden").forEach((card) => {
                     card.parentNode.removeChild(card);
@@ -34,8 +48,6 @@ cardsBig.forEach((card) => {
                     clone.style.setProperty(propertyName, propertyValue)
                 }
             }
-        } else {
-            console.log("doesn't contain active");
         }
     })
 
