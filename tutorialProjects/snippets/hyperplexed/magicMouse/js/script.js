@@ -27,6 +27,10 @@ wrapperNode.addEventListener("mousemove", (evt) => {
         dot.style.top = `${currentY}px`;
         wrapperNode.appendChild(dot);
 
+        setTimeout(() => {
+            wrapperNode.removeChild(dot)
+        }, 1500)
+
         prevX = currentX;
         prevY = currentY;
     }
