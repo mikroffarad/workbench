@@ -1,5 +1,4 @@
 .discover {
-
     padding: 60px 0;
 
     &__grid {
@@ -29,6 +28,7 @@
 
     &__hint {
         position: absolute;
+        z-index: 1;
         top: 95px;
         left: 40px;
         width: 100%;
