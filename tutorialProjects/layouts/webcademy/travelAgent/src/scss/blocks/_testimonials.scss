@@ -4,13 +4,41 @@
 		grid-template-columns: repeat(3, 1fr);
 		justify-items: center;
 		gap: 32px;
+		overflow: hidden;
 	}
 
 	&__col {
 		width: 100%;
 
-		&:nth-child(2) {
-			// padding-top: 50px;
-		}
+		display: grid;
+		gap: 32px;
+
+		animation: slideUp 20s linear infinite;
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(0%);
+	}
+	95% {
+		transform: translateY(-50%);
+		opacity: 1;
+		filter: blur(0px);
+	}
+	97% {
+		transform: translateY(-50%);
+		opacity: 0;
+		filter: blur(10px);
+	}
+	98% {
+		transform: translateY(-50%);
+		opacity: 0;
+		filter: blur(10px);
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+		filter: blur(0px);
 	}
 }

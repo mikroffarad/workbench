@@ -2,19 +2,20 @@
 	--container-width: 1230px;
 	--container-padding: 15px;
 
-	--font-main: 'Circular Std', sans-serif;
+	--font-main: "Circular Std", sans-serif;
 
 	--page-bg: #fff;
 	--text-color: #181818;
 	--text-muted: #909090;
-	--accent: #35AFF4;
+	--text-white: #ffffff;
+	--accent: #35aff4;
 
-    --laptop-size: 1199px;
+	--laptop-size: 1199px;
 	--tablet-size: 959px;
 	--mobile-size: 599px;
 }
 
 .dark {
-    --page-bg: #252526;
-    --text-color: #fff;
+	--page-bg: #252526;
+	--text-color: #fff;
 }
