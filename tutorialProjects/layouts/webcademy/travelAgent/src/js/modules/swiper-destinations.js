@@ -2,7 +2,7 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 function swiperFunc() {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('#swiper-destinations', {
 
         // loop: true,
         slidesPerView: 4,

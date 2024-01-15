@@ -1,12 +1,5 @@
-<div class="swiper">
+<div class="swiper" id="swiper-destinations">
 	<div class="swiper-wrapper">
-		<div class="swiper-slide">@@include('./../cards/venice.html')</div>
-		<div class="swiper-slide">@@include('./../cards/bali.html')</div>
-		<div class="swiper-slide">@@include('./../cards/bangkok.html')</div>
-		<div class="swiper-slide">@@include('./../cards/santorini.html')</div>
-		<div class="swiper-slide">@@include('./../cards/venice.html')</div>
-		<div class="swiper-slide">@@include('./../cards/bali.html')</div>
-		<div class="swiper-slide">@@include('./../cards/bangkok.html')</div>
-		<div class="swiper-slide">@@include('./../cards/santorini.html')</div>
+		@@loop('./../templates/destinations-slider.html', './../html/blocks/data/destinations-slider.json')
 	</div>
 </div>

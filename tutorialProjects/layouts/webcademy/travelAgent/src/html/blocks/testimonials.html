@@ -2,22 +2,27 @@
 	<div class="container">
 		<div class="testimonials__grid">
 			<div class="testimonials__col">
-				@@include("./testimonials/card.html")
-				@@include("./testimonials/card.html")
-				@@include("./testimonials/card.html")
-				@@include("./testimonials/card.html")
+				<div class="swiper testimonials__swiper" id="testimonials-col-1">
+					<div class="swiper-wrapper smooth-transition">
+						@@loop("./templates/card-review.html", './blocks/data/testimonials-col-1.json')
+					</div>
+				</div>
 			</div>
 			<div class="testimonials__col">
-				@@include("./testimonials/card.html")
-				@@include("./testimonials/card.html")
-				@@include("./testimonials/card.html")
-				@@include("./testimonials/card.html")
+
+				<div class="swiper testimonials__swiper" id="testimonials-col-2">
+					<div class="swiper-wrapper smooth-transition">
+						@@loop("./templates/card-review.html", './blocks/data/testimonials-col-2.json')
+					</div>
+				</div>
+
 			</div>
 			<div class="testimonials__col">
-				@@include("./testimonials/card.html")
-				@@include("./testimonials/card.html")
-				@@include("./testimonials/card.html")
-				@@include("./testimonials/card.html")
+				<div class="swiper testimonials__swiper" id="testimonials-col-3">
+					<div class="swiper-wrapper smooth-transition">
+						@@loop("./templates/card-review.html", './blocks/data/testimonials-col-3.json')
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
