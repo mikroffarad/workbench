@@ -5,3 +5,15 @@ body {
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: dodgerblue;
+}
+
+a:hover {
+    color: red;
+}
