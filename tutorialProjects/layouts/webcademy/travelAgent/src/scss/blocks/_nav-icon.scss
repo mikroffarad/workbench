@@ -34,7 +34,7 @@
 
 .nav-icon::before,
 .nav-icon::after {
-	content: '';
+	content: "";
 	display: block;
 
 	position: absolute;
@@ -45,7 +45,8 @@
 
 	border-radius: var(--radius);
 	background-color: var(--color);
-	transition: transform var(--time) ease-in,
+	transition:
+		transform var(--time) ease-in,
 		top var(--time) linear var(--time);
 }
 
@@ -66,7 +67,8 @@
 .nav-icon.nav-icon--active::before,
 .nav-icon.nav-icon--active::after {
 	top: 0;
-	transition: top var(--time) linear,
+	transition:
+		top var(--time) linear,
 		transform var(--time) ease-in var(--time);
 }
 
@@ -81,7 +83,8 @@
 /* Layout */
 
 .mobile-nav-btn {
-	z-index: 999;
+	// position: relative !important;
+	z-index: 999 !important;
 	// display: none;
 }
 
