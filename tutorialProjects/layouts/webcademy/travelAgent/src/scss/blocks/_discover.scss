@@ -24,6 +24,12 @@
 
     &__picture {
         position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        width: fit-content;
     }
 
     &__hint {
@@ -41,5 +47,58 @@
         position: absolute;
         bottom: 20px;
         right: 15px;
+    }
+}
+
+@include mediaLaptop {
+    .discover {
+        &__hint {
+            top: 40px;
+            left: 20px;
+        }
+
+        &__scroll-down {
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+@include mediaTablet {
+    .discover {
+        &__grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        &__picture {
+            grid-row: -1 / 1;
+        }
+    }
+}
+
+@include mediaMobile {
+    .discover {
+        .form {
+            grid-template-columns: 1fr;
+
+            &__separator {
+                display: none;
+            }
+
+            &__button {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        &__hint {
+            top: 30px;
+        }
+
+        &__scroll-down {
+            width: 30%;
+        }
     }
 }

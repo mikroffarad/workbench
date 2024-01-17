@@ -45,6 +45,13 @@
     }
 
     &__button {
+        background-image: url(./../../img/icons/search.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 48px;
+        width: 48px;
+        background-color: var(--accent);
+        border-radius: 10px;
     }
 
     &__separator {

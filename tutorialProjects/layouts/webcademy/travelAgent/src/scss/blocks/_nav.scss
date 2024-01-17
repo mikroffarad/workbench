@@ -23,11 +23,26 @@
       &__btns {
             display: flex;
             gap: 12px;
+
+            & > * {
+                  flex-shrink: 0;
+            }
+      }
+
+      &__icon {
+            display: none;
       }
 }
 
-.active {
-}
+@include mediaMobile {
+      .nav {
+            &__list,
+            &__btns {
+                  display: none;
+            }
 
-.btn-signup {
+            &__icon {
+                  display: block;
+            }
+      }
 }

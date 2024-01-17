@@ -1,6 +1,7 @@
 .autoComplete_wrapper {
   display: block;
   position: relative;
+  z-index: 99;
 }
 
 .autoComplete_wrapper > input {
@@ -12,8 +13,8 @@
   font-weight: 450;
   line-height: normal;
 
-    // color: rgb(116, 116, 116);
-    outline: none;
+  // color: rgb(116, 116, 116);
+  outline: none;
 }
 
 .autoComplete_wrapper > input::placeholder {
@@ -79,6 +80,7 @@
 
 @media only screen and (max-width: 600px) {
   .autoComplete_wrapper > input {
-    width: 18rem;
+    // width: 18rem;
+    width: 100%;
   }
 }
