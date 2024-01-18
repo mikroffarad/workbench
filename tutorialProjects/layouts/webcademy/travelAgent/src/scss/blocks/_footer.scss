@@ -53,3 +53,18 @@
 		line-height: 150%; /* 24px */
 	}
 }
+
+@include mediaMobile {
+	.footer {
+		padding: 40px 0;
+
+		&__row {
+			grid-template-columns: 1fr;
+			gap: 60px;
+		}
+
+		&__navigation {
+			grid-row: -1 / 1;
+		}
+	}
+}

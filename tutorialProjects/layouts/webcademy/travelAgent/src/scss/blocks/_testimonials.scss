@@ -1,3 +1,13 @@
+.testimonials-horizontal {
+	display: none;
+
+	.swiper {
+		// width: 100%;
+		// height: 500px;
+		padding: 30px 0;
+	}
+}
+
 .testimonials {
 	&__grid {
 		display: grid;
@@ -28,7 +38,12 @@
 		height: 900px;
 
 		.swiper-slide {
-			height: 325px !important;
+			padding: 0 10px 32px;
+			height: 357px !important;
+			width: 376px;
+			& > * {
+				height: 100%;
+			}
 		}
 	}
 }
@@ -63,4 +78,28 @@
 	--webkit-transition-timing-function: linear !important;
 	--o-transition-timing-function: linear !important;
 	transition-timing-function: linear !important;
+}
+
+@include mediaLaptop {
+	.swiper-slide {
+		height: 400px !important;
+	}
+
+	.testimonials {
+		&__swiper {
+			height: 600px;
+		}
+	}
+}
+
+@include mediaTablet {
+	.testimonials {
+		&__grid {
+			display: none;
+		}
+	}
+
+	.testimonials-horizontal {
+		display: block;
+	}
 }

@@ -79,6 +79,8 @@
 
 @include mediaMobile {
     .discover {
+        padding: 30px 0;
+
         .form {
             grid-template-columns: 1fr;
 
@@ -99,6 +101,14 @@
 
         &__scroll-down {
             width: 30%;
+        }
+    }
+}
+
+@include mediaMobileXS {
+    .discover {
+        &__hint {
+            display: none;
         }
     }
 }

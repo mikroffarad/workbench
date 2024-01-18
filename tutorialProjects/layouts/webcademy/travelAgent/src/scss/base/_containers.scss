@@ -6,22 +6,18 @@
 
 .container-right {
 	/* overflow-x: hidden; */
-	padding-left: calc(
-		(100% - var(--container-width)) / 2 + var(--container-padding)
-	);
+	padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
 
-	@media (max-width: var(--laptop-size)) {
+	@media (max-width: 1229.98px) {
 		padding-left: var(--container-padding);
 	}
 }
 
 .container-left {
 	/* overflow-x: hidden; */
-	padding-right: calc(
-		(100% - var(--container-width)) / 2 + var(--container-padding)
-	);
+	padding-right: calc((100% - var(--container-width)) / 2 + var(--container-padding));
 
-	@media (max-width: var(--laptop-size)) {
+	@media (max-width: 1229.98px) {
 		padding-right: var(--container-padding);
 	}
 }

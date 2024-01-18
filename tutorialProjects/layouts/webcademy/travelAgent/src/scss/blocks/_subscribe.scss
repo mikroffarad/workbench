@@ -44,5 +44,59 @@
 
     &__form {
         flex-grow: 1;
+        min-width: 400px;
+    }
+}
+
+@include mediaLaptop {
+    .subscribe {
+        padding: 40px 0;
+    }
+}
+
+@include mediaTablet {
+    .subscribe {
+        &__row {
+            padding: 0 150px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            &::before {
+                top: -50px;
+                // left: -20px;
+            }
+        }
+    }
+}
+
+@include mediaMobile {
+    .subscribe {
+        &__row {
+            padding: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+        &__form {
+            min-width: unset;
+            width: 100%;
+        }
+    }
+}
+
+@include mediaMobileS {
+    .form-subscribe {
+        display: flex;
+        flex-direction: column;
+
+        &__email {
+            width: 100%;
+        }
+
+        &__button {
+            width: 100%;
+        }
     }
 }

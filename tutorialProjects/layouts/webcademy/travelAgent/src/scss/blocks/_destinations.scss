@@ -30,6 +30,7 @@
     }
 
     &__buttons {
+        flex-shrink: 0;
         & > * {
             width: 48px;
             height: 48px;
@@ -55,15 +56,31 @@
 
     &__list {
         display: flex;
-        
+
         gap: 32px;
     }
-
-
 }
 
 .desc--card {
     .desc__title {
         font-size: 20px;
+    }
+}
+
+@include mediaMobile {
+    .destinations {
+        &__title {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+@include mediaMobileS {
+    .destinations {
+        &__top {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 }

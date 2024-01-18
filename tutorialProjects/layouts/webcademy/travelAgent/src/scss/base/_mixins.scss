@@ -15,3 +15,15 @@
         @content;
     }
 }
+
+@mixin mediaMobileS() {
+    @media (max-width: 474.98px) {
+        @content;
+    }
+}
+
+@mixin mediaMobileXS() {
+    @media (max-width: 319.98px) {
+        @content;
+    }
+}

@@ -30,6 +30,10 @@ img {
 		@include mediaMobile {
 			font-size: 32px;
 		}
+
+		@include mediaMobileXS {
+			font-size: 26px;
+		}
 	}
 
 	&--decor {
