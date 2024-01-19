@@ -42,12 +42,12 @@ const breakpointChecker = function () {
             grabCursor: true,
             ally: false,
             freeMode: true,
-            speed: 2000,
+            speed: 4000,
             loop: true,
-            // autoplay: {
-            //     delay: 0.5,
-            //     disableOnInteration: false,
-            // },
+            autoplay: {
+                delay: 0.5,
+                disableOnInteration: false,
+            },
         });
         if (swiperHorizontal !== undefined) swiperHorizontal.destroy(true, true);
         return;
