@@ -5,7 +5,7 @@ function swiperFunc() {
     const swiper = new Swiper('#swiper-destinations', {
 
         // loop: true,
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 32,
         // freeMode: true,
         // Navigation arrows
@@ -14,8 +14,8 @@ function swiperFunc() {
             prevEl: '.destinations__prev',
         },
         breakpoints: {
-            425: {
-                slidesPerView: 2,
+            715: {
+                slidesPerView: 4,
                 spaceBetween: 20,
             },
         }
