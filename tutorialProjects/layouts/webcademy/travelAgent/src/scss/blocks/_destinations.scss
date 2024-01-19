@@ -39,13 +39,13 @@
     }
 
     &__prev {
-        background-image: url("../../img/icons/btn-back.svg");
+        background-image: url("./../img/icons/btn-back.svg");
         // border: 1px solid var(--text-muted);
         margin-right: 15px;
     }
 
     &__next {
-        background-image: url("../../img/icons/btn-next.svg");
+        background-image: url("./../img/icons/btn-next.svg");
         // background-color: var(--accent);
     }
 }
