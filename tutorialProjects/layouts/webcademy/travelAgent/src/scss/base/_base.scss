@@ -36,6 +36,28 @@ img {
 		}
 	}
 
+	&--2 {
+		color: var(--text-color);
+
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 120%;
+		text-transform: capitalize;
+
+		@include mediaTablet {
+			font-size: 32px;
+		}
+
+		@include mediaMobile {
+			font-size: 22px;
+		}
+
+		@include mediaMobileXS {
+			font-size: 18px;
+		}
+	}
+
 	&--decor {
 		position: relative;
 
@@ -66,7 +88,8 @@ img {
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 450;
-	line-height: 150%; /* 27px */
+	line-height: 150%;
+	/* 27px */
 
 	@include mediaMobile {
 		font-size: 16px;
