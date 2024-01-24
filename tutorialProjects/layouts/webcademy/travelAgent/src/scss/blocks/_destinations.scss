@@ -9,8 +9,7 @@
         margin-bottom: 32px;
     }
 
-    &__text {
-    }
+    &__text {}
 
     &__title {
         font-size: 36px;
@@ -26,12 +25,14 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 450;
-        line-height: 150%; /* 27px */
+        line-height: 150%;
+        /* 27px */
     }
 
     &__buttons {
         flex-shrink: 0;
-        & > * {
+
+        &>* {
             width: 48px;
             height: 48px;
             border-radius: 50px;
@@ -51,8 +52,7 @@
 }
 
 .destinations {
-    &__bottom {
-    }
+    &__bottom {}
 
     &__list {
         display: flex;
@@ -67,12 +67,25 @@
     }
 }
 
+@include mediaLaptop {
+    .destinations {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+}
+
 @include mediaMobile {
     .destinations {
+
+
         &__title {
             font-size: 28px;
             margin-bottom: 8px;
         }
+    }
+
+    .swiper-slide {
+        // max-height: 300px;
     }
 }
 
