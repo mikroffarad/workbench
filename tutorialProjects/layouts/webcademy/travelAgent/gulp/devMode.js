@@ -79,11 +79,11 @@ gulp.task('sass:dev', function () {
 gulp.task('images:dev', function () {
     return gulp.src('./src/img/**/*')
         .pipe(changed('./build/img'))
-        // .pipe(webp())
+        .pipe(webp())
         .pipe(gulp.dest('./build/img'))
         .pipe(gulp.src('./src/img/**/*'))
         .pipe(changed('./build/img'))
-        // .pipe(imagemin({ verbose: true }))
+        .pipe(imagemin({ verbose: true }))
         .pipe(gulp.dest('./build/img/'))
 })
 
