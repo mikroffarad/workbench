@@ -8,12 +8,3 @@
 //     return arr;
 // }
 
-export const generateTreshold = () => {
-    const arr = []
-
-    for(let i = 0.01; i < 1; i += 0.01) {
-        arr.push(Number(i.toFixed(2)));
-    }
-
-    return arr;
-}

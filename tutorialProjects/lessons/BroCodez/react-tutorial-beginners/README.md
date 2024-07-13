@@ -1,1 +1,0 @@
-# [mikroffarad's first React project](https://mikroffarad.github.io/workbench/mentors/BroCodez/lessons/react-tutorial-beginners/)
