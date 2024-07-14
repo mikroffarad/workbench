@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Controller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1>Color Chooser</h1>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="rect"></div>
+                <div class="values">
+                    <div class="values__item value-rgb"></div>
+                    <div class="values__item value-hex"></div>
+                </div>
+                <div class="controllers">
+                    <div class="field">
+                        <div class="field__value">0</div>
+                        <input type="range" class="field__range range--red" min="0" max="255">
+                        <div class="field__value">255</div>
+                    </div>
+                    <div class="field">
+                        <div class="field__value">0</div>
+                        <input type="range" class="field__range range--green" min="0" max="255">
+                        <div class="field__value">255</div>
+                    </div>
+                    <div class="field">
+                        <div class="field__value">0</div>
+                        <input type="range" class="field__range range--blue" min="0" max="255">
+                        <div class="field__value">255</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <p>2024</p>
+            </div>
+        </footer>
+        <script src="app.js"></script>
+    </div>
+</body>
+
+</html>
