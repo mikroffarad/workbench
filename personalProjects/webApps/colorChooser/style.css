@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -46,7 +48,7 @@ body {
 }
 
 .wrapper {
-    min-height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
 }
@@ -57,7 +59,8 @@ body {
 }
 
 .main {
-    flex: 1 1 100%;
+    flex-grow: 1;
+    overflow: visible;
     display: flex;
 }
 
@@ -69,7 +72,6 @@ body {
 }
 
 .main__container {
-    min-height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
