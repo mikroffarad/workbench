@@ -15,6 +15,31 @@ body {
     text-align: center;
 }
 
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__title {
+    flex-grow: 1;
+}
+
+.header__button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none;
+    background: unset;
+    background-image: url(./img/darkMode.png);
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    cursor: pointer;
+}
+
+.wrapper.dark .header__button {
+    background-image: url(./img/lightMode.png);
+}
+
 .footer {
     padding: 15px 20px;
     text-align: center;
@@ -26,9 +51,13 @@ body {
     flex-direction: column;
 }
 
+.wrapper.dark {
+    background-color: #000;
+    color: #fff;
+}
+
 .main {
     flex: 1 1 100%;
-    border: 1px solid #000;
     display: flex;
 }
 
@@ -50,7 +79,6 @@ body {
 }
 
 .rect {
-    border: 1px solid #000;
     padding-left: 15px;
     padding-right: 15px;
     width: clamp(200px, 100%, 400px);
@@ -67,6 +95,18 @@ body {
 
 .values>* {
     cursor: pointer;
+}
+
+.values>*:hover {
+    color: dodgerblue;
+}
+
+.wrapper.dark .values>*:active {
+    color: papayawhip;
+}
+
+.values>*:active {
+    color: aquamarine;
 }
 
 .controllers {
@@ -102,4 +142,12 @@ body {
 
 .range--blue {
     background: #00f;
+}
+
+.button-random {
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: dodgerblue;
+    padding: 5px 15px;
 }
