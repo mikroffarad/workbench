@@ -109,7 +109,7 @@ legend {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #F0F8FF;
+  background-color: #F0F8FF !important;
 }
 
 [class*=__container] {
@@ -132,6 +132,42 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 600px;
+}
+
+.form__starter {
+  background-color: #fff;
+}
+
+.form__content {
+  background-color: #fff;
+}
+
+.form__btn {
+  width: 100%;
+}
+
+.form__title {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.form__text-wrapper {
+  position: relative;
+}
+
+.form__text-fake {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: #777;
+}
+
+.form__text {
+  margin-bottom: 1rem;
 }
 
 .main__cards-wrapper {

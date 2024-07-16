@@ -15,13 +15,22 @@
         <div class="header__container">
             <h1 class="header__title">Google Keep from WebCademy!</h1>
             <form action="" class="form" id="addNoteForm">
-                <div class="input-group mb-3">
-                    <input type="text" placeholder="Text of note" class="form-control" id="noteText">
-                    <button class="btn btn-primary">Add note</button>
+
+                <div class="form__starter shadow p-3 mb-5 rounded">Add a note...</div>
+
+                <div class="form__content shadow p-3 mb-5 rounded" hidden="true">
+                    <input class="form__title" type="text" placeholder="Title note" id="noteTitleInput">
+                    <div class="form__text-wrapper">
+                        <div class="form__text-fake">Text note</div>
+                        <div class="form__text" contenteditable="true" id="noteTextInput"></div>
+                    </div>
+                    <button class="form__btn btn btn-primary">Add note</button>
                 </div>
 
-                <div contenteditable="true">Title note</div>
-                <div contenteditable="true">Text note</div>
+                <!-- <div class="input-group mb-3">
+                    <input type="text" placeholder="Text of note" class="form-control" id="noteText">
+                    <button class="btn btn-primary">Add note</button>
+                </div> -->
             </form>
         </div>
     </header>
@@ -32,6 +41,7 @@
             </div>
         </div>
     </main>
+    <script src="./js/formUI.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
