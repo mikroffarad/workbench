@@ -153,3 +153,7 @@ body {
     background-color: dodgerblue;
     padding: 5px 15px;
 }
+
+.hint {
+    visibility: hidden;
+}

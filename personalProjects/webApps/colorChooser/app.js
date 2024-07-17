@@ -77,3 +77,20 @@ document.querySelector(".button-random").addEventListener("click", () => {
 document.querySelector(".header__button").addEventListener("click", () => {
     document.querySelector(".wrapper").classList.toggle("dark");
 })
+
+document.querySelectorAll(".values__item").forEach(value => {
+    value.addEventListener("mouseenter", () => {
+        document.querySelector(".hint").style.visibility = "visible";
+    })
+    value.addEventListener("mouseleave", () => {
+        document.querySelector(".hint").style.visibility = "hidden";
+        document.querySelector(".hint").innerHTML = "Click to copy";
+    })
+    value.addEventListener("click", () => {
+        document.querySelector(".hint").innerHTML = "Copied!";
+        setTimeout(() => {
+            document.querySelector(".hint").innerHTML = "Click to copy";
+        }, 1000)
+        // document.querySelector(".hint").innerHTML = "Click to copy";
+    })
+})
