@@ -5,10 +5,15 @@ const formTextFake = document.querySelector(".form__text-fake");
 const formText = document.querySelector(".form__text");
 
 // Show note adding form
-formStarter.onclick = () => {
+formStarter.onclick = (event) => {
+    event.stopPropagation();
     formStarter.hidden = "true";
     formContent.removeAttribute("hidden");
     formTitle.focus();
+}
+
+formContent.onclick = (event) => {
+    event.stopPropagation();
 }
 
 // Focus transition from title to text
@@ -22,4 +27,9 @@ formTitle.addEventListener("keydown", (event) => {
 // Hiding/Showing textFake label
 formText.addEventListener("input", () => {
     formText.innerText !== "" ? formTextFake.hidden = true : formTextFake.removeAttribute("hidden");
+})
+
+document.addEventListener("click", () => {
+    formStarter.removeAttribute("hidden");
+    formContent.hidden = "true";
 })
