@@ -1,170 +1,167 @@
 <!DOCTYPE html>
 <html lang="uk">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FindYourJob</title>
-        <link rel="stylesheet" href="styles/css/style.css">
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-        <meta name="theme-color" content="#1a75e8">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindYourJob</title>
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#1a75e8">
+</head>
 
-    <body>
-        <section class="hero hero--bg-secondary">
-            <header class="hero__header header">
-                <div class="header__container">
-                    <a class="header__logo" href="">
-                        <img src="images/logo.svg" alt="">
-                    </a>
-                    <nav class="header__menu">
-                        <ul class="header__list">
-                            <li class="header__item">
-                                <a class="header__link" href="">Головна</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="">Вакансії</a>
-                            </li>
-                            <li class="header__item">
-                                <a class="header__link" href="">Компанії</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="header__authorize">
-                        <a class="header__sign-in" href="">Увійти</a>
-                        <a class="header__sign-up button" href="">Реєстрація</a>
-                    </nav>
-                    <div class="header__icon-menu icon-menu">
-                        <img src="images/icons/menu-burger.svg" alt="">
-                    </div>
-                </div>
-            </header>
-            <div class="hero__body body-hero">
-                <div class="body-hero__container">
-                    <div class="body-hero__content">
-                        <h1 class="body-hero__title title title--big">Знайдіть віддалену роботу вашої мрії</h1>
-                        <p class="body-hero__text">Створіть резюме або надішліть відгук на вакансію в&nbsp;компанії
-                            з&nbsp;світовим ім'ям та&nbsp;працюйте за&nbsp;вільним графіком</p>
-                        <form class="body-hero__search search" action="#">
-                            <input class="body-hero__input" type="text" placeholder="Почніть пошук">
-                            <button type="button" class="body-hero__button button">
-                                <span>Шукати вакансії</span>
-                            </button>
-                        </form>
-                        <div class="body-hero__hint hint">
-                            <span class="hint__text">Наприклад:</span>
-                            <ul class="hint__list">
-                                <li class="hint__item">
-                                    Front-end
-                                </li>
-                                <li class="hint__item">
-                                    Back-end
-                                </li>
-                                <li class="hint__item">
-                                    Designer
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="body-hero__image">
-                        <img src="images/hero-image.svg" alt="">
-                    </div>
+<body>
+    <section class="hero hero--bg-secondary">
+        <header class="hero__header header">
+            <div class="header__container">
+                <a class="header__logo" href="">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a class="header__link" href="">Головна</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="">Вакансії</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="">Компанії</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header__authorize">
+                    <a class="header__sign-in" href="">Увійти</a>
+                    <a class="header__sign-up button" href="">Реєстрація</a>
+                </nav>
+                <div class="header__icon-menu icon-menu">
+                    <img src="images/icons/menu-burger.svg" alt="">
                 </div>
             </div>
-        </section>
-        <main class="main">
-            <section class="main__categories categories">
-                <div class="categories__container">
-                    <h2 class="categories__title title title--medium">Категорії</h2>
-                    <nav class="categories__navigation"></nav>
-                </div>
-            </section>
-            <section class="main__vacancies vacancies">
-                <div class="vacancies__container">
-                    <h2 class="vacancies__title title title--medium">
-                        Свіжі вакансії
-                    </h2>
-                    <ul class="vacancies__list"></ul>
-                    <a class="item-vacancies__button button" href="">Більше вакансій</a>
-                </div>
-            </section>
-            <div class="main__subscription subscription subscription--bg-secondary">
-                <div class="subscription__container">
-                    <h2 class="subscription__title">Підпишіться на розсилку з новими вакансіями</h2>
-                    <p class="subscription__text">
-                        Ми надсилаємо по одному листу на тиждень з підходящими вам вакансіями
-                    </p>
-                    <form class="subscription__search search" action="#">
-                        <input class="body-hero__input" type="text" placeholder="E-mail">
-                        <button type="button" class="subscription__button button">
-                            <span>Підписатися</span>
+        </header>
+        <div class="hero__body body-hero">
+            <div class="body-hero__container">
+                <div class="body-hero__content">
+                    <h1 class="body-hero__title title title--big">Знайдіть віддалену роботу вашої мрії</h1>
+                    <p class="body-hero__text">Створіть резюме або надішліть відгук на вакансію в&nbsp;компанії
+                        з&nbsp;світовим ім'ям та&nbsp;працюйте за&nbsp;вільним графіком</p>
+                    <form class="body-hero__search search" action="#">
+                        <input class="body-hero__input" type="text" placeholder="Почніть пошук">
+                        <button type="button" class="body-hero__button button">
+                            <span>Шукати вакансії</span>
                         </button>
                     </form>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__logo-copy">
-                    <a href="" class="logo">
-                        <img src="images/logo.svg" alt="">
-                    </a>
-                    <p class="footer__copyright">
-                        © 2023 Coded by <a class="footer__link" href="https://github.com/mikroffarad"
-                            target="_blank">mikroffarad</a>
-                    </p>
-                    <a class="footer__link"
-                        href="https://github.com/mikroffarad/workbench/tree/main/own/layouts/single-page/findYourJob"
-                        target="_blank">Source code & Details</a>
-                    <a class="footer__link"
-                        href="https://mikroffarad.github.io/workbench/own/snippets/project-list/2023/"
-                        target="_blank">More projects</a>
-                    <p>
-                        Category: Single Page Websites / Made my own
-                    </p>
-                </div>
-                <div class="footer__row">
-                    <div class="footer__col col">
-                        <h3 class="col__title title">Зв'яжіться з нами</h3>
-                        <div class="col__list">
-                            <a href="tel:+1234567890" class="col__item">+1 (234) 567-890</a>
-                            <a href="mailto:example@example.com" class="col__item">example@example.com</a>
-                        </div>
+                    <div class="body-hero__hint hint">
+                        <span class="hint__text">Наприклад:</span>
+                        <ul class="hint__list">
+                            <li class="hint__item">
+                                Front-end
+                            </li>
+                            <li class="hint__item">
+                                Back-end
+                            </li>
+                            <li class="hint__item">
+                                Designer
+                            </li>
+                        </ul>
                     </div>
-                    <nav class="footer__col col">
-                        <h3 class="col__title title">Інформація</h3>
-                        <ul class="col__list">
-                            <li class="col__item">
-                                <a class="col__link" href="">Обробка даних</a>
-                            </li>
-                            <li class="col__item">
-                                <a class="col__link" href="">Конфіденційність</a>
-                            </li>
-                            <li class="col__item">
-                                <a class="col__link" href="">Публічна оферта</a>
-                            </li>
-                        </ul>
-
-                    </nav>
-                    <nav class="footer__col col">
-                        <h3 class="col__title title">Навігація сайтом</h3>
-                        <ul class="col__list">
-                            <li class="col__item">
-                                <a class="col__link" href="">Вакансії</a>
-                            </li>
-                            <li class="col__item">
-                                <a class="col__link" href="">Компанії</a>
-                            </li>
-                            <li class="col__item">
-                                <a class="col__link" href="">Контакти</a>
-                            </li>
-                        </ul>
-                    </nav>
+                </div>
+                <div class="body-hero__image">
+                    <img src="images/hero-image.svg" alt="">
                 </div>
             </div>
-        </footer>
-        <script src="js/script.js"></script>
-        <script src="js/tabs.js"></script>
-    </body>
+        </div>
+    </section>
+    <main class="main">
+        <section class="main__categories categories">
+            <div class="categories__container">
+                <h2 class="categories__title title title--medium">Категорії</h2>
+                <nav class="categories__navigation"></nav>
+            </div>
+        </section>
+        <section class="main__vacancies vacancies">
+            <div class="vacancies__container">
+                <h2 class="vacancies__title title title--medium">
+                    Свіжі вакансії
+                </h2>
+                <ul class="vacancies__list"></ul>
+                <a class="item-vacancies__button button" href="">Більше вакансій</a>
+            </div>
+        </section>
+        <div class="main__subscription subscription subscription--bg-secondary">
+            <div class="subscription__container">
+                <h2 class="subscription__title">Підпишіться на розсилку з новими вакансіями</h2>
+                <p class="subscription__text">
+                    Ми надсилаємо по одному листу на тиждень з підходящими вам вакансіями
+                </p>
+                <form class="subscription__search search" action="#">
+                    <input class="body-hero__input" type="text" placeholder="E-mail">
+                    <button type="button" class="subscription__button button">
+                        <span>Підписатися</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo-copy">
+                <a href="" class="logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <p class="footer__copyright">
+                    © 2023 Coded by <a class="footer__link" href="https://github.com/mikroffarad"
+                        target="_blank">mikroffarad</a>
+                </p>
+                <a class="footer__link"
+                    href="https://github.com/mikroffarad/workbench/tree/main/personalProjects/findYourJob"
+                    target="_blank">Source code & Details</a>
+                <p>
+                    Category: Single Page Websites / Made my own
+                </p>
+            </div>
+            <div class="footer__row">
+                <div class="footer__col col">
+                    <h3 class="col__title title">Зв'яжіться з нами</h3>
+                    <div class="col__list">
+                        <a href="tel:+1234567890" class="col__item">+1 (234) 567-890</a>
+                        <a href="mailto:example@example.com" class="col__item">example@example.com</a>
+                    </div>
+                </div>
+                <nav class="footer__col col">
+                    <h3 class="col__title title">Інформація</h3>
+                    <ul class="col__list">
+                        <li class="col__item">
+                            <a class="col__link" href="">Обробка даних</a>
+                        </li>
+                        <li class="col__item">
+                            <a class="col__link" href="">Конфіденційність</a>
+                        </li>
+                        <li class="col__item">
+                            <a class="col__link" href="">Публічна оферта</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <nav class="footer__col col">
+                    <h3 class="col__title title">Навігація сайтом</h3>
+                    <ul class="col__list">
+                        <li class="col__item">
+                            <a class="col__link" href="">Вакансії</a>
+                        </li>
+                        <li class="col__item">
+                            <a class="col__link" href="">Компанії</a>
+                        </li>
+                        <li class="col__item">
+                            <a class="col__link" href="">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/tabs.js"></script>
+</body>
 
 </html>

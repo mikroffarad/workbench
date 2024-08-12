@@ -4,4 +4,4 @@ Enter text and get different variations written in different styles (cases): `We
 
 Just type your text below (input's autofocus is enabled, no need to click on it) and click on your desired case to copy.
 
-[Page](https://mikroffarad.github.io/workbench/own/webapps/stringCaseConverter/)
+[Page](https://mikroffarad.github.io/workbench/personalProjects/stringCaseConverter/)
