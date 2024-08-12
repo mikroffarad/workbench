@@ -1,1 +1,0 @@
-# [Color Chooser](https://mikroffarad.github.io/workbench/personalProjects/webApps/colorChooser/)
