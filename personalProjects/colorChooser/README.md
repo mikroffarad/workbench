@@ -1,1 +1,1 @@
-# [Color Chooser](https://mikroffarad.github.io/workbench/personalProjects/webApps/colorChooser/)
+# [Color Chooser](https://mikroffarad.github.io/workbench/personalProjects/colorChooser/)
