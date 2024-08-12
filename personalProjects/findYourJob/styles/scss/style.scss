@@ -1,0 +1,64 @@
+// Import variables
+@use "variables";
+// Import Font
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&display=swap");
+
+@import "reset";
+
+body {
+    color: variables.$textPrimary;
+    font-family: "Fira Sans", sans-serif;
+}
+
+@import "blocks";
+@import "hero";
+@import "categories";
+@import "vacancies";
+@import "subscription";
+@import "footer";
+
+.footer {
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    @media (max-width: 767.98px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    &__container {
+    }
+}
+
+.main {
+    &__categories {
+        padding-top: 35px;
+        padding-bottom: 45px;
+
+        @media (max-width: 767.98px) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+
+    &__vacancies {
+        padding-top: 35px;
+        padding-bottom: 45px;
+
+        @media (max-width: 767.98px) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+
+    &__subscription {
+        padding-top: 35px;
+        padding-bottom: 45px;
+
+        @media (max-width: 767.98px) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.card-review {
+	padding: 32px;
+	display: grid;
+	gap: 32px;
+
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0px 4px 10px 0px rgba(23, 28, 31, 0.23);
+
+	& > * {
+		// display: grid;
+		// grid-template-rows: subgrid;
+	}
+
+	&__rating {
+		display: flex;
+	}
+
+	&__content {
+		color: var(--text-muted);
+
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 150%; /* 24px */
+
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		-webkit-line-clamp: 5;
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+	}
+
+	&__avatar {
+	}
+
+	&__info {
+		line-height: 150%; /* 24px */
+	}
+
+	&__name {
+		font-weight: 500;
+	}
+
+	&__activity {
+		color: var(--text-muted);
+		font-weight: 450;
+	}
+}

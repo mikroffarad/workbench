@@ -1,0 +1,167 @@
+.header {
+    min-height: 100vh;
+    position: relative;
+    &__container {
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+        flex-wrap: wrap;
+
+        @media (max-width: 575.98px) {
+            padding-top: 20px;
+        }
+    }
+
+    &__logo {
+    }
+
+    &__navigation {
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 40px;
+    }
+
+    &__item {
+    }
+
+    &__button {
+        color: #fff;
+        background-color: #000;
+    }
+
+    &__content {
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        font-size: 210px;
+        font-weight: 700;
+        position: absolute;
+        margin-top: 55px;
+
+        &--air {
+        }
+
+        &--pod {
+            position: relative;
+            z-index: -1;
+        }
+
+        &--s {
+            display: inline-block;
+            transform: translateY(60px);
+        }
+
+        &--m {
+            display: inline-block;
+            transform: translate(-30px, 275px);
+        }
+
+        &--ax {
+            display: inline-block;
+            position: relative;
+            transform: translate(-128px, 440px);
+            z-index: -1;
+        }
+    }
+
+    &__images {
+        text-align: center;
+        img {
+            max-width: 100%;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            // width: 100%;
+            z-index: -2;
+            transition: background-color 0.3s ease;
+        }
+
+        &.color--pink {
+            &::before {
+                background: linear-gradient(180deg, #f3d6d1 0%, rgba(235, 235, 235, 0) 100%);
+            }
+        }
+
+        &.color--green {
+            &::before {
+                background: linear-gradient(180deg, #DDEAD9 0%, rgba(235, 235, 235, 0.00) 100%);
+            }
+        }
+
+        &.color--skyblue {
+            &::before {
+                background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
+            }
+        }
+
+        &.color--silver {
+            &::before {
+                background: linear-gradient(180deg, #FAFAFA 0%, rgba(235, 235, 235, 0.00) 100%);
+            }
+        }
+
+        &.color--spacegray {
+            &::before {
+                background: linear-gradient(180deg, #B6B6B6 0%, rgba(235, 235, 235, 0.00) 100%);
+            }
+        }
+    }
+
+    &__burger-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1469px) {
+    .header {
+        &__title {
+            position: relative;
+            font-size: clamp(1rem, 10vw, 10rem);
+            text-wrap: unset;
+            text-align: center;
+
+            & > * {
+                transform: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .header {
+        &__burger-menu {
+            display: block;
+        }
+
+        &__navigation {
+            display: none;
+        }
+
+        .menu-open &__navigation {
+            display: block;
+            order: 3;
+            flex: 1 1 100%;
+        }
+
+        .menu-open &__list {
+            margin-top: 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

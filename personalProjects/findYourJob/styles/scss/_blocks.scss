@@ -1,0 +1,91 @@
+@use "variables";
+
+[class*="__container"] {
+    // border: 1px solid #000;
+    max-width: 1161px;
+    margin: 0 auto;
+    padding: 0 15px;
+    // padding-left: 15px !important;
+    // padding-right: 15px !important;
+}
+
+[class*="--bg-secondary"] {
+    background: variables.$backgroundSecondary;
+}
+
+input,
+button,
+a {
+    // &:focus {
+    //     outline: none;
+    // }
+
+    &:focus-visible {
+        outline: 1px solid variables.$buttonsPrimary;
+    }
+}
+
+.title {
+    color: variables.$textPrimary;
+    font-weight: 700;
+    line-height: normal;
+
+    &--big {
+        font-size: 44px;
+    }
+
+    &--medium {
+        font-size: 24px;
+    }
+
+    &--small {
+        font-size: 16px;
+    }
+}
+
+.button {
+    background-color: variables.$buttonsPrimary;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.hint {
+    color: variables.$textSecondary;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &__text {
+    }
+
+    &__list {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        // text-align: center;
+        padding: 5px 10px;
+        border: 1px solid variables.$textSecondary;
+        border-radius: 5px;
+    }
+}
+
+.search {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+
+    border-radius: 5px;
+    border: 1px solid rgba(209, 209, 209, 0.1);
+    background: var(--inputs-light, #fff);
+    box-shadow: 0px 4px 25px 0px rgba(15, 17, 56, 0.1);
+    margin-bottom: 25px;
+
+    & > * {
+        flex: 1 1 auto;
+    }
+}

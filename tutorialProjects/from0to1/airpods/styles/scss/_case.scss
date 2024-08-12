@@ -1,0 +1,21 @@
+.case {
+    background-color: #fafafa;
+
+    &__container {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+    }
+
+    &__image {
+        img {
+            max-width: 100%;
+        }
+    }
+}

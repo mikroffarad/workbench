@@ -1,0 +1,182 @@
+[data-index="0"] {
+    .card {
+        &--big {
+            &:nth-child(2) {
+                background-image: url('./../../images/selfies/1.webp');
+                background-position: 70%;
+            }
+
+            &:nth-child(4) {
+                background-image: url('./../../images/selfies/2.webp');
+                background-position: 70%;
+            }
+
+            &:nth-child(6) {
+                background-image: url('./../../images/selfies/10.webp');
+                background-position: 70%;
+            }
+
+            &:nth-child(8) {
+                background-image: url('./../../images/selfies/11.webp');
+                background-position: 100%;
+            }
+        }
+
+        &--little {
+            &:nth-child(1) {
+                background-image: url('./../../images/selfies/7.webp');
+            }
+
+            &:nth-child(3) {
+                background-image: url('./../../images/selfies/8.webp');
+            }
+
+            &:nth-child(5) {
+                background-image: url('./../../images/selfies/5.webp');
+            }
+
+            &:nth-child(7) {
+                background-image: url('./../../images/selfies/3.webp');
+                background-position: 50%;
+            }
+        }
+    }
+}
+
+[data-index="1"] {
+    .card {
+        &--big {
+            &:nth-child(2) {
+                background-image: url('./../../images/nature/6.webp');
+                background-position: 70%;
+            }
+
+            &:nth-child(4) {
+                background-image: url('./../../images/nature/2.webp');
+                background-position: 70%;
+            }
+
+            &:nth-child(6) {
+                background-image: url('./../../images/nature/8.webp');
+            }
+
+            &:nth-child(8) {
+                background-image: url('./../../images/nature/3.webp');
+                background-position: 70%;
+            }
+        }
+
+        &--little {
+            &:nth-child(1) {
+                background-image: url('./../../images/nature/11.webp');
+            }
+
+            &:nth-child(3) {
+                background-image: url('./../../images/nature/12.webp');
+                background-position: 50%;
+            }
+
+            &:nth-child(5) {
+                background-image: url('./../../images/nature/10.webp');
+            }
+
+            &:nth-child(7) {
+                background-image: url('./../../images/nature/7.webp');
+                background-position: 50%;
+            }
+        }
+    }
+}
+
+[data-index="2"] {
+    .card {
+        &--big {
+            &:nth-child(2) {
+                background-image: url('./../../images/animals/11.webp');
+                // background-position: 70%;
+            }
+
+            &:nth-child(4) {
+                background-image: url('./../../images/animals/6.webp');
+                background-position: 70%;
+            }
+
+            &:nth-child(6) {
+                background-image: url('./../../images/animals/5.webp');
+                background-position: 50%;
+            }
+
+            &:nth-child(8) {
+                background-image: url('./../../images/animals/1.webp');
+
+            }
+        }
+
+        &--little {
+            &:nth-child(1) {
+                background-image: url('./../../images/animals/10.webp');
+                background-position: 80%;
+            }
+
+            &:nth-child(3) {
+                background-image: url('./../../images/animals/14.webp');
+                background-position: 45%;
+            }
+
+            &:nth-child(5) {
+                background-image: url('./../../images/animals/2.webp');
+            }
+
+            &:nth-child(7) {
+                background-image: url('./../../images/animals/7.webp');
+                background-position: 50%;
+            }
+        }
+    }
+}
+
+[data-index="3"] {
+    .card {
+        &--big {
+            &:nth-child(2) {
+                background-image: url('./../../images/tech/4.webp');
+            }
+
+            &:nth-child(4) {
+                background-image: url('./../../images/tech/1.webp');
+                background-position: 60%;
+            }
+
+            &:nth-child(6) {
+                background-image: url('./../../images/tech/3.webp');
+                background-position: 50%;
+            }
+
+            &:nth-child(8) {
+                background-image: url('./../../images/tech/9.webp');
+            }
+        }
+
+        &--little {
+            &:nth-child(1) {
+                background-image: url('./../../images/tech/10.webp');
+                background-position: 50%;
+            }
+
+            &:nth-child(3) {
+                background-image: url('./../../images/tech/11.webp');
+                background-position: 55%;
+            }
+
+            &:nth-child(5) {
+                background-image: url('./../../images/tech/7.webp');
+                background-position: 30%;
+            }
+
+            &:nth-child(7) {
+                background-image: url('./../../images/tech/6.webp');
+                background-position: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>iAmNotGoodEnough.js</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/css/style.css">
+</head>
+
+<body>
+    <p class="hint">Tip: Click on card to enlarge, click again to put it back</p>
+    <div class="card-swiper">
+        <div class="card-container">
+            <div class="card-group" data-index="0" data-status="active">
+                <h2 class="card-title">Selfies</h2>
+                <div class="card-inner">
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                </div>
+            </div>
+            <div class="card-group" data-index="1" data-status="unknown">
+                <h2 class="card-title">Nature</h2>
+                <div class="card-inner">
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                </div>
+            </div>
+            <div class="card-group" data-index="2" data-status="unknown">
+                <h2 class="card-title">Animals</h2>
+                <div class="card-inner">
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                </div>
+            </div>
+            <div class="card-group" data-index="3" data-status="unknown">
+                <h2 class="card-title">Tech</h2>
+                <div class="card-inner">
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                    <div class="card card--little"></div>
+                    <div class="card card--big"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-buttons">
+            <button class="button button--hate" onclick="handleHateClick()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="button button--love" onclick="handleLoveClick()">
+                <i class="fa-solid fa-heart"></i>
+            </button>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/1a58f43100.js" crossorigin="anonymous"></script>
+    <script src="./js/enlargeCard.js"></script>
+    <script src="./js/iterateCardGroup.js"></script>
+</body>
+
+</html>

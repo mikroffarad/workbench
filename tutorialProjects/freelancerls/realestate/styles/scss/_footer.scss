@@ -1,0 +1,40 @@
+.footer {
+
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 1px solid #DEDFE1;
+  }
+
+  &__menu {
+    max-width: 880px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    
+    padding-top: 60px;
+
+    &__container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+}
+

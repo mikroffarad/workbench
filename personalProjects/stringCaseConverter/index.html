@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>String Case Converter</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="theme-color" content="#171d3b">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <h1 class="header__title">String Case Converter</h1>
+                    <p class="header__hint" hidden>Click on text to copy</p>
+                </div>
+            </header>
+            <main class="main">
+                <div class="main__container">
+                    <div class="main__greeting">
+                        <p>👉👈</p>
+                        <p>👇👇👇</p>
+                    </div>
+                    <ul class="main__list" hidden>
+                        <!-- <li class="main__item item">
+                        <h2 class="item__key"></h2>
+                        <span class="item__value"></span>
+                    </li>
+                    <li class="main__item">
+                        <h2 class="item__key"></h2>
+                        <span class="item__value"></span>
+                    </li> -->
+                    </ul>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <input type="text" class="footer__input" id="input" autofocus autocomplete="off"
+                        placeholder="Start typing to convert" oninput="echoValue()">
+                    <p>© 2023 by <a class="link" href="https://github.com/mikroffarad" target="_blank">mikroffarad</a>
+                        (<a class="link"
+                            href="https://github.com/mikroffarad/workbench/tree/main/own/webapps/stringCaseConverter"
+                            target="_blank">Source Code & Details</a>, <a class="link" href="https://mikroffarad.github.io/workbench/own/snippets/project-list/2023/">More Projects</a>)</p>
+                    <p>
+                        Category: Web Apps / Made my own
+                    </p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="js/cases.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+
+</html>

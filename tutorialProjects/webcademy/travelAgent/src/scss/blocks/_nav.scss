@@ -1,0 +1,48 @@
+.nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+
+      &__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+      }
+
+      &__link {
+            color: #181818;
+      }
+
+      &__link:hover,
+      .active {
+            color: #35aff4;
+      }
+
+      &__btns {
+            display: flex;
+            gap: 12px;
+
+            & > * {
+                  flex-shrink: 0;
+            }
+      }
+
+      &__icon {
+            display: none;
+      }
+}
+
+@include mediaMobile {
+      .nav {
+            &__list,
+            &__btns {
+                  display: none;
+            }
+
+            &__icon {
+                  display: block;
+            }
+      }
+}

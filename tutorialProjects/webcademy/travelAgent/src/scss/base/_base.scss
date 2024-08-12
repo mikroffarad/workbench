@@ -1,0 +1,97 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-main);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img {
+	display: block;
+}
+
+.title {
+	&--1 {
+		color: var(--text-color);
+
+		font-size: 72px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+
+		@include mediaTablet {
+			font-size: 52px;
+		}
+
+		@include mediaMobile {
+			font-size: 32px;
+		}
+
+		@include mediaMobileXS {
+			font-size: 26px;
+		}
+	}
+
+	&--2 {
+		color: var(--text-color);
+
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 120%;
+		text-transform: capitalize;
+
+		@include mediaTablet {
+			font-size: 32px;
+		}
+
+		@include mediaMobile {
+			font-size: 28px;
+		}
+
+		@include mediaMobileXS {
+			font-size: 18px;
+		}
+	}
+
+	&--decor {
+		position: relative;
+
+		&::after {
+			content: "";
+
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 268px;
+			height: 24px;
+
+			z-index: -1;
+			background-image: url("../../img/discover/underline.svg");
+			background-repeat: no-repeat;
+
+			@include mediaMobile {
+				width: 184px;
+				height: 12px;
+				background-size: contain;
+			}
+		}
+	}
+}
+
+.text {
+	color: var(--text-muted);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 450;
+	line-height: 150%;
+	/* 27px */
+
+	@include mediaMobile {
+		font-size: 16px;
+	}
+}
