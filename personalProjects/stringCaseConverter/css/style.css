@@ -5,6 +5,16 @@
 	box-sizing: border-box;
 }
 
+/* Custom scrollbar */
+::-webkit-scrollbar {
+	background-color: var(--accent-color1);
+	width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--accent-color2);
+  }
+
 [hidden] {
 	display: none !important;
 }
