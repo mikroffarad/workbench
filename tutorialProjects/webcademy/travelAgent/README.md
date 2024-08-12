@@ -14,4 +14,4 @@ Technologies used:
 npm packages/plugins used:
 
 - [autocomplete.js](https://tarekraafat.github.io/autoComplete.js/#/) (autocomplete and hints on text input)
-- [easepick js](https://easepick.com/) (datepicker)
+- [easepick.js](https://easepick.com/) (datepicker)
