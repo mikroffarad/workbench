@@ -23,8 +23,8 @@ This repository is organized into two main directories:
 ## 📂 How to Navigate
 
 - No need to clone the entire repository to view or run a single project.
-- You can browse the source code directly through GitHub's web interface.
 - Each project's ``README.md`` file contains all necessary information and links. 
+- You can browse the source code directly through GitHub's web interface.
 
 ## 💼 Featured Projects
 
