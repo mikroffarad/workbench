@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+body {
+    padding: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.box {
+    width: 350px;
+    text-align: center;
+}
+
+.button {
+    background-color: olive;
+    text-transform: uppercase;
+    padding: 0.5lh 1.5lh;
+    inline-size: 100%;
+}
+
+.button:hover,
+.button:focus-visible,
+.menu__link:hover,
+.menu__link:focus-visible {
+    background-color: olivedrab;
+}
+
+.menu {
+    line-height: 0;
+    overflow: hidden;
+    transition: line-height .5s, color .5s;
+    color: transparent;
+    background-color: olive;
+    text-transform: uppercase;
+}
+
+.button.active ~ .menu {
+    line-height: 1.2;
+    color: #fff;
+}
+
+.menu__item {
+    overflow: hidden;
+}
+
+.menu__link {
+    display: block;
+    padding: 0.5lh;
+}

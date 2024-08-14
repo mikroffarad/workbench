@@ -22,16 +22,16 @@ This repository is organized into two main directories:
 
 ## 📂 How to Navigate
 
-- You don't need to clone the entire repository to view or run a single project. 
+- No need to clone the entire repository to view or run a single project.
 - Each project's ``README.md`` file contains all necessary information and links. 
 - You can browse the source code directly through GitHub's web interface.
 
 ## 💼 Featured Projects
 
 ### Personal Projects
-- [Color Chooser](https://github.com/mikroffarad/workbench/tree/main/personalProjects/colorChooser): An interactive color selection tool with RGB sliders, real-time preview, and copy functionality.
-- [Find Your Job](https://github.com/mikroffarad/workbench/tree/main/personalProjects/findYourJob): A single-page job listing platform with categorized vacancies and tab-based navigation.
-- [String Case Converter](https://github.com/mikroffarad/workbench/tree/main/personalProjects/stringCaseConverter): A real-time text transformation tool offering various case styles with easy copy options.
+- [**Color Chooser**](https://github.com/mikroffarad/workbench/tree/main/personalProjects/colorChooser): An interactive color selection tool with RGB sliders, real-time preview, and copy functionality.
+- [**Find Your Job**](https://github.com/mikroffarad/workbench/tree/main/personalProjects/findYourJob): A single-page job listing platform with categorized vacancies and tab-based navigation.
+- [**String Case Converter**](https://github.com/mikroffarad/workbench/tree/main/personalProjects/stringCaseConverter): A real-time text transformation tool offering various case styles with easy copy options.
 
 ### Tutorial Projects
 - [**Hyperplexed**](https://www.youtube.com/@Hyperplexed)
