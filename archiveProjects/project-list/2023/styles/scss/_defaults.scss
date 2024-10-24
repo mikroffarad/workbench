@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+[class*="__container"] {
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: variables.$backgroundColor;
+    color: variables.$mainColor;
+    font-family: "Roboto", sans-serif;
+    font-family: monospace;
+}
+
+button {
+    background: unset;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+}

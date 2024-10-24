@@ -1,0 +1,50 @@
+@import 'shop/goods';
+@import 'shop/unit';
+
+.promo-text, .main-text, .goods, .unit {
+    &__inner {
+        padding: variables.$paddingSize 0;
+    }
+}
+
+.goods, .unit {
+    &__title {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+.promo-text {
+    background: url("../../images/main/main-background.jpg") no-repeat;
+    background-size: 100% 100%, auto;
+    height: 600px;
+
+    &__header {
+        font-size: 2em;
+        color: #000;
+        margin-bottom: 25px;
+        background-color: #fff;
+        text-align: center;
+        font-weight: 400;
+
+    }
+
+    &__accent {
+        color: inherit;
+        text-decoration: underline;
+        font-weight: 700;
+    }
+
+    &__header--red-text {
+        background-color: #f00;
+    }
+
+    &__header--green-text {
+        background-color: #0f0;
+    }
+}
+
+.main-text {
+    text-align: justify;
+}

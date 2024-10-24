@@ -1,0 +1,56 @@
+@use '../variables';
+
+.header {
+    background: url(../../images/header/background-removebg-preview.png) no-repeat center;
+    border-bottom: 1px solid variables.$color1;
+    &__inner {
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.logoname {
+    $logonameHeight: 60px;
+    display: flex;
+    align-items: center;
+    &__logo {
+        margin-right: 5px;
+        img {
+            width: $logonameHeight;
+            height: $logonameHeight;
+        }
+    }
+
+    &__name {
+        line-height: $logonameHeight;
+        font-size: 28px;
+        font-family: "Huntsman";
+    }
+}
+
+.header-nav {
+    &__list {
+        display: flex;
+        height: 100%;
+    }
+
+    &__item {
+        border-left: 1px solid variables.$color1;
+        border-right: 1px solid variables.$color1;
+        &:last-child {
+            border-left: none;
+        }
+    }
+
+    &__link {
+        &:hover{
+            background-color: variables.$color1;
+            color: variables.$color2;
+        }
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 40px;
+    }
+}

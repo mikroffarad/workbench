@@ -1,0 +1,41 @@
+.unit {
+
+    &__unit-card {
+        // margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.unit-card {
+    border: 1px solid variables.$color1;
+    padding: variables.$paddingSize;
+    &__image { 
+        margin-right: 5px;
+        display: flex;
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-size: 2em;
+    }
+
+    &__description {
+        margin-top: 10px;
+        font-size: 1.5em;
+    }
+
+    &__price {
+        margin-top: 10px;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+}
